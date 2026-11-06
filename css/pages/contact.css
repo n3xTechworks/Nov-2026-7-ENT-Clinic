@@ -65,3 +65,11 @@
 }
 .ct-hours tbody th{text-transform:none;letter-spacing:0;font-size:15.5px;background:none}
 .ct-photo img{object-position:50% 15%}
+
+/* Desktop: form card stretches to match the left column so both bottoms line up */
+@media (min-width:901px){
+  .ct-sec .grid{align-items:stretch}
+  .ct-form-col{display:flex}
+  .ct-form-col .form-card{flex:1;grid-template-rows:auto auto 1fr}
+  .ct-form-col .ct-form-f{align-self:end}
+}
