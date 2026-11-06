@@ -1,0 +1,148 @@
+---
+title: Book appointment | Tridya ENT Clinic
+description: Book an ENT appointment online in under two minutes. Choose a specialist, a day and a time, then add the patient's details.
+nav:
+css: book
+js: book
+pagehead: true
+crumbs: Book appointment
+h1: Book an appointment
+lead: Choose a specialist and time, then add the patient's details. You'll get an SMS and email confirmation.
+---
+    <section class="sec bk-sec" id="bk-flow">
+      <div class="wrap">
+        <div class="stepper bk-stepper" role="list" aria-label="Booking progress">
+          <div role="listitem" class="cur" data-step="1"><i>1</i><span>Doctor &amp; time</span></div>
+          <div role="listitem" data-step="2"><i>2</i><span>Patient details</span></div>
+          <div role="listitem" data-step="3"><i>3</i><span>Confirm</span></div>
+        </div>
+
+        <form class="grid bk-grid" id="bk-form" data-validate novalidate data-no-reset>
+          <div class="bk-main" style="grid-column: span 8;">
+            <div class="card form-card" id="bk-card-time" data-reveal>
+              <div class="bk-card-h"><h2 class="h3">1 · Doctor and time</h2><button class="link bk-reset" type="button" data-bk-change>Change</button></div>
+              <div class="form-grid">
+                <div class="field"><label for="b-spec">Specialty</label>
+                  <select class="inp" id="b-spec" name="specialty">
+                    <option value="ear">Ear &amp; hearing</option>
+                    <option value="nose">Nose &amp; sinus</option>
+                    <option value="throat">Throat &amp; voice</option>
+                    <option value="headneck">Head &amp; neck</option>
+                    <option value="children">Children's ENT</option>
+                    <option value="audiology">Hearing tests &amp; audiology</option>
+                  </select></div>
+                <div class="field"><label for="b-doc">Doctor</label>
+                  <select class="inp" id="b-doc" name="doctor"></select></div>
+              </div>
+              <div class="grid bk-when">
+                <div class="bk-cal-col" style="grid-column: span 6;">
+                  <div class="bk-cal-h"><b id="bk-month" aria-live="polite">November 2026</b>
+                    <span class="bk-nav"><button type="button" class="icon-btn sm" data-cal="-1" aria-label="Previous month">{{icon chevron-left 18 flip}}</button><button type="button" class="icon-btn sm" data-cal="1" aria-label="Next month">{{icon chevron-right 18 flip}}</button></span></div>
+                  <div class="cal" id="bk-cal" role="grid" aria-label="Choose a day"></div>
+                </div>
+                <div class="bk-slot-col" style="grid-column: span 6;">
+                  <b id="bk-slot-h">Choose a day</b>
+                  <div class="slots" id="bk-slots" role="group" aria-label="Available times"></div>
+                  <p class="msg hint">{{icon info 16}}Struck-through slots are already booked.</p>
+                  <p class="msg err" id="bk-slot-err" hidden>{{icon circle-alert 16}}Choose a day and a time to continue.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card form-card" id="bk-card-patient" data-reveal>
+              <h2 class="h3">2 · Patient details</h2>
+              <div class="form-grid">
+                <div class="field"><label for="b-name">Full name <i>*</i></label><input class="inp" id="b-name" name="name" autocomplete="name" placeholder="e.g. Ramesh Kumar" required></div>
+                <div class="field"><label for="b-phone">Mobile number <i>*</i></label><div class="inp"><span class="pre">+91</span><input id="b-phone" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="98430 12345" required></div></div>
+                <div class="field"><label for="b-email">Email</label><input class="inp" id="b-email" name="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
+                <div class="field"><label for="b-age">Age</label><input class="inp" id="b-age" name="age" type="number" min="0" max="110" inputmode="numeric" placeholder="e.g. 46"></div>
+                <div class="field"><span class="lbl" id="b-type-l">Patient type</span>
+                  <div class="chip-row" role="group" aria-labelledby="b-type-l" id="b-type">
+                    <button type="button" class="chip" aria-pressed="true" data-ptype="New patient">New patient</button>
+                    <button type="button" class="chip" aria-pressed="false" data-ptype="Returning">Returning</button>
+                  </div></div>
+                <div class="field"><label for="b-pay">Payment</label>
+                  <select class="inp" id="b-pay" name="payment">
+                    <option>Pay at clinic · cash, card or UPI</option>
+                    <option>Insurance · cashless</option>
+                    <option>Insurance · reimbursement</option>
+                    <option>Corporate tie-up</option>
+                  </select></div>
+                <div class="field full"><label for="b-reason">Reason for visit</label><textarea class="inp" id="b-reason" name="reason" rows="3" maxlength="500" placeholder="e.g. Blocked nose on the left side for 4 months, worse at night."></textarea></div>
+                <label class="full check"><input type="checkbox" name="consent" id="b-consent" required><span>I agree to the clinic's <a href="privacy.html">privacy policy</a> and to receive appointment reminders by SMS and WhatsApp.</span></label>
+              </div>
+            </div>
+          </div>
+
+          <aside class="bk-aside" style="grid-column: span 4;">
+            <div class="card form-card bk-summary" data-reveal>
+              <h2 class="h3">Appointment summary</h2>
+              <div class="mini-doc"><div class="ph round" id="bk-sum-photo">{{portrait doc-arjun | Dr. Arjun Venkatesh | 160}}</div><div><b id="bk-sum-name">Dr. Arjun Venkatesh</b><small id="bk-sum-role">Rhinology &amp; sinus surgery</small></div></div>
+              <div class="sum">
+                <div><span>Date</span><b id="bk-sum-date">Choose a day</b></div>
+                <div><span>Time</span><b class="tnum" id="bk-sum-time">Choose a time</b></div>
+                <div id="bk-sum-tx-row" hidden><span>For</span><b id="bk-sum-tx"></b></div>
+                <div><span>Location</span><b id="bk-sum-room">Ground floor, Room 3</b></div>
+                <div><span>Consultation fee</span><b class="tnum" id="bk-sum-fee">₹800</b></div>
+              </div>
+              <button class="btn btn-cta btn-lg btn-block" type="submit" id="bk-submit">{{icon calendar-check 18}}Confirm booking</button>
+              <p class="msg hint bk-center">{{icon shield-check 16}}Pay at the clinic. No advance needed.</p>
+            </div>
+            <div class="card bk-info" data-reveal>
+              <h2 class="h3">Before your visit</h2>
+              <ul class="bk-list">
+                <li>{{icon clock 18}}<span>Arrive 15 minutes early for registration and vitals.</span></li>
+                <li>{{icon file-text 18}}<span>Bring previous ENT reports, scans and a list of your medicines.</span></li>
+                <li>{{icon id-card 18}}<span>Carry a photo ID, and your insurance card for cashless care.</span></li>
+                <li>{{icon headphones 18}}<span>Hearing test booked? Avoid loud noise for 16 hours beforehand.</span></li>
+              </ul>
+            </div>
+            <div class="card bk-info bk-help" data-reveal>
+              <h2 class="h3">Prefer to book by phone?</h2>
+              <p>Our front desk can book, reschedule or answer insurance questions.</p>
+              <a class="bk-tel" href="tel:+914222456780">{{icon phone 18}}+91 422 245 6780</a>
+              <a class="bk-tel" href="https://wa.me/919894022110" target="_blank" rel="noopener">{{icon message-circle 18}}WhatsApp +91 98940 22110</a>
+            </div>
+          </aside>
+        </form>
+      </div>
+    </section>
+
+    <!-- Booking confirmed (design board 07): shown after a valid booking -->
+    <section class="bk-done" id="bk-done" hidden>
+      <div class="wrap">
+        <div class="ok-hero">
+          <span class="ok-badge">{{icon circle-check 36}}</span>
+          <span class="eyebrow">Booking confirmed</span>
+          <h2 class="bk-done-h" id="bk-done-h" tabindex="-1">You're booked with <span data-bk="doctor">Dr. Arjun Venkatesh</span></h2>
+          <p class="muted bk-done-p" data-bk="sent">We've sent the details to your mobile. Please arrive 15 minutes early for registration.</p>
+        </div>
+        <div class="card ticket">
+          <div><span class="mono muted">Booking ID</span><b class="tnum bk-big" data-bk="id">TRD-2611-0482</b>
+            <div class="sum"><div><span>Patient</span><b data-bk="name"></b></div><div><span>Doctor</span><b data-bk="doctor"></b></div><div><span>Specialty</span><b data-bk="spec"></b></div></div></div>
+          <div><span class="mono muted">When and where</span><b class="bk-big" data-bk="when"></b>
+            <div class="sum"><div><span>Location</span><b data-bk="room"></b></div><div><span>Fee</span><b class="tnum" data-bk="fee"></b></div><div><span>Bring</span><b>Old reports, ID</b></div></div></div>
+        </div>
+        <div class="bk-done-acts">
+          <a class="btn btn-cta btn-lg" href="signup.html">{{icon user-plus 18}}Create patient account</a>
+          <a class="btn btn-ghost btn-lg" href="index.html">Back to home</a>
+        </div>
+        <p class="bk-done-more"><a class="link" href="dashboard-appointments.html">See it in the patient portal{{icon arrow-right 16 flip}}</a> <span aria-hidden="true">·</span> <button class="link" type="button" data-bk-again>Book another appointment</button></p>
+      </div>
+    </section>
+
+    <dialog class="modal" id="dlg-booked" aria-labelledby="dlg-booked-t">
+      <span class="grab" aria-hidden="true"></span>
+      <div class="modal-h"><div class="t"><span class="badge-ic ok">{{icon circle-check}}</span><div><h3 id="dlg-booked-t">Appointment confirmed</h3><p>Please arrive 15 minutes early for registration.</p></div></div>
+        <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+      <div class="modal-b">
+        <div class="sum">
+          <div><span>Booking ID</span><b class="tnum" data-bk="id"></b></div>
+          <div><span>Doctor</span><b data-bk="doctor"></b></div>
+          <div><span>When</span><b data-bk="when"></b></div>
+          <div><span>Where</span><b data-bk="room"></b></div>
+        </div>
+        <div class="alert info">{{icon message-circle}}<span data-bk="sms">Confirmation sent by SMS and WhatsApp.</span></div>
+      </div>
+      <div class="modal-f"><button class="btn btn-ghost" type="button" data-bk-ics>{{icon calendar-days}}Add to calendar</button><a class="btn btn-cta" href="signup.html">Create patient account</a></div>
+    </dialog>

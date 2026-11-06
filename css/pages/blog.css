@@ -1,0 +1,113 @@
+/* blog.html + blog-1..6.html */
+/* ---------- list ---------- */
+.bl-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:32px}
+.bl-chips{display:flex;flex-wrap:wrap;gap:8px}
+.bl-chips .chip{cursor:pointer;height:40px;transition:background .2s,color .2s,border-color .2s}
+.bl-chips .chip .ico{width:16px;height:16px}
+.bl-chips .chip:not([aria-pressed="true"]):hover{border-color:var(--teal);color:var(--teal)}
+.bl-count{margin:0;font-size:15px}
+.bl-grid{--ar:16/10}
+.bl-card{position:relative}
+.bl-card .bl-cover{display:block;overflow:hidden}
+.bl-card .bl-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+html.motion .bl-card:hover .bl-cover img{transform:scale(1.04)}
+.bl-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px;padding-top:6px}
+.bl-meta .muted{display:inline-flex;align-items:center;gap:6px}
+.bl-meta .ico{width:14px;height:14px}
+.bl-title{font-size:21px;line-height:1.3;margin:0}
+.bl-title a{color:var(--ink);text-decoration:none}
+.bl-title a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.bl-title a:focus-visible{outline:none}
+.bl-card:has(.bl-title a:focus-visible){outline:2px solid var(--teal);outline-offset:3px}
+.bl-card:hover .bl-title a{color:var(--teal)}
+.bl-ex{margin:0;color:var(--ink-2);font-size:15.5px}
+.bl-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;border-top:1px solid var(--line)}
+.bl-author{display:flex;align-items:center;gap:10px;min-width:0}
+.bl-author .avatar{width:40px;height:40px;flex:none;border-radius:50%;overflow:hidden;padding:0}
+.bl-author .avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.bl-author b{display:block;font-size:14.5px;line-height:1.3}
+.bl-author small{display:block;color:var(--ink-3);font-size:13px}
+.bl-read{position:relative;z-index:1;flex:none;font-size:14.5px;white-space:nowrap}
+.bl-card[hidden]{display:none}
+.bl-empty{max-width:520px;margin:24px auto 0;text-align:center}
+.bl-cta-txt{display:grid;gap:14px}
+
+/* ---------- article ---------- */
+.ar-sec{padding-top:48px}
+.ar-grid{align-items:start}
+.ar-main,.ar-aside{min-width:0}
+.ar-byline{display:flex;align-items:center;gap:16px 24px;flex-wrap:wrap;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid var(--line)}
+.ar-by{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;margin-inline-end:auto}
+.ar-by b{display:block;color:var(--ink)}
+.ar-by small{display:block;color:var(--ink-3);font-size:14px}
+.ar-by:hover b{color:var(--teal)}
+.ar-av{width:52px;height:52px;flex:none;border-radius:50%;overflow:hidden;padding:0}
+.ar-av img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.ar-facts{list-style:none;margin:0;padding:0;display:flex;gap:18px;color:var(--ink-2);font-size:15px}
+.ar-facts li{display:inline-flex;align-items:center;gap:6px}
+.ar-facts .ico{width:16px;height:16px;color:var(--teal)}
+.ar-cover{margin:0 0 36px;aspect-ratio:16/9;border-radius:var(--r-card,16px);overflow:hidden}
+.ar-cover img{width:100%;height:100%;object-fit:cover}
+.ar-prose{max-width:760px}
+.ar-prose .ar-lead{font-size:20px;line-height:1.6;color:var(--ink)}
+.ar-prose h2{scroll-margin-top:100px}
+.ar-prose ol{margin:0;padding-inline-start:22px;display:grid;gap:10px}
+.ar-prose li{padding-inline-start:4px}
+.ar-prose li::marker{color:var(--teal);font-weight:700}
+.ar-prose strong{color:var(--ink)}
+.ar-prose a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
+.callout{display:flex;gap:14px;align-items:flex-start;padding:20px 22px;border-radius:14px;background:var(--teal-soft);border-inline-start:4px solid var(--teal);color:var(--ink)}
+.callout .ico{flex:none;color:var(--teal);margin-top:3px}
+.callout p{margin:0;color:var(--ink)!important}
+.ar-review{display:flex;gap:12px;align-items:flex-start;margin-top:40px;padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:var(--surface);max-width:760px}
+.ar-review .ico{flex:none;color:var(--ok, var(--teal));margin-top:2px}
+.ar-review p{margin:0;font-size:15px;color:var(--ink-2)}
+.ar-aside .aside{top:96px}
+.ar-author{padding:24px;display:grid;gap:16px}
+.ar-author-h{display:flex;gap:14px;align-items:center}
+.ar-author-ph{width:72px;height:72px;flex:none;border-radius:50%;overflow:hidden}
+.ar-author-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.ar-author-h .eyebrow{font-size:11.5px}
+.ar-author-h h2{font-size:19px;margin:4px 0 2px}
+.ar-author-h small{color:var(--ink-3);font-size:14px}
+.ar-author p{margin:0;color:var(--ink-2);font-size:15px}
+.ar-author-acts{display:grid;gap:12px;justify-items:center}
+.ar-toc{padding:24px;display:grid;gap:12px}
+.ar-toc h2{font-size:17px;margin:0}
+.ar-toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;counter-reset:t}
+.ar-toc li{counter-increment:t}
+.ar-toc a{display:flex;gap:10px;padding:8px 10px;border-radius:8px;color:var(--ink-2);text-decoration:none;font-size:15px;line-height:1.4}
+.ar-toc a::before{content:counter(t,decimal-leading-zero);font:600 12.5px/1.7 var(--f-body);color:var(--ink-3)}
+.ar-toc a:hover,.ar-toc a.on{background:var(--teal-soft);color:var(--ink)}
+.ar-toc a.on::before{color:var(--teal)}
+
+@media (max-width:1100px){
+  .bl-title{font-size:20px}
+}
+@media (max-width:900px){
+  .ar-main,.ar-aside{grid-column:span 12!important}
+  .ar-aside .aside{position:static;grid-template-columns:1fr 1fr;align-items:start}
+}
+@media (max-width:760px){
+  .ar-aside .aside{grid-template-columns:1fr}
+  .ar-prose .ar-lead{font-size:18px}
+  .ar-cover{margin-bottom:28px}
+}
+@media (max-width:560px){
+  .bl-bar{margin-bottom:24px}
+  .bl-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-16px;padding-inline:16px;padding-bottom:4px;scrollbar-width:none;max-width:calc(100% + 32px)}
+  .bl-chips::-webkit-scrollbar{display:none}
+  .bl-chips .chip{flex:none}
+  .ar-share{margin-inline-start:auto}
+  .callout{padding:16px}
+}
+.cards>.card.sub.bl-rel{padding-top:24px}
+/* article heads hold long titles: same .page-head height as other inner pages */
+.ar-page .page-head h1{font-size:clamp(30px,3.6vw,46px);line-height:1.12;max-width:980px}
+.ar-page .page-head .lead{font-size:17px;margin-top:12px}
+/* cards: keep text rows level */
+.bl-card>.bl-foot{align-self:start}
+.bl-foot{align-items:flex-start}
+.bl-read{margin-top:10px}
+.bl-author b{white-space:nowrap}
+.ar-aside .aside,.ar-author-h>div{min-width:0}

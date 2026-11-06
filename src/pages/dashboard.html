@@ -1,0 +1,101 @@
+---
+title: Overview | Patient portal | Tridya ENT Clinic
+description: Your Tridya ENT patient portal: next appointment, active medicines, latest audiogram and recent visits.
+layout: app
+app: overview
+app_title: Overview
+css: dashboard
+js: dashboard
+search: no
+---
+        <!-- loading skeleton (d3_24): shown briefly on load, or always with ?state=loading -->
+        <div class="ov-block" id="ovSkel" aria-hidden="true" hidden>
+          <div class="ov-sk-head"><span class="sk" style="width:220px;height:14px"></span><span class="sk" style="width:min(360px,80%);height:30px"></span></div>
+          <span class="sk" style="width:100%;height:130px;border-radius:16px"></span>
+          <div class="kpis">
+            <div class="card kpi"><span class="sk" style="width:36px;height:36px;border-radius:10px"></span><span class="sk" style="width:60px;height:24px"></span><span class="sk" style="width:120px;height:12px;min-height:12px"></span></div>
+            <div class="card kpi"><span class="sk" style="width:36px;height:36px;border-radius:10px"></span><span class="sk" style="width:60px;height:24px"></span><span class="sk" style="width:120px;height:12px;min-height:12px"></span></div>
+            <div class="card kpi"><span class="sk" style="width:36px;height:36px;border-radius:10px"></span><span class="sk" style="width:60px;height:24px"></span><span class="sk" style="width:120px;height:12px;min-height:12px"></span></div>
+            <div class="card kpi"><span class="sk" style="width:36px;height:36px;border-radius:10px"></span><span class="sk" style="width:60px;height:24px"></span><span class="sk" style="width:120px;height:12px;min-height:12px"></span></div>
+          </div>
+          <div class="d2">
+            <div class="panel ov-sk-panel" style="grid-column:span 7"><span class="sk" style="width:240px;height:16px"></span><span class="sk" style="width:100%;height:280px;border-radius:12px"></span></div>
+            <div class="panel ov-sk-panel" style="grid-column:span 5">
+              <div class="ov-sk-row"><span class="sk" style="width:40px;height:40px;border-radius:10px"></span><div><span class="sk" style="width:70%;height:12px;min-height:12px"></span><span class="sk" style="width:45%;height:10px;min-height:10px"></span></div></div>
+              <div class="ov-sk-row"><span class="sk" style="width:40px;height:40px;border-radius:10px"></span><div><span class="sk" style="width:70%;height:12px;min-height:12px"></span><span class="sk" style="width:45%;height:10px;min-height:10px"></span></div></div>
+              <div class="ov-sk-row"><span class="sk" style="width:40px;height:40px;border-radius:10px"></span><div><span class="sk" style="width:70%;height:12px;min-height:12px"></span><span class="sk" style="width:45%;height:10px;min-height:10px"></span></div></div>
+              <div class="ov-sk-row"><span class="sk" style="width:40px;height:40px;border-radius:10px"></span><div><span class="sk" style="width:70%;height:12px;min-height:12px"></span><span class="sk" style="width:45%;height:10px;min-height:10px"></span></div></div>
+              <div class="ov-sk-row"><span class="sk" style="width:40px;height:40px;border-radius:10px"></span><div><span class="sk" style="width:70%;height:12px;min-height:12px"></span><span class="sk" style="width:45%;height:10px;min-height:10px"></span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- overview (d3_16) -->
+        <div class="ov-block" id="ovFull">
+          <div class="ov-greet">
+            <div><p class="mono muted" data-today>Thursday, 5 November 2026</p><h2 data-greet>Good evening, Sangeetha</h2></div>
+            <a class="btn btn-cta" href="dashboard-book.html">{{icon plus}}Book appointment</a>
+          </div>
+
+          <div class="next" id="ovNext">
+            <div class="date"><small data-n-mon>NOV</small><b class="tnum" data-n-day>12</b><small data-n-wd>THU</small></div>
+            <div class="next-txt">
+              <span class="mono next-k" data-n-k>NEXT APPOINTMENT · 17:10</span>
+              <h2 data-n-title>Follow-up hearing test with Dr. Meera Raghavan</h2>
+              <p data-n-where>Hearing &amp; Balance Clinic · First floor, Room 12 · Arrive by 16:55</p>
+            </div>
+            <div class="acts">
+              <a class="btn btn-ghost" href="dashboard-appointments.html" data-n-resched>Reschedule</a>
+              <button class="btn btn-cta" type="button" data-add-cal>{{icon calendar-days}}Add to calendar</button>
+            </div>
+          </div>
+
+          <div class="kpis" data-stagger>
+            <a class="card kpi lift" href="dashboard-appointments.html">{{icon calendar-days}}<b class="tnum" data-kpi-up>2</b><span>Upcoming visits</span></a>
+            <a class="card kpi lift" href="dashboard-prescriptions.html">{{icon pill}}<b class="tnum">3</b><span>Active medicines</span></a>
+            <a class="card kpi lift" href="dashboard-reports.html">{{icon file-heart}}<b class="tnum">7</b><span>Reports on file</span></a>
+            <a class="card kpi lift" href="dashboard-prescriptions.html">{{icon bell}}<b class="tnum">20:00</b><span>Next dose · Betahistine</span></a>
+          </div>
+
+          <div class="d2">
+            <div class="panel" style="grid-column:span 7">
+              <div class="panel-h"><h3>Latest report · Pure-tone audiogram</h3><a class="link" href="dashboard-reports.html">Open report{{icon arrow-right 16 flip}}</a></div>
+              <div class="panel-b ov-aud">
+                <svg class="aud" viewBox="0 0 560 320" width="100%" role="img" aria-label="Pure-tone audiogram, 26 Oct 2026: both ears in the normal range up to 1 kHz, falling to about 50 to 55 dB HL at 8 kHz"><rect class="band" x="48" y="20.0" width="496" height="86.54"></rect><line class="g" x1="48" x2="544" y1="20.0" y2="20.0"></line><text x="40" y="24.0" text-anchor="end">-10</text><line class="g" x1="48" x2="544" y1="44.72" y2="44.72"></line><text x="40" y="48.72" text-anchor="end">0</text><line class="g" x1="48" x2="544" y1="69.45" y2="69.45"></line><text x="40" y="73.45" text-anchor="end">10</text><line class="g" x1="48" x2="544" y1="94.18" y2="94.18"></line><text x="40" y="98.18" text-anchor="end">20</text><line class="g" x1="48" x2="544" y1="118.90" y2="118.90"></line><text x="40" y="122.90" text-anchor="end">30</text><line class="g" x1="48" x2="544" y1="143.63" y2="143.63"></line><text x="40" y="147.63" text-anchor="end">40</text><line class="g" x1="48" x2="544" y1="168.36" y2="168.36"></line><text x="40" y="172.36" text-anchor="end">50</text><line class="g" x1="48" x2="544" y1="193.09" y2="193.09"></line><text x="40" y="197.09" text-anchor="end">60</text><line class="g" x1="48" x2="544" y1="217.81" y2="217.81"></line><text x="40" y="221.81" text-anchor="end">70</text><line class="g" x1="48" x2="544" y1="242.54" y2="242.54"></line><text x="40" y="246.54" text-anchor="end">80</text><line class="g" x1="48" x2="544" y1="267.27" y2="267.27"></line><text x="40" y="271.27" text-anchor="end">90</text><line class="g" x1="48" x2="544" y1="292.0" y2="292.0"></line><text x="40" y="296.0" text-anchor="end">100</text><line class="g" x1="48.0" x2="48.0" y1="20" y2="292"></line><text x="48.0" y="312" text-anchor="middle">250</text><line class="g" x1="147.2" x2="147.2" y1="20" y2="292"></line><text x="147.2" y="312" text-anchor="middle">500</text><line class="g" x1="246.4" x2="246.4" y1="20" y2="292"></line><text x="246.4" y="312" text-anchor="middle">1k</text><line class="g" x1="345.6" x2="345.6" y1="20" y2="292"></line><text x="345.6" y="312" text-anchor="middle">2k</text><line class="g" x1="444.8" x2="444.8" y1="20" y2="292"></line><text x="444.8" y="312" text-anchor="middle">4k</text><line class="g" x1="544.0" x2="544.0" y1="20" y2="292"></line><text x="544.0" y="312" text-anchor="middle">8k</text><polyline class="r" points="48.0,81.81 147.2,94.18 246.4,106.54 345.6,131.27 444.8,168.36 544.0,180.72"></polyline><polyline class="l" points="48.0,81.81 147.2,81.81 246.4,94.18 345.6,118.90 444.8,156.0 544.0,168.36"></polyline><circle class="rm" cx="48.0" cy="81.81" r="5.5"></circle><circle class="rm" cx="147.2" cy="94.18" r="5.5"></circle><circle class="rm" cx="246.4" cy="106.54" r="5.5"></circle><circle class="rm" cx="345.6" cy="131.27" r="5.5"></circle><circle class="rm" cx="444.8" cy="168.36" r="5.5"></circle><circle class="rm" cx="544.0" cy="180.72" r="5.5"></circle><path class="lm" d="M43.0 76.81L53.0 86.81M53.0 76.81L43.0 86.81"></path><path class="lm" d="M142.2 76.81L152.2 86.81M152.2 76.81L142.2 86.81"></path><path class="lm" d="M241.4 89.18L251.4 99.18M251.4 89.18L241.4 99.18"></path><path class="lm" d="M340.6 113.90L350.6 123.90M350.6 113.90L340.6 123.90"></path><path class="lm" d="M439.8 151.0L449.8 161.0M449.8 151.0L439.8 161.0"></path><path class="lm" d="M539.0 163.36L549.0 173.36M549.0 163.36L539.0 173.36"></path><text x="54" y="99.12" style="fill: var(--ok);">Normal range</text></svg>
+                <div class="legend"><span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="var(--ear-r)" stroke-width="2"></circle></svg>Right ear (O)</span><span><svg width="14" height="14" aria-hidden="true"><path d="M2 2L12 12M12 2L2 12" stroke="var(--ear-l)" stroke-width="2"></path></svg>Left ear (X)</span><span>dB HL vs frequency (Hz)</span></div>
+                <p class="muted">26 Oct 2026 · Mild high-frequency hearing loss in both ears. Reviewed by Dr. Meera Raghavan.</p>
+              </div>
+            </div>
+            <div class="ov-col" style="grid-column:span 5">
+              <div class="panel">
+                <div class="panel-h"><h3>Active medicines</h3><a class="link" href="dashboard-prescriptions.html">All{{icon arrow-right 16 flip}}</a></div>
+                <div class="list">
+                  <div class="li">{{icon pill}}<div><b>Betahistine 16 mg</b><small>1-0-1 · after food</small></div><span class="pill info">12 days left</span></div>
+                  <div class="li">{{icon pill}}<div><b>Fluticasone nasal spray</b><small>2 puffs each side · morning</small></div><span class="pill info">20 days left</span></div>
+                  <div class="li">{{icon pill}}<div><b>Ginkgo + B-complex</b><small>0-0-1 · after dinner</small></div><span class="pill warn">5 days left</span></div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-h"><h3>Recent visits</h3><a class="link" href="dashboard-appointments.html">History{{icon arrow-right 16 flip}}</a></div>
+                <div class="list">
+                  <div class="li">{{icon history}}<div><b>Hearing assessment</b><small>26 Oct · Dr. Meera Raghavan</small></div><span class="pill ok">Completed</span></div>
+                  <div class="li">{{icon history}}<div><b>Sinus follow-up</b><small>12 Sep · Dr. Arjun Venkatesh</small></div><span class="pill ok">Completed</span></div>
+                  <div class="li">{{icon history}}<div><b>Nasal endoscopy</b><small>03 Aug · Dr. Arjun Venkatesh</small></div><span class="pill ok">Completed</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- empty states for a new patient (d3_23): ?state=new -->
+        <div class="ov-block" id="ovEmpty" hidden>
+          <div class="ov-greet"><div><p class="mono muted" data-today>Thursday, 5 November 2026</p><h2>Welcome, Karthik</h2></div></div>
+          <div class="alert info">{{icon info}}<span><b>Your account is set up</b>Book your first visit and your prescriptions and reports will appear here.</span></div>
+          <div class="d2">
+            <div style="grid-column:span 12"><div class="panel"><div class="empty"><span class="badge-ic">{{icon calendar-days}}</span><h3>No upcoming appointments</h3><p>When you book a visit it will show here with reminders and directions.</p><a class="btn btn-cta" href="dashboard-book.html">{{icon calendar-days}}Book appointment</a></div></div></div>
+            <div class="ov-empty-pair" style="grid-column:span 12">
+              <div class="panel"><div class="empty"><span class="badge-ic">{{icon pill}}</span><h3>No prescriptions yet</h3><p>Prescriptions from your doctor appear here the same day as your visit.</p><a class="btn btn-ghost" href="doctors.html">{{icon stethoscope}}Find a specialist</a></div></div>
+              <div class="panel"><div class="empty"><span class="badge-ic">{{icon file-heart}}</span><h3>No reports yet</h3><p>Hearing tests, endoscopy and scans are added after each visit. You can also upload outside reports.</p><a class="btn btn-ghost" href="dashboard-reports.html">{{icon upload}}Upload a report</a></div></div>
+            </div>
+          </div>
+        </div>

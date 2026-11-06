@@ -1,0 +1,62 @@
+/* Portal overview (dashboard.html): overview, empty states (?state=new), loading skeleton */
+.ov-block{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.ov-block[hidden]{display:none}
+.ov-greet{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.ov-greet h2{font-size:30px}
+.ov-greet .mono{font-size:13.5px}
+
+.next .next-txt{display:grid;gap:6px;min-width:0}
+.next .next-k{color:var(--teal);font-size:13px}
+.next h2{font-size:24px}
+
+a.kpi{color:var(--ink);transition:transform .2s,box-shadow .2s,border-color .2s}
+a.kpi:hover{border-color:color-mix(in srgb,var(--teal) 40%,var(--line))}
+a.kpi b{color:var(--ink)}
+
+.ov-col{display:grid;gap:24px;align-content:start}
+.ov-aud{display:grid;gap:14px}
+.ov-aud .aud{direction:ltr;display:block;height:auto}
+.ov-aud p{font-size:15px}
+.d2>.panel{align-self:start}
+
+/* empty states */
+.ov-empty-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.ov-empty-pair .panel{display:grid}
+.ov-empty-pair .empty{grid-template-rows:auto auto 1fr auto;align-content:start}
+
+/* skeleton */
+.ov-sk-head{display:grid;gap:10px}
+.ov-sk-panel{padding:22px;display:grid;gap:18px;align-content:start}
+.ov-sk-row{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:center}
+.ov-sk-row>div{display:grid;gap:6px}
+#ovSkel .kpi{display:grid;gap:10px}
+
+@media (max-width:900px){
+  .next{grid-template-columns:auto 1fr}
+  .next .acts{grid-column:1/-1}
+}
+@media (max-width:760px){
+  .ov-empty-pair{grid-template-columns:1fr}
+  .ov-greet h2{font-size:28px}
+}
+@media (max-width:560px){
+  .ov-greet{align-items:flex-start;flex-direction:column}
+  .next{padding:20px;gap:16px}
+  .next h2{font-size:21px}
+  .next .acts{display:grid;justify-items:start}
+  .ov-aud .legend{gap:12px}
+  .li .pill{white-space:nowrap}
+}
+@media (max-width:560px){
+  .ov-col .li{grid-template-columns:40px 1fr;row-gap:6px;padding:14px 16px}
+  .ov-col .li>.ico{grid-row:span 2;align-self:start}
+  .ov-col .li .pill{grid-column:2;justify-self:start}
+}
+
+/* shell fix (shared site.css hides every span in the collapsed 84px sidebar, including the .ico icons) */
+@media (max-width:1100px) and (min-width:761px){
+  .side nav a>.ico,.side nav button>.ico{display:inline-block}
+  .side nav button{width:52px;justify-content:center;padding:0}
+  .side nav button>span:not(.ico){display:none}
+}
+.ov-aud .aud{max-width:640px;margin-inline:auto;width:100%}

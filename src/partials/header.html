@@ -1,0 +1,58 @@
+<body class="{{body_class}}">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="hdr" id="siteHeader">
+    <div class="wrap">
+      {{> logo}}
+      <nav class="nav" aria-label="Main">
+        <div class="dd" data-dd>
+          <button type="button" class="{{home_on}}" aria-haspopup="true" aria-expanded="false" aria-controls="homeMenu" data-dd-btn>Home{{icon chevron-down}}</button>
+          <div class="dd-menu" id="homeMenu">
+            <a href="index.html" data-cur="nav:home1"><i>H1</i><b>Home 1 · Clinic overview</b><small>Ear, nose &amp; throat care at a glance</small></a>
+            <a href="home-2.html" data-cur="nav:home2"><i>H2</i><b>Home 2 · Specialty clinics</b><small>Hearing, sinus, sleep, voice &amp; paediatric</small></a>
+          </div>
+        </div>
+        <a href="about.html" data-cur="nav:about">About</a>
+        <a href="services.html" data-cur="nav:services">Services</a>
+        <a href="doctors.html" data-cur="nav:doctors">Doctors</a>
+        <a href="blog.html" data-cur="nav:blog">Blog</a>
+        <a href="contact.html" data-cur="nav:contact">Contact</a>
+        <a href="dashboard.html" data-cur="nav:dashboard">Dashboard</a>
+      </nav>
+      <div class="hdr-actions">
+        <button class="icon-btn" type="button" aria-label="Search the site" data-search-open>{{icon search}}</button>
+        <button class="icon-btn ctl" type="button" aria-label="Switch theme" data-theme-toggle><span class="ico t-moon" aria-hidden="true">{{svg moon}}</span><span class="ico t-sun" aria-hidden="true">{{svg sun}}</span></button>
+        <button class="icon-btn rtl-btn ctl" type="button" aria-label="Switch text direction" aria-pressed="false" data-dir-toggle><span class="dir-txt" aria-hidden="true"><span class="d-to-rtl">RTL</span><span class="d-to-ltr">LTR</span></span></button>
+        <a class="btn btn-ghost hdr-login ctl" href="login.html" data-nav-login>Log in</a>
+        <a class="btn btn-cta ctl" href="book.html" data-nav-cta>{{icon calendar-days}}Book appointment</a>
+        <button class="icon-btn burger" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false" data-drawer-open>{{icon menu}}</button>
+      </div>
+    </div>
+  </header>
+  <dialog class="drawer" id="drawer" aria-label="Menu">
+    <div class="drawer-top">
+      {{> logo}}
+      <button class="icon-btn close" type="button" aria-label="Close menu" data-close autofocus>{{icon x}}</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Mobile">
+      <button type="button" class="drawer-home" aria-expanded="{{home_open}}" aria-controls="drawerHome" data-drawer-home>Home{{icon chevron-down}}</button>
+      <div class="drawer-sub" id="drawerHome"{{home_hidden}}>
+        <a href="index.html" data-cur="nav:home1">Home 1 · Clinic overview</a>
+        <a href="home-2.html" data-cur="nav:home2">Home 2 · Specialty clinics</a>
+      </div>
+      <a href="about.html" data-cur="nav:about">About</a>
+      <a href="services.html" data-cur="nav:services">Services</a>
+      <a href="doctors.html" data-cur="nav:doctors">Doctors</a>
+      <a href="blog.html" data-cur="nav:blog">Blog</a>
+      <a href="contact.html" data-cur="nav:contact">Contact</a>
+      <a href="dashboard.html" data-cur="nav:dashboard">Dashboard</a>
+    </nav>
+    <div class="drawer-foot">
+      <div class="tools drawer-ctl">
+        <button class="icon-btn" type="button" aria-label="Switch theme" data-theme-toggle><span class="ico t-moon" aria-hidden="true">{{svg moon}}</span><span class="ico t-sun" aria-hidden="true">{{svg sun}}</span></button>
+        <button class="icon-btn rtl-btn" type="button" aria-label="Switch text direction" aria-pressed="false" data-dir-toggle><span class="dir-txt" aria-hidden="true"><span class="d-to-rtl">RTL</span><span class="d-to-ltr">LTR</span></span></button>
+        <a class="btn btn-ghost" href="login.html" style="flex:1" data-nav-login>Log in</a>
+      </div>
+      <a class="btn btn-cta btn-lg btn-block drawer-ctl" href="book.html" data-nav-cta>{{icon calendar-days}}Book appointment</a>
+      <button class="alert err" type="button" style="border:0;text-align:start;cursor:pointer;width:100%" data-open-dialog="dlg-emergency">{{icon siren}}<span><b>ENT emergency 24×7</b><span class="tnum">+91 422 245 6799</span></span></button>
+    </div>
+  </dialog>

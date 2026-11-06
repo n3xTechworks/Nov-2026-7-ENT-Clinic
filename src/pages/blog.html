@@ -1,0 +1,54 @@
+---
+title: Blog | Tridya ENT Clinic
+description: Practical ENT health articles from Tridya's doctors and audiologist: ear care, sinus and allergy, voice, snoring, children's hearing and hearing tests.
+nav: blog
+css: blog
+js: blog
+pagehead: true
+crumbs: Blog
+h1: ENT health articles
+lead: Practical advice from our doctors on hearing, sinus, voice, sleep and children's ENT, written for patients and families.
+---
+    <section class="sec bl-sec">
+      <div class="wrap">
+        <div class="bl-bar">
+          <div class="chip-row bl-chips" data-filter-group="posts" role="group" aria-label="Filter articles by topic">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All topics</button>
+            <button class="chip" type="button" data-filter="ear" aria-pressed="false">{{icon ear 16}}Ear &amp; hearing</button>
+            <button class="chip" type="button" data-filter="nose" aria-pressed="false">{{icon wind 16}}Nose &amp; sinus</button>
+            <button class="chip" type="button" data-filter="throat" aria-pressed="false">{{icon mic 16}}Throat &amp; voice</button>
+            <button class="chip" type="button" data-filter="sleep" aria-pressed="false">{{icon bed-double 16}}Sleep &amp; snoring</button>
+            <button class="chip" type="button" data-filter="children" aria-pressed="false">{{icon baby 16}}Children</button>
+          </div>
+          <p class="bl-count muted" id="bl-count" aria-live="polite">6 articles</p>
+        </div>
+
+        <div class="cards bl-grid" style="--cols:3;--rows:5" data-filter-target="posts" data-stagger>
+          {{#each posts}}
+          <article class="card sub lift bl-card blog-card" data-tags="{{tags}}">
+            <a class="ph bl-cover" href="{{page}}" tabindex="-1" aria-hidden="true"><img class="blog-cover" src="images/{{cover}}-800.webp" srcset="images/{{cover}}-800.webp 800w, images/{{cover}}-1600.webp 1600w" sizes="(max-width: 560px) 100vw, (max-width: 1100px) 50vw, 400px" width="1600" height="1067" alt="{{cover_alt}}" loading="lazy" decoding="async"></a>
+            <div class="bl-meta"><span class="pill info">{{category}}</span><span class="muted">{{icon clock 14}}{{read}}</span></div>
+            <h2 class="h3 bl-title"><a href="{{page}}">{{title}}</a></h2>
+            <p class="bl-ex">{{excerpt}}</p>
+            <div class="bl-foot">
+              <div class="bl-author"><span class="avatar">{{portrait {{author_doc.portrait}} | {{author_doc.name}} | 160 | author-photo}}</span><div><b class="author-name">{{author_doc.name}}</b><small>{{date_label}}</small></div></div>
+              <a class="link bl-read" href="{{page}}" aria-label="Read article: {{title}}">Read article{{icon arrow-right 16 flip}}</a>
+            </div>
+          </article>
+          {{/each}}
+        </div>
+        <div class="empty bl-empty" data-filter-empty="posts" hidden>
+          <span class="badge-ic">{{icon newspaper}}</span><h3>No articles on this topic yet</h3><p>Try another topic, or ask our doctors directly.</p>
+          <button class="btn btn-ghost" type="button" data-bl-all>Show all articles</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt">
+      <div class="wrap">
+        <div class="cta-band" data-reveal>
+          <div class="bl-cta-txt"><span class="eyebrow">Ask a specialist</span><h2>Symptoms that won't settle?</h2><p>Articles help, but they can't examine you. Book a consultation with the right ENT specialist, often on the same day.</p></div>
+          <div class="acts"><span class="tel">+91 422 245 6780</span><a class="btn btn-cta btn-lg" href="book.html">{{icon calendar-days}}Book appointment</a></div>
+        </div>
+      </div>
+    </section>

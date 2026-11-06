@@ -1,0 +1,42 @@
+---
+title: Log in | Tridya ENT Clinic
+description: Log in to the Tridya ENT patient portal to book visits, read prescriptions and download your hearing and endoscopy reports.
+layout: auth
+css: auth
+js: auth
+search: no
+body_class: auth-login
+auth_img: auth-login
+auth_alt: Patient smiling while checking her phone in a bright clinic waiting area
+auth_h: Your ENT records, in one place
+auth_p: Book visits, read prescriptions and download reports any time.
+auth_points: Book and reschedule appointments | Prescriptions with dosage schedules | Audiograms and endoscopy reports
+---
+        <div class="auth-head">
+          <h1>Log in to your patient portal</h1>
+          <p>Continue with</p>
+          <div class="socials">
+            <button type="button" aria-label="Continue with Google" data-social="Google">{{brand google}}</button>
+            <button type="button" aria-label="Continue with Apple" data-social="Apple">{{brand apple}}</button>
+          </div>
+        </div>
+        <div class="or">or use your mobile number</div>
+        <div class="alert err" id="loginErr" role="alert" hidden>{{icon circle-alert}}<span><b data-err-title>That password is incorrect</b><span data-err-text>2 attempts left before login is paused for 15 minutes.</span></span></div>
+        <form class="auth-form" id="loginForm" data-validate data-validate-only novalidate>
+          <div class="field">
+            <label for="l-id">Mobile number or email</label>
+            <div class="inp">{{icon user}}<input dir="auto" id="l-id" name="login" data-rule="required" autocomplete="username" placeholder="98430 12345 or name@example.com" required></div>
+          </div>
+          <div class="field" data-pw-field>
+            <div class="lbl-row"><label for="l-pw">Password</label><a class="link" href="forgot-password.html">Forgot password?</a></div>
+            <div class="inp">{{icon lock}}<input dir="auto" id="l-pw" name="password" type="password" autocomplete="current-password" placeholder="At least 8 characters" required><button class="pw-eye" type="button" aria-label="Show password" aria-pressed="false" data-pw-eye>{{icon eye}}{{icon eye-off}}</button></div>
+          </div>
+          <div class="field" data-otp-field hidden>
+            <div class="lbl-row"><label for="l-otp">One-time code</label><button class="link" type="button" data-otp-resend>Resend code</button></div>
+            <div class="inp">{{icon message-circle}}<input dir="auto" id="l-otp" name="otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code" placeholder="6-digit code from SMS" required></div>
+          </div>
+          <label class="check"><input type="checkbox" name="remember" checked>Keep me logged in on this device</label>
+          <button class="btn btn-cta btn-lg btn-block" type="submit" data-submit>Log in</button>
+          <button class="btn btn-ghost btn-block" type="button" data-otp-toggle>{{icon message-circle}}<span>Log in with a one-time code (OTP)</span></button>
+        </form>
+        <p class="auth-foot">New patient? <a class="link" href="signup.html">Create an account</a></p>

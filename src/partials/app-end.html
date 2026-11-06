@@ -1,0 +1,21 @@
+      </main>
+    </div>
+  </div>
+  <div class="app-scrim" data-side-close hidden></div>
+  <nav class="mobile-tabs" aria-label="Portal shortcuts">
+    <a href="dashboard.html" data-cur="app:overview">{{icon layout-dashboard}}Overview</a>
+    <a href="dashboard-book.html" data-cur="app:book">{{icon calendar-days}}Book</a>
+    <a href="dashboard-appointments.html" data-cur="app:appointments">{{icon calendar-check}}Visits</a>
+    <a href="dashboard-prescriptions.html" data-cur="app:prescriptions">{{icon pill}}Medicines</a>
+    <a href="dashboard-reports.html" data-cur="app:reports">{{icon file-heart}}Reports</a>
+  </nav>
+  <dialog class="modal sm" id="dlg-logout" aria-labelledby="dlg-logout-t">
+    <span class="grab" aria-hidden="true"></span>
+    <div class="modal-h"><div class="t"><span class="badge-ic warn">{{icon log-out}}</span><div><h3 id="dlg-logout-t">Log out of the portal?</h3><p>You'll need your mobile number and password to log back in.</p></div></div><button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+    <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Stay logged in</button><a class="btn btn-cta" href="index.html" data-logout>{{icon log-out}}Log out</a></div>
+  </dialog>
+  <dialog class="modal sm" id="dlg-session" aria-labelledby="dlg-session-t">
+    <span class="grab" aria-hidden="true"></span>
+    <div class="modal-h"><div class="t"><span class="badge-ic warn">{{icon timer}}</span><div><h3 id="dlg-session-t">Your session has expired</h3><p>For your privacy we log you out after 30 minutes without activity. Any form you were filling in has been saved as a draft.</p></div></div></div>
+    <div class="modal-f"><a class="btn btn-ghost" href="index.html">Go to website</a><a class="btn btn-cta" href="login.html">{{icon log-in}}Log in again</a></div>
+  </dialog>

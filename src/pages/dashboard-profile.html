@@ -1,0 +1,115 @@
+---
+title: Profile & family | Patient portal | Tridya ENT Clinic
+description: Update your personal details, notification settings and family members in the Tridya ENT Clinic patient portal.
+layout: app
+app: profile
+app_title: Profile & family
+css: dash-profile
+js: dash-profile
+search: no
+---
+<div class="d2 pf-page">
+  <div class="pf-col pf-left">
+    <section class="panel" aria-labelledby="pfDetT">
+      <div class="panel-h"><h2 id="pfDetT">Personal details</h2><button class="btn btn-ghost" type="submit" form="pfForm" data-no-feedback>Save changes</button></div>
+      <form class="panel-b" id="pfForm" data-validate data-no-reset novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="pf-n">Full name</label><input class="inp" id="pf-n" name="name" autocomplete="name" placeholder="Your full name" value="Sangeetha Prakash" required></div>
+          <div class="field"><label for="pf-id">Patient ID</label><input class="inp tnum" id="pf-id" value="TRD-04418" placeholder="TRD-04418" disabled aria-describedby="pf-id-h"><span class="sr-only" id="pf-id-h">Your patient ID cannot be changed.</span></div>
+          <div class="field"><label for="pf-m">Mobile</label><div class="inp"><span class="pre">+91</span><input id="pf-m" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="98940 56721" value="9894056721" required></div></div>
+          <div class="field"><label for="pf-e">Email</label><input class="inp" id="pf-e" name="email" type="email" autocomplete="email" placeholder="name@example.com" value="sangeetha.p@gmail.com" required></div>
+          <div class="field"><label for="pf-d">Date of birth</label><input class="inp" id="pf-d" name="dob" type="date" value="1988-03-14" min="1900-01-01" required placeholder="dd / mm / yyyy"></div>
+          <div class="field"><label for="pf-b">Blood group</label><select class="inp" id="pf-b" name="blood"><option value="">Not known</option><option>A+</option><option>A-</option><option selected>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div>
+          <div class="field full"><label for="pf-a">Known allergies</label><input class="inp" id="pf-a" name="allergies" placeholder="For example: penicillin, dust mite" value="None reported"></div>
+        </div>
+        <p class="pf-saved msg ok" data-pf-saved hidden>Saved just now</p>
+      </form>
+    </section>
+
+    <section class="panel" id="settings" aria-labelledby="pfNtfT">
+      <div class="panel-h"><h2 id="pfNtfT">Notifications</h2></div>
+      <div class="panel-b pf-ntf">
+        <div class="row-set"><div><b id="sw1">Appointment reminders</b><p>SMS and WhatsApp, 24 h and 2 h before</p></div><button class="switch" type="button" role="switch" aria-checked="true" aria-labelledby="sw1" data-pref="reminders"></button></div>
+        <div class="row-set"><div><b id="sw2">Medicine reminders</b><p>Push to the phone app at dose times</p></div><button class="switch" type="button" role="switch" aria-checked="true" aria-labelledby="sw2" data-pref="medicine"></button></div>
+        <div class="row-set"><div><b id="sw3">New report alerts</b><p>Email when a report is uploaded</p></div><button class="switch" type="button" role="switch" aria-checked="true" aria-labelledby="sw3" data-pref="reports"></button></div>
+        <div class="row-set"><div><b id="sw4">Health notes newsletter</b><p>Monthly email from our doctors</p></div><button class="switch" type="button" role="switch" aria-checked="false" aria-labelledby="sw4" data-pref="newsletter"></button></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="pf-col pf-right">
+    <section class="panel" aria-labelledby="pfFamT">
+      <div class="panel-h"><h2 id="pfFamT">Family members</h2><button class="btn btn-cta" type="button" data-open-dialog="dlg-family">{{icon plus}}Add member</button></div>
+      <div class="list" id="pfFamily" aria-live="polite"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="pfSecT">
+      <div class="panel-h"><h2 id="pfSecT">Privacy and security</h2></div>
+      <div class="list pf-sec">
+        <button class="li" type="button" data-open-dialog="dlg-password">{{icon key}}<span><b>Change password</b><small data-pw-when>Last changed 3 months ago</small></span><span class="pf-go">{{icon chevron-right 18 flip}}</span></button>
+        <button class="li" type="button" data-records>{{icon download}}<span><b>Download my records</b><small>All reports and prescriptions as one file</small></span><span class="pf-go">{{icon chevron-right 18 flip}}</span></button>
+        <button class="li" type="button" data-open-dialog="dlg-access">{{icon shield-check}}<span><b>Who can see my records</b><small data-access-sum>Your doctors and 2 family members</small></span><span class="pf-go">{{icon chevron-right 18 flip}}</span></button>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- d3_40 Add family member -->
+<dialog class="modal" id="dlg-family" aria-labelledby="af-t">
+  <span class="grab" aria-hidden="true"></span>
+  <form id="afForm" data-validate novalidate>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon users}}</span><div><h3 id="af-t">Add a family member</h3><p>Book and manage visits for them from your account.</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b">
+    <div class="form-grid">
+      <div class="field full"><label for="af-n">Full name <i>*</i></label><input class="inp" id="af-n" name="name" autocomplete="off" placeholder="For example: Lakshmi Prakash" required></div>
+      <div class="field"><label for="af-r">Relationship <i>*</i></label><select class="inp" id="af-r" name="relation" required><option value="">Choose</option><option>Mother</option><option>Father</option><option>Spouse</option><option>Son</option><option>Daughter</option><option>Sibling</option><option>Grandparent</option><option>Other</option></select></div>
+      <div class="field"><label for="af-d">Date of birth <i>*</i></label><input class="inp" id="af-d" name="dob" type="date" min="1900-01-01" required placeholder="dd / mm / yyyy"></div>
+      <div class="field"><span class="label" id="af-sx">Sex</span><div class="chip-row af-sex" role="radiogroup" aria-labelledby="af-sx">
+        <label class="chip"><input class="sr-only" type="radio" name="sex" value="Female" checked>Female</label>
+        <label class="chip"><input class="sr-only" type="radio" name="sex" value="Male">Male</label>
+        <label class="chip"><input class="sr-only" type="radio" name="sex" value="Other">Other</label></div></div>
+      <div class="field"><label for="af-m">Mobile (optional)</label><div class="inp"><span class="pre">+91</span><input id="af-m" name="phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit number"></div><span class="msg hint" id="af-m-hint">Digits only</span></div>
+      <div class="field full"><label for="af-e">Email (optional)</label><input class="inp" id="af-e" name="email" type="email" placeholder="name@example.com"></div>
+    </div>
+    <div class="field"><label class="check"><input type="checkbox" name="consent" id="af-c" required>I have their permission to manage their appointments and view their records.</label></div>
+  </div>
+  <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Cancel</button><button class="btn btn-cta" type="submit">Add family member</button></div>
+  </form>
+</dialog>
+
+<!-- Manage member -->
+<dialog class="modal sm" id="dlg-member" aria-labelledby="mm-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="avatar" data-mm-av>AP</span><div><h3 id="mm-t" data-mm-name>Aarav Prakash</h3><p data-mm-sub>Son · 9 years</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b"><div class="sum" data-mm-body></div></div>
+  <div class="modal-f"><button class="btn btn-ghost pf-remove" type="button" data-mm-remove>{{icon trash}}Remove</button><a class="btn btn-cta" href="dashboard-book.html" data-mm-book>{{icon calendar-days}}Book a visit</a></div>
+</dialog>
+
+<!-- Change password -->
+<dialog class="modal sm" id="dlg-password" aria-labelledby="pw-t">
+  <span class="grab" aria-hidden="true"></span>
+  <form id="pwForm" data-validate novalidate>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon key}}</span><div><h3 id="pw-t">Change password</h3><p>Use at least 8 characters with a letter and a number.</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b">
+    <div class="field"><label for="pw-old">Current password</label><input class="inp" id="pw-old" name="current" type="password" data-rule="required" autocomplete="current-password" placeholder="Your current password" required></div>
+    <div class="field"><label for="pw-new">New password</label><input class="inp" id="pw-new" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" required></div>
+    <div class="field"><label for="pw-new2">Confirm new password</label><input class="inp" id="pw-new2" name="confirm" type="password" data-rule="required" data-match="#pw-new" autocomplete="new-password" placeholder="Type it again" required></div>
+  </div>
+  <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Cancel</button><button class="btn btn-cta" type="submit">Update password</button></div>
+  </form>
+</dialog>
+
+<!-- Who can see my records -->
+<dialog class="modal" id="dlg-access" aria-labelledby="ac-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon shield-check}}</span><div><h3 id="ac-t">Who can see my records</h3><p>Your treating doctors always have access. Family access is up to you.</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b pf-access">
+    <div class="row-set"><div><b>Your doctors at Tridya</b><p>Dr. Meera Raghavan, Dr. Arjun Venkatesh, Dr. Kavitha Sundaram, Divya Prakash</p></div><button class="switch" type="button" role="switch" aria-checked="true" aria-disabled="true" aria-label="Doctors' access (always on)" data-locked></button></div>
+    <div data-access-family></div>
+  </div>
+  <div class="modal-f"><button class="btn btn-cta" type="button" data-close data-access-done>Done</button></div>
+</dialog>

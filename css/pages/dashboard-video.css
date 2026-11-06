@@ -1,0 +1,69 @@
+/* Portal: video consultation waiting room (dashboard-video.html, d3_22) */
+.vc{align-items:start}
+.vc-main{display:grid;gap:14px;min-width:0}
+.vc-side{display:grid;gap:20px;align-content:start}
+.vc .video{background:#0F2E2C}
+.vc-self{position:absolute;inset:0;border-radius:20px}
+.vc-self img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.vc-self::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(6,26,25,.45))}
+
+.vc-off{position:absolute;inset:0;z-index:1;display:grid;place-content:center;justify-items:center;gap:8px;text-align:center;padding:24px;background:#163A37;color:#E6F2F0}
+.vc-off[hidden]{display:none}
+.vc-off .ico{color:#9FE3DA}
+.vc-off span{color:#BFD7D3;font-size:15px;max-width:320px}
+
+.vc-tag,.vc-live{position:absolute;z-index:2;inset-block-start:16px;display:inline-flex;align-items:center;gap:6px;height:30px;padding-inline:12px;border-radius:999px;background:rgba(6,26,25,.62);color:#fff;font-size:13.5px;font-weight:600;backdrop-filter:blur(4px)}
+.vc-tag{inset-inline-start:16px}
+.vc-live{inset-inline-end:16px}
+.vc-live[hidden]{display:none}
+.vc-live i{width:8px;height:8px;border-radius:50%;background:#FF6B5E}
+html.motion .vc-live i{animation:vc-blink 1.2s infinite}
+@keyframes vc-blink{50%{opacity:.3}}
+
+.vc-doc{position:absolute;z-index:2;inset-block-start:58px;inset-inline-end:16px;width:min(30%,180px);aspect-ratio:3/4;border-radius:14px;overflow:hidden;border:2px solid rgba(255,255,255,.85);box-shadow:0 10px 30px -10px rgba(0,0,0,.5);background:#163A37}
+.vc-doc[hidden]{display:none}
+.vc-doc .ph{position:absolute;inset:0;border-radius:0}
+.vc-doc .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.vc-doc b{position:absolute;inset-inline:8px;inset-block-end:8px;color:#fff;font-size:13px;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+
+.vc .vctl{left:50%;right:auto;transform:translateX(-50%)}
+.vctl button{width:52px;height:52px;border-radius:50%;border:0;display:grid;place-items:center;background:rgba(255,255,255,.92);color:#0D2B2A;cursor:pointer;transition:transform .15s,background-color .15s}
+.vctl button:hover{transform:translateY(-2px)}
+.vctl button .ico{width:22px;height:22px}
+.vctl button .ico+.ico{display:none}
+.vctl button[aria-pressed="false"]{background:#3B4F4D;color:#fff}
+.vctl button[aria-pressed="false"] .ico:first-child{display:none}
+.vctl button[aria-pressed="false"] .ico+.ico{display:inline-block}
+.vctl button.off{background:#B42318;color:#fff}
+
+.vc-checks{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.vc-checks .pill{height:28px;font-family:var(--f-body);font-weight:600;font-size:12.5px;letter-spacing:0;transition:background-color .2s,color .2s}
+.vc-checks .pill .ico{width:14px;height:14px}
+.vc-checks .btn{margin-inline-start:auto}
+
+.vc-card{padding:22px;display:grid;gap:14px}
+.vc-card .mini-doc .ph{width:52px;height:52px;display:block}
+.vc-card .mini-doc .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;border-radius:50%}
+.vc-card .alert span span{display:block}
+.vc-card .alert.ok-alert{background:var(--ok-soft);color:var(--ok)}
+.vc-card .btn[disabled]{opacity:.55}
+.vc-notify{background:none;border:0;padding:0;cursor:pointer;font:inherit;font-weight:600;font-size:15px;justify-self:start}
+.vc-card h4{font-size:17px}
+.vc-card .link{font-size:15px}
+
+@media (max-width:760px){
+  .vc-checks .btn{margin-inline-start:0}
+}
+@media (max-width:560px){
+  .vc .video{aspect-ratio:3/4}
+  .vctl button{width:46px;height:46px}
+  .vc-doc{width:34%}
+}
+
+/* shell fix (shared site.css hides every span in the collapsed 84px sidebar, including the .ico icons) */
+@media (max-width:1100px) and (min-width:761px){
+  .side nav a>.ico,.side nav button>.ico{display:inline-block}
+  .side nav button{width:52px;justify-content:center;padding:0}
+  .side nav button>span:not(.ico){display:none}
+}
+.vc-doc .ph img{border-radius:0}

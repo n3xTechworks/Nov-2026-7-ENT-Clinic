@@ -1,0 +1,67 @@
+/* contact.html (design boards d3_08, d3_32, mobile d1_05) */
+.ct-sec .grid{align-items:start}
+.ct-side{display:grid;gap:16px;align-content:start;min-width:0}
+.ct-form-col{min-width:0}
+.ct-side .ccard{color:inherit;text-decoration:none;text-align:start;width:100%;font:inherit;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.ct-side .ccard b{font-size:17px;color:var(--ink)}
+.ct-side .ccard p{margin:0}
+.ct-side .ccard:hover{border-color:color-mix(in srgb,var(--teal) 35%,var(--line))}
+.ct-side .ccard:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.ct-emg .ico{background:var(--danger-soft)!important;color:var(--danger)!important}
+.ct-hours{overflow:hidden;padding:0}
+.ct-hours .table{width:100%;border-collapse:collapse}
+.ct-hours th,.ct-hours td{padding:16px 18px;text-align:start;border-bottom:1px solid var(--line);font-size:15.5px}
+.ct-hours tbody tr:last-child th,.ct-hours tbody tr:last-child td{border-bottom:0}
+.ct-hours thead th{background:var(--sunk);font:600 12px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.ct-hours tbody th{font-weight:500;color:var(--ink)}
+.ct-form-h{display:grid;gap:6px}
+.ct-form-h h2{font-size:28px;margin:0}
+.ct-form-h p{margin:0}
+#ct-form label i{color:var(--danger);font-style:normal}
+.ct-count{display:block;margin-top:6px;font-size:13.5px;color:var(--ink-3)}
+.ct-count.near{color:var(--warn)}
+.ct-form-f{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.ct-form-f .btn{margin-inline-start:auto}
+.ct-form-f .msg{display:flex;gap:8px;align-items:center;margin:0;color:var(--danger);font-size:14.5px}
+
+/* location */
+.ct-loc{align-items:stretch}
+.ct-map{height:auto;min-height:440px}
+.ct-visit{display:grid;grid-template-rows:auto 1fr;overflow:hidden;padding:0;min-width:0}
+.ct-photo{aspect-ratio:16/10;border-radius:0}
+.ct-photo img{width:100%;height:100%;object-fit:cover}
+.ct-visit-b{padding:22px 24px 24px;display:grid;gap:10px;align-content:start}
+.ct-visit-b h3{margin:0;font-size:20px}
+.ct-visit-b p{margin:0}
+.ct-how{list-style:none;margin:4px 0;padding:0;display:grid;gap:10px}
+.ct-how li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--ink-2)}
+.ct-how .ico{color:var(--teal);flex:none;margin-top:2px}
+.ct-visit .link{margin-top:4px}
+
+/* FAQ (centred list) */
+#faq .sh.center{margin-inline:auto}
+#faq .sh p a{color:var(--teal);font-weight:600}
+#faq .faq p a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
+
+#dlg-sent .modal-b{display:grid;gap:16px}
+#dlg-sent .modal-b p{margin:0}
+#dlg-sent .modal-b p b{color:var(--ink)}
+
+@media (max-width:900px){
+  .ct-side,.ct-form-col,.ct-map,.ct-visit{grid-column:span 12!important}
+  .ct-side{grid-template-columns:1fr 1fr}
+  .ct-hours{grid-column:1/-1}
+  .ct-map{min-height:400px}
+  .ct-visit{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);grid-template-rows:auto}
+  .ct-photo{aspect-ratio:auto;height:100%;min-height:220px}
+}
+@media (max-width:560px){
+  .ct-side{grid-template-columns:1fr}
+  .ct-map{min-height:340px}
+  .ct-visit{grid-template-columns:1fr}
+  .ct-photo{aspect-ratio:16/10;min-height:0}
+  .ct-hours th,.ct-hours td{padding:14px 12px;font-size:14.5px}
+  .ct-form-f .btn{width:100%}
+}
+.ct-hours tbody th{text-transform:none;letter-spacing:0;font-size:15.5px;background:none}
+.ct-photo img{object-position:50% 15%}

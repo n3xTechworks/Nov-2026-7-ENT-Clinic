@@ -1,0 +1,55 @@
+/* Doctors list (d3_04 + d1_02, filters sheet d1_10) */
+.docs-filters{align-items:center}
+.docs-tools{display:flex;gap:10px;align-items:center}
+.docs-search{width:280px}
+.docs-search input,.docs-search input:focus{border:0;outline:0;background:transparent;color:var(--ink);font:inherit;flex:1;min-width:0;height:100%}
+.docs-search:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+.docs-more{height:48px;flex:none;position:relative}
+.docs-badge{min-width:20px;height:20px;border-radius:999px;background:var(--teal);color:var(--teal-ink);font:600 12px/20px var(--f-body);text-align:center;padding-inline:6px}
+.docs-status{font-size:14.5px;margin:-12px 0 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.docs-reset{background:none;border:0;padding:0;color:var(--teal);font:600 14.5px var(--f-body);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.docs-list{overflow:hidden}
+.docs-list .drow[hidden]{display:none}
+.docs-list .drow.first-vis{border-top:0}
+.docs-list .drow .ph{display:block;border-radius:14px;overflow:hidden}
+.docs-list .drow .ph img.portrait{border-radius:0;aspect-ratio:auto}
+.docs-list .drow .ph img{transition:transform .5s ease}
+.docs-list .drow .ph:hover img{transform:scale(1.03)}
+.drow h2{font-size:26px}
+.drow h2 a{color:var(--ink)}
+.drow h2 a:hover{color:var(--teal)}
+.drole{font-weight:600;color:var(--ink)}
+.dqual{font-size:13.5px}
+.dlang{display:flex;gap:8px;align-items:center;font-size:15px}
+.dsch-l{font-size:14px}
+.dnext{font-weight:600;color:var(--ink);font-size:14.5px}
+.dacts{display:flex;gap:10px;flex-wrap:wrap}
+.docs-empty{border-top:1px solid var(--line)}
+.docs-help .card.sub{padding-top:24px}
+.docs-help .badge-ic{margin-inline:24px}
+.docs-help p{color:var(--ink-2);font-size:15.5px}
+.cta-band .tel{text-decoration:none}
+/* filter dialog = d1_10 sheet */
+.docs-sheet{width:min(520px,calc(100% - 32px))}
+.df-set{border:0;margin:0;padding:0;display:grid;gap:10px;min-width:0}
+.df-set legend{font:600 16px var(--f-display);color:var(--ink);padding:0;margin-bottom:10px}
+.df-langs{display:grid;gap:12px}
+.df-foot{justify-content:stretch}
+.df-foot .btn-ghost{flex:1}
+.df-foot .btn-cta{flex:2}
+@media (min-width:1001px) and (max-width:1279px){
+  .drow .sch .week{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:1100px){
+  .docs-filters{flex-direction:column;align-items:stretch}
+  .docs-search{flex:1;width:auto}
+}
+@media (max-width:560px){
+  .docs-list .drow .ph{aspect-ratio:4/3}
+  .docs-list .drow .ph img{object-position:50% 25%}
+  .drow h2{font-size:24px}
+  .docs-tools{flex-wrap:nowrap}
+  .docs-more{padding-inline:12px}
+}
+@media (max-width:560px){.cards.c4.docs-help{grid-template-columns:minmax(0,1fr)}}
+.cards.docs-help>.sub>p{align-self:start}

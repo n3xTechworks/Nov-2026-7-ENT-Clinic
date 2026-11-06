@@ -1,0 +1,123 @@
+---
+title: Medical reports | Patient portal | Tridya ENT Clinic
+description: Your audiograms, endoscopy, imaging and lab reports from Tridya ENT Clinic. View, download or upload outside reports.
+layout: app
+app: reports
+app_title: Medical reports
+css: dash-reports
+js: dash-reports
+search: no
+---
+<div class="rp-bar">
+  <div class="chip-row" role="group" aria-label="Filter reports" id="rpChips">
+    <button class="chip on" type="button" aria-pressed="true" data-type="all"><span>All · <span data-n="all">7</span></span></button>
+    <button class="chip" type="button" aria-pressed="false" data-type="hearing"><span>Hearing · <span data-n="hearing">2</span></span></button>
+    <button class="chip" type="button" aria-pressed="false" data-type="endoscopy"><span>Endoscopy · <span data-n="endoscopy">1</span></span></button>
+    <button class="chip" type="button" aria-pressed="false" data-type="imaging"><span>Imaging · <span data-n="imaging">1</span></span></button>
+    <button class="chip" type="button" aria-pressed="false" data-type="lab"><span>Lab · <span data-n="lab">3</span></span></button>
+  </div>
+  <button class="btn btn-ghost" type="button" data-open-dialog="dlg-upload">{{icon upload}}Upload outside report</button>
+</div>
+
+<section class="panel rp-feat" id="rpFeat" aria-labelledby="rpFeatT">
+  <div class="panel-h">
+    <div class="stack-sm rp-feat-t"><span class="mono muted">REP-2610-077 · 26 Oct 2026 · Audiology suite</span><h2 id="rpFeatT">Pure-tone audiogram</h2></div>
+    <button class="btn btn-ghost" type="button" data-dl-rep="aud">{{icon download}}Download PDF</button>
+  </div>
+  <div class="panel-b rp-feat-b">
+    <div class="rp-chart">
+      <div class="rp-svg"><svg class="aud" viewBox="0 0 760 380" width="100%" role="img" aria-labelledby="audT" preserveAspectRatio="xMidYMid meet"><title id="audT">Audiogram: right ear 27 dB average, left ear 22 dB average, with high-frequency loss above 2 kHz</title><rect class="band" x="48" y="20.0" width="696" height="105.6"></rect><line class="g" x1="48" x2="744" y1="20.0" y2="20.0"></line><text x="40" y="24.0" text-anchor="end">-10</text><line class="g" x1="48" x2="744" y1="50.2" y2="50.2"></line><text x="40" y="54.2" text-anchor="end">0</text><line class="g" x1="48" x2="744" y1="80.4" y2="80.4"></line><text x="40" y="84.4" text-anchor="end">10</text><line class="g" x1="48" x2="744" y1="110.5" y2="110.5"></line><text x="40" y="114.5" text-anchor="end">20</text><line class="g" x1="48" x2="744" y1="140.7" y2="140.7"></line><text x="40" y="144.7" text-anchor="end">30</text><line class="g" x1="48" x2="744" y1="170.9" y2="170.9"></line><text x="40" y="174.9" text-anchor="end">40</text><line class="g" x1="48" x2="744" y1="201.1" y2="201.1"></line><text x="40" y="205.1" text-anchor="end">50</text><line class="g" x1="48" x2="744" y1="231.3" y2="231.3"></line><text x="40" y="235.3" text-anchor="end">60</text><line class="g" x1="48" x2="744" y1="261.5" y2="261.5"></line><text x="40" y="265.5" text-anchor="end">70</text><line class="g" x1="48" x2="744" y1="291.6" y2="291.6"></line><text x="40" y="295.6" text-anchor="end">80</text><line class="g" x1="48" x2="744" y1="321.8" y2="321.8"></line><text x="40" y="325.8" text-anchor="end">90</text><line class="g" x1="48" x2="744" y1="352.0" y2="352.0"></line><text x="40" y="356.0" text-anchor="end">100</text><line class="g" x1="48.0" x2="48.0" y1="20" y2="352"></line><text x="48.0" y="372" text-anchor="middle">250</text><line class="g" x1="187.2" x2="187.2" y1="20" y2="352"></line><text x="187.2" y="372" text-anchor="middle">500</text><line class="g" x1="326.4" x2="326.4" y1="20" y2="352"></line><text x="326.4" y="372" text-anchor="middle">1k</text><line class="g" x1="465.6" x2="465.6" y1="20" y2="352"></line><text x="465.6" y="372" text-anchor="middle">2k</text><line class="g" x1="604.8" x2="604.8" y1="20" y2="352"></line><text x="604.8" y="372" text-anchor="middle">4k</text><line class="g" x1="744.0" x2="744.0" y1="20" y2="352"></line><text x="744.0" y="372" text-anchor="middle">8k</text><polyline class="r" points="48.0,95.5 187.2,110.5 326.4,125.6 465.6,155.8 604.8,201.1 744.0,216.2"></polyline><polyline class="l" points="48.0,95.5 187.2,95.5 326.4,110.5 465.6,140.7 604.8,186.0 744.0,201.1"></polyline><circle class="rm" cx="48.0" cy="95.5" r="5.5"></circle><circle class="rm" cx="187.2" cy="110.5" r="5.5"></circle><circle class="rm" cx="326.4" cy="125.6" r="5.5"></circle><circle class="rm" cx="465.6" cy="155.8" r="5.5"></circle><circle class="rm" cx="604.8" cy="201.1" r="5.5"></circle><circle class="rm" cx="744.0" cy="216.2" r="5.5"></circle><path class="lm" d="M43.0 90.5L53.0 100.5M53.0 90.5L43.0 100.5"></path><path class="lm" d="M182.2 90.5L192.2 100.5M192.2 90.5L182.2 100.5"></path><path class="lm" d="M321.4 105.5L331.4 115.5M331.4 105.5L321.4 115.5"></path><path class="lm" d="M460.6 135.7L470.6 145.7M470.6 135.7L460.6 145.7"></path><path class="lm" d="M599.8 181.0L609.8 191.0M609.8 181.0L599.8 191.0"></path><path class="lm" d="M739.0 196.1L749.0 206.1M749.0 196.1L739.0 206.1"></path><text x="54" y="116.6" class="nr">Normal range</text></svg></div>
+      <div class="legend"><span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="var(--ear-r)" stroke-width="2"></circle></svg>Right ear (O)</span><span><svg width="14" height="14" aria-hidden="true"><path d="M2 2L12 12M12 2L2 12" stroke="var(--ear-l)" stroke-width="2"></path></svg>Left ear (X)</span><span>dB HL vs frequency (Hz)</span></div>
+    </div>
+    <div class="rp-side">
+      <div class="card table-wrap"><table class="table rp-pta"><thead><tr><th scope="col">Ear</th><th scope="col">PTA</th><th scope="col">Grade</th></tr></thead><tbody>
+        <tr><td><b class="ear-r">Right</b></td><td class="tnum">27 dB</td><td>Mild</td></tr>
+        <tr><td><b class="ear-l">Left</b></td><td class="tnum">22 dB</td><td>Normal–mild</td></tr></tbody></table></div>
+      <div class="card rp-imp"><h3>Doctor's impression</h3><p class="muted">Bilateral mild sensorineural hearing loss above 2 kHz, right slightly worse. Tympanometry type A both ears. Consistent with tinnitus complaint.</p><span class="mono muted">Dr. Meera Raghavan · 26 Oct, 18:42</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="rpAllT">
+  <div class="panel-h"><h2 id="rpAllT">All reports</h2><span class="mono muted" data-rp-shown>7 reports</span></div>
+  <div class="table-wrap">
+    <table class="table st-table rp-table" id="rpTable">
+      <thead><tr><th scope="col">Report</th><th scope="col">Type</th><th scope="col">Date</th><th scope="col">By</th><th scope="col">Status</th><th scope="col"><span class="sr-only">Download</span></th></tr></thead>
+      <tbody id="rpRows">
+        <tr data-type="hearing" data-rep="aud" class="is-cur"><td><button class="rp-name" type="button" data-open-rep>{{icon file-text}}<b>Pure-tone audiogram</b></button></td><td data-label="Type"><span class="pill info">Hearing</span></td><td class="tnum" data-label="Date">26 Oct 2026</td><td class="muted" data-label="By">Dr. Meera Raghavan</td><td data-label="Status"><span class="pill ok">Reviewed</span></td><td class="act"><button class="icon-btn rp-dl" type="button" data-dl-rep aria-label="Download Pure-tone audiogram">{{icon download}}</button></td></tr>
+        <tr data-type="hearing" data-rep="tymp"><td><button class="rp-name" type="button" data-open-rep>{{icon file-text}}<b>Tympanometry</b></button></td><td data-label="Type"><span class="pill info">Hearing</span></td><td class="tnum" data-label="Date">26 Oct 2026</td><td class="muted" data-label="By">Divya Prakash</td><td data-label="Status"><span class="pill ok">Reviewed</span></td><td class="act"><button class="icon-btn rp-dl" type="button" data-dl-rep aria-label="Download Tympanometry">{{icon download}}</button></td></tr>
+        <tr data-type="lab" data-rep="histo"><td><button class="rp-name" type="button" data-open-rep>{{icon file-text}}<b>Histopathology · nasal polyp</b></button></td><td data-label="Type"><span class="pill info">Lab</span></td><td class="tnum" data-label="Date">27 Aug 2026</td><td class="muted" data-label="By">Lab partner</td><td data-label="Status"><span class="pill ok">Reviewed</span></td><td class="act"><button class="icon-btn rp-dl" type="button" data-dl-rep aria-label="Download Histopathology · nasal polyp">{{icon download}}</button></td></tr>
+        <tr data-type="endoscopy" data-rep="endo"><td><button class="rp-name" type="button" data-open-rep>{{icon file-text}}<b>Nasal endoscopy video</b></button></td><td data-label="Type"><span class="pill info">Endoscopy</span></td><td class="tnum" data-label="Date">03 Aug 2026</td><td class="muted" data-label="By">Dr. Arjun Venkatesh</td><td data-label="Status"><span class="pill ok">Reviewed</span></td><td class="act"><button class="icon-btn rp-dl" type="button" data-dl-rep aria-label="Download Nasal endoscopy video">{{icon download}}</button></td></tr>
+        <tr data-type="imaging" data-rep="ct"><td><button class="rp-name" type="button" data-open-rep>{{icon file-text}}<b>CT paranasal sinuses</b></button></td><td data-label="Type"><span class="pill info">Imaging</span></td><td class="tnum" data-label="Date">01 Aug 2026</td><td class="muted" data-label="By">Radiology partner</td><td data-label="Status"><span class="pill ok">Reviewed</span></td><td class="act"><button class="icon-btn rp-dl" type="button" data-dl-rep aria-label="Download CT paranasal sinuses">{{icon download}}</button></td></tr>
+        <tr data-type="lab" data-rep="cbc"><td><button class="rp-name" type="button" data-open-rep>{{icon file-text}}<b>Complete blood count</b></button></td><td data-label="Type"><span class="pill info">Lab</span></td><td class="tnum" data-label="Date">01 Aug 2026</td><td class="muted" data-label="By">Lab partner</td><td data-label="Status"><span class="pill ok">Reviewed</span></td><td class="act"><button class="icon-btn rp-dl" type="button" data-dl-rep aria-label="Download Complete blood count">{{icon download}}</button></td></tr>
+        <tr data-type="lab" data-rep="allergy"><td><button class="rp-name" type="button" data-open-rep>{{icon file-text}}<b>Allergy skin-prick panel</b></button></td><td data-label="Type"><span class="pill info">Lab</span></td><td class="tnum" data-label="Date">18 Jul 2026</td><td class="muted" data-label="By">Dr. Kavitha Sundaram</td><td data-label="Status"><span class="pill warn">Pending review</span></td><td class="act"><button class="icon-btn rp-dl" type="button" data-dl-rep aria-label="Download Allergy skin-prick panel">{{icon download}}</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="empty" id="rpEmpty" hidden><span class="badge-ic">{{icon file-text}}</span><h3>No reports of this type yet</h3><p>Reports from the clinic appear here once your doctor has reviewed them. You can also upload reports from other labs.</p><button class="btn btn-ghost" type="button" data-open-dialog="dlg-upload">{{icon upload}}Upload outside report</button></div>
+</section>
+
+<!-- d3_38 Endoscopy report viewer -->
+<dialog class="modal xl" id="dlg-endo" aria-labelledby="ev-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon maximize}}</span><div><h3 id="ev-t">Nasal endoscopy</h3><p>03 Aug 2026 · Dr. Arjun Venkatesh</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b">
+    <div class="ev-grid">
+      <div class="ev-thumbs" role="group" aria-label="Report images">
+          <button class="ev-thumb" type="button" data-img="0" aria-pressed="true" aria-label="Image 1: Endoscopy capture" data-alt="Flexible endoscope beside a monitor showing a live nasal endoscopy view" data-meta="0° rigid endoscope · 4K capture" data-slot="endo-1"><span class="ph">{{img endo-1 | Flexible endoscope beside a monitor showing a live nasal endoscopy view | 120px | eager}}</span><span class="ev-cap">Endoscopy capture</span></button>
+          <button class="ev-thumb" type="button" data-img="1" aria-pressed="false" aria-label="Image 2: Lateral X-ray" data-alt="Doctor pointing at a lateral head and neck X-ray on a tablet" data-meta="Lateral soft-tissue X-ray · adenoid view" data-slot="endo-2"><span class="ph">{{img endo-2 | Doctor pointing at a lateral head and neck X-ray on a tablet | 120px | eager}}</span><span class="ev-cap">Lateral X-ray</span></button>
+          <button class="ev-thumb" type="button" data-img="2" aria-pressed="false" aria-label="Image 3: Axial CT slices" data-alt="Clinician reviewing axial CT slices of the head on a tablet" data-meta="CT paranasal sinuses · axial" data-slot="endo-3"><span class="ph">{{img endo-3 | Clinician reviewing axial CT slices of the head on a tablet | 120px | eager}}</span><span class="ev-cap">Axial CT slices</span></button>
+          <button class="ev-thumb" type="button" data-img="3" aria-pressed="false" aria-label="Image 4: CT series" data-alt="Sheet of axial CT slices of the head on a lightbox" data-meta="CT series · 1 mm slices" data-slot="endo-4"><span class="ph">{{img endo-4 | Sheet of axial CT slices of the head on a lightbox | 120px | eager}}</span><span class="ev-cap">CT series</span></button>
+          <button class="ev-thumb" type="button" data-img="4" aria-pressed="false" aria-label="Image 5: Sinus X-ray" data-alt="Frontal X-ray showing the sinuses and nasal cavity" data-meta="Occipitomental X-ray · sinuses" data-slot="endo-5"><span class="ph">{{img endo-5 | Frontal X-ray showing the sinuses and nasal cavity | 120px | eager}}</span><span class="ev-cap">Sinus X-ray</span></button>
+      </div>
+      <div class="ev-main">
+        <div class="ph ev-stage">{{img endo-1 | Flexible endoscope beside a monitor showing a live nasal endoscopy view | (max-width:900px) 100vw, 600px | eager}}
+          <button class="icon-btn ev-nav ev-prev" type="button" data-ev-step="-1" aria-label="Previous image">{{icon chevron-left 20 flip}}</button>
+          <button class="icon-btn ev-nav ev-next" type="button" data-ev-step="1" aria-label="Next image">{{icon chevron-right 20 flip}}</button>
+        </div>
+        <div class="mono muted ev-meta"><span data-ev-count>Image 1 of 5</span><span data-ev-meta>0° rigid endoscope · 4K capture</span></div>
+      </div>
+      <div class="ev-side">
+        <div class="card ev-card"><h4>Findings</h4><ul><li>Grade 2 polyp, right middle meatus</li><li>Septal spur to the left</li><li>Mucopurulent discharge</li></ul></div>
+        <div class="card ev-card"><h4>Impression</h4><p class="muted">Chronic rhinosinusitis with nasal polyps. CT sinus advised.</p><span class="mono muted">Dr. Arjun Venkatesh</span></div>
+        <button class="btn btn-ghost" type="button" data-ev-video>{{icon play}}Play video clip · 0:48</button>
+        <p class="ev-video" data-ev-video-msg hidden>{{icon info}}<span>The 48-second clip streams in the clinic app. We've emailed you a secure link that works for 24 hours.</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-f"><span class="sp">REP-2608-031 · 5 images, 1 video</span><button class="btn btn-ghost" type="button" data-share-rep>{{icon share-2}}Share with a doctor</button><button class="btn btn-cta" type="button" data-dl-rep="endo">{{icon download}}Download report</button></div>
+</dialog>
+
+<!-- generic report details -->
+<dialog class="modal" id="dlg-report" aria-labelledby="rd-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon file-text}}</span><div><h3 id="rd-t" data-rd-title>Report</h3><p data-rd-sub></p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b"><div class="sum" data-rd-body></div><div class="card rp-imp"><h4>Summary</h4><p class="muted" data-rd-note></p></div></div>
+  <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Close</button><button class="btn btn-cta" type="button" data-dl-rep data-rd-dl>{{icon download}}Download</button></div>
+</dialog>
+
+<!-- d3_39 Upload outside reports -->
+<dialog class="modal ap-580" id="dlg-upload" aria-labelledby="up-t">
+  <span class="grab" aria-hidden="true"></span>
+  <form id="upForm" data-validate data-validate-only novalidate>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon upload}}</span><div><h3 id="up-t">Upload outside reports</h3><p>Your doctor will see them before your next visit.</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b">
+    <label class="drop" id="upDrop" for="upFile">
+      <span class="badge-ic">{{icon upload}}</span>
+      <b>Drag files here, or <span class="link">browse</span></b>
+      <span class="muted up-hint">PDF, JPG or PNG · up to 20 MB each</span>
+      <input class="sr-only" type="file" id="upFile" placeholder="Choose files" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png">
+    </label>
+    <p class="msg err" id="upErr" hidden></p>
+    <div class="up-files" id="upFiles" aria-live="polite"></div>
+    <div class="form-grid">
+      <div class="field"><label for="u-type">Report type</label><select class="inp" id="u-type" required><option value="">Choose a type</option><option value="imaging">Imaging</option><option value="lab">Lab</option><option value="hearing">Hearing</option><option value="endoscopy">Endoscopy</option></select><p class="msg err" id="u-type-error" hidden></p></div>
+      <div class="field"><label for="u-date">Report date</label><input class="inp" type="date" id="u-date" required placeholder="dd / mm / yyyy"><p class="msg err" id="u-date-error" hidden></p></div>
+    </div>
+  </div>
+  <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Cancel</button><button class="btn btn-cta" type="submit" id="upSubmit" disabled>Add reports</button></div>
+  </form>
+</dialog>

@@ -1,0 +1,68 @@
+/* about.html (not in the design: built from the same system) */
+.ab-story .grid{align-items:center}
+.ab-story-media{position:relative;min-width:0}
+.ab-story-ph{aspect-ratio:4/3.4;border-radius:20px;overflow:hidden}
+.ab-story-ph img{width:100%;height:100%;object-fit:cover}
+.ab-badge{position:absolute;inset-inline-end:-12px;inset-block-end:28px;display:grid;gap:2px;padding:16px 20px;border-radius:14px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.ab-badge b{font:700 28px/1 var(--f-display);color:var(--teal)}
+.ab-badge span{font-size:14px;color:var(--ink-2)}
+.ab-story-txt{display:grid;gap:20px;min-width:0}
+.ab-story-txt .sh{margin:0}
+.ab-p{margin:0;color:var(--ink-2);font-size:17px}
+.ab-values{margin-top:4px}
+.ab-values div{padding-block:16px}
+.ab-values b{color:var(--ink)}
+
+.ab-stats-sec{padding-block:48px}
+
+.ab-fac .ph{--ar:3/2}
+.ab-tag{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--teal);padding-top:4px}
+.ab-tag .ico{width:16px;height:16px}
+.ab-fac h3{margin:0;font-size:20px}
+.ab-fac p{margin:0;color:var(--ink-2);font-size:15.5px}
+
+.ab-tl{margin-top:8px}
+.ab-tl h3{margin:0;font-size:20px}
+.ab-tl p{margin:0}
+.ab-tl>li{padding:20px 22px;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:var(--shadow-sm)}
+.ab-tl>li::before{top:24px}
+.vtl.ab-tl>li:nth-child(odd)::before{inset-inline-end:-49px}
+.vtl.ab-tl>li:nth-child(even)::before{inset-inline-start:-49px}
+
+.ab-team-intro{align-items:center;margin-bottom:48px}
+.ab-team-ph{aspect-ratio:16/10;border-radius:20px;overflow:hidden}
+.ab-team-ph img{width:100%;height:100%;object-fit:cover}
+.ab-team-txt{display:grid;gap:20px;min-width:0}
+.ab-team-txt .sh{margin:0}
+.ab-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ab-list li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-2)}
+.ab-list .ico{flex:none;color:var(--teal);margin-top:3px}
+.ab-docs{--ar:4/3.6}
+.ab-doc-ph{display:block}
+.ab-doc-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;transition:transform .5s ease}
+html.motion .ab-doc:hover .ab-doc-ph img{transform:scale(1.04)}
+.ab-doc-h{display:grid;gap:2px}
+.ab-doc-h h3{margin:0;font-size:20px}
+.ab-doc-h h3 a{color:var(--ink);text-decoration:none}
+.ab-doc-h h3 a:hover{color:var(--teal)}
+.ab-doc-h p{margin:0}
+.ab-doc-q{margin:0;font-size:14.5px;color:var(--ink-2)}
+.ab-cta-txt{display:grid;gap:14px}
+
+@media (max-width:900px){
+  .ab-story-media,.ab-story-txt,.ab-team-intro>div{grid-column:span 12!important}
+  .ab-badge{inset-inline-end:16px}
+  .ab-team-intro{margin-bottom:36px}
+}
+@media (max-width:760px){
+  .vtl.ab-tl>li::before{inset-inline-start:-37px!important;inset-inline-end:auto!important}
+}
+@media (max-width:560px){
+  .ab-badge{inset-block-end:16px;padding:12px 16px}
+  .ab-badge b{font-size:22px}
+  .ab-tl>li{padding:16px 18px}
+}
+.vtl.ab-tl>li:nth-child(odd)::before{inset-inline-end:-51px}
+.vtl.ab-tl>li:nth-child(even)::before{inset-inline-start:-51px}
+.ab-doc-ph img.portrait{border-radius:0;aspect-ratio:auto}
+.ab-fac>:last-child{align-self:start}

@@ -1,0 +1,52 @@
+---
+title: Prescriptions | Patient portal | Tridya ENT Clinic
+description: Your prescriptions from Tridya ENT Clinic with dose schedule, doctor's advice and follow-up. Preview, print or download each one.
+layout: app
+app: prescriptions
+app_title: Prescriptions
+css: dash-prescriptions
+js: dash-prescriptions
+search: no
+---
+<div class="d2 rx-page">
+  <section class="panel rx-side" aria-labelledby="rxListT">
+    <div class="panel-h"><h2 id="rxListT">Prescriptions</h2><span class="mono muted" data-rx-count>4</span></div>
+    <nav class="rx-list" id="rxList" aria-label="Your prescriptions"></nav>
+  </section>
+  <section class="panel rx-main" id="rxDetail" aria-live="polite" aria-labelledby="rxTitle">
+    <div class="rx-head">
+      <div class="stack-sm rx-head-t"><span class="mono muted" data-rx="meta">RX-2610-118 · 26 Oct 2026</span><h2 id="rxTitle" data-rx="title">Tinnitus with mild hearing loss</h2><p class="muted" data-rx="doc">Dr. Meera Raghavan · MS (ENT), DNB · Reg. TNMC 74219</p></div>
+      <div class="rx-acts">
+        <button class="btn btn-ghost" type="button" data-rx-preview>{{icon download}}PDF</button>
+        <button class="btn btn-teal" type="button" data-rx-share>{{icon share-2}}Share</button>
+      </div>
+    </div>
+    <div class="panel-b rx-body">
+      <div class="rx-legend"><span class="rx-sym" aria-hidden="true">℞</span><p class="muted">Dose schedule: <b>M</b> morning · <b>A</b> afternoon · <b>N</b> night</p></div>
+      <div class="card table-wrap">
+        <table class="table st-table rx-table">
+          <thead><tr><th scope="col">Medicine</th><th scope="col">Schedule</th><th scope="col">Instructions</th><th scope="col">Duration</th></tr></thead>
+          <tbody data-rx="meds"></tbody>
+        </table>
+      </div>
+      <div class="rx-cards">
+        <div class="card rx-card"><h3>Doctor's advice</h3><ul class="rx-advice" data-rx="advice"></ul></div>
+        <div class="card rx-card"><h3>Follow-up</h3><p class="muted" data-rx="fu"></p><span class="mono" data-rx="fu-when"></span><a class="link" data-rx="fu-link" href="dashboard-appointments.html">View appointment{{icon arrow-right 16 flip}}</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- d3_37 Prescription preview -->
+<dialog class="modal lg" id="dlg-rx" aria-labelledby="rxp-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon file-text}}</span><div><h3 id="rxp-t" data-rxp="title">Prescription · RX-2610-118</h3><p data-rxp="sub">Dr. Meera Raghavan · 26 Oct 2026</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b"><div class="rx-paper"><div class="letter" id="rxLetter"></div></div></div>
+  <div class="modal-f"><span class="sp">Page 1 of 1 · printable copy</span>
+    <button class="btn btn-ghost" type="button" data-rx-share>{{icon share-2}}Share</button>
+    <button class="btn btn-ghost" type="button" data-rx-print>{{icon printer}}Print</button>
+    <button class="btn btn-cta" type="button" data-rx-download>{{icon download}}Download</button></div>
+</dialog>
+
+<div class="rx-print" id="rxPrint" aria-hidden="true"></div>

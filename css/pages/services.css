@@ -1,0 +1,71 @@
+/* Services page (d3_02 + d1_01) */
+.svc-page .svc-filters{margin-bottom:12px}
+.svc-page .svc-search{width:420px;max-width:100%}
+.svc-page .svc-search input{border:0;outline:0;background:transparent;color:var(--ink);font:inherit;flex:1;min-width:0;height:100%}
+.svc-page .svc-search:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+.svc-page .svc-search input::-webkit-search-cancel-button{cursor:pointer}
+.svc-status{font-size:14.5px;margin-bottom:28px}
+/* Left column (search, setting chips, specialty index).
+   Desktop: it stays in view just below the header while the treatment groups scroll, and is released when
+   the list ends. It is sticky only inside its own column, not a full-width bar glued under the navbar.
+   Tablet/phone (<=1000px): one column, nothing sticky. */
+.svc-page .idx{position:static}
+.svc-page .idx .svc-filters{margin-bottom:12px}
+@media (min-width:1001px){
+  .svc-page .idx{
+    position:sticky;top:calc(var(--hdr-h,77px) + 20px);
+    max-height:calc(100dvh - var(--hdr-h,77px) - 40px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;
+    padding:4px;margin:-4px /* room for the search focus ring inside the scroll box */
+  }
+  .svc-page .idx .svc-filters{display:grid;gap:12px;justify-content:stretch}
+  .svc-page .idx .svc-search{width:100%}
+  .svc-page .idx .chip-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .svc-page .idx .chip{justify-content:center;height:36px;padding-inline:10px;font-size:14.5px}
+  .svc-page .idx .svc-status{font-size:14px;margin:0 0 14px;padding-inline:2px}
+}
+.svc-page .idx-links{display:grid;gap:2px}
+.svc-page .idx a.dim{opacity:.45}
+.svc-groups{min-width:0}
+.grp{scroll-margin-top:96px}
+.grp[hidden]{display:none}
+.grp-txt{display:grid;gap:8px}
+.grp-txt h2{font-size:30px}
+.grp-h .ph{border-radius:14px;overflow:hidden}
+.svc-table{overflow:hidden}
+.svc-table .trow{color:var(--ink);transition:background .15s}
+.svc-table a.trow:hover{background:var(--sunk)}
+.svc-table a.trow:hover b{text-decoration:underline;text-underline-offset:3px}
+.svc-table a.trow b{color:var(--teal-deep)}
+[data-theme="dark"] .svc-table a.trow b{color:var(--teal)}
+.svc-table .trow .tnum{color:var(--teal-deep);font-size:16px}
+[data-theme="dark"] .svc-table .trow .tnum{color:var(--teal)}
+.svc-table .trow[hidden]{display:none}
+.svc-table .trow.last-vis{border-bottom:0}
+.svc-empty{border:1px dashed var(--line-2);border-radius:var(--r-card);background:var(--surface)}
+.svc-steps .badge-ic{margin-inline:24px}
+.svc-steps .badge-ic{margin-top:24px}
+.svc-steps p{color:var(--ink-2);font-size:15.5px}
+.cta-band .tel{text-decoration:none}
+.cta-band .tel:hover{text-decoration:underline}
+@media (max-width:1000px){
+  .svc-page .idx-links{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+  .svc-page .idx{display:block;margin-bottom:28px}
+  .svc-page .idx .svc-status{margin-bottom:16px}
+  .svc-page .idx a{gap:8px}
+  .svc-table .trow b{grid-column:1/-1}
+  .svc-table .trow>span:nth-of-type(2){justify-self:start}
+}
+@media (max-width:760px){
+  .svc-page .svc-filters{flex-direction:column;align-items:stretch}
+  .svc-page .svc-search{width:100%}
+}
+@media (max-width:560px){
+  .grp-h .ph{aspect-ratio:16/10}
+  .grp-txt h2{font-size:26px}
+  .svc-table .trow{padding:16px 18px;row-gap:10px}
+}
+/* .pill.opd collides with the hero ".opd" strip class in site.css: reset it here */
+span.pill.opd{display:inline-flex;width:auto;margin:0;padding:0 11px;border:0;gap:6px;justify-content:center;align-items:center;font:600 12.5px/1 var(--f-body);color:var(--teal-deep);background:var(--teal-soft);flex-wrap:nowrap}
+[data-theme="dark"] span.pill.opd{color:var(--teal)}
+@media (max-width:560px){.cards.c4.svc-steps{grid-template-columns:minmax(0,1fr)}}
+.cards.svc-steps>.sub>p{align-self:start}

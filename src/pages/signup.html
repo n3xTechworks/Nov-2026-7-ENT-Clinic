@@ -1,0 +1,67 @@
+---
+title: Sign up | Tridya ENT Clinic
+description: Create your Tridya ENT patient account to manage visits, prescriptions and reports for your whole family.
+layout: auth
+css: auth
+js: auth
+search: no
+body_class: auth-signup
+auth_img: auth-signup
+auth_alt: Mother and daughter at the clinic reception desk being welcomed by staff
+auth_h: One account for the whole family
+auth_p: Add family members and manage everyone's ENT visits from one login.
+auth_points: Add up to 6 family members | Reminders by SMS and WhatsApp | Reports shared securely with your doctor
+---
+        <div class="auth-view" data-view="form">
+          <div class="auth-head">
+            <h1>Create your patient account</h1>
+            <p>Sign up with</p>
+            <div class="socials">
+              <button type="button" aria-label="Sign up with Google" data-social="Google">{{brand google}}</button>
+              <button type="button" aria-label="Sign up with Apple" data-social="Apple">{{brand apple}}</button>
+            </div>
+          </div>
+          <div class="or">or fill in your details</div>
+          <form class="auth-form" id="signupForm" data-validate data-validate-only novalidate>
+            <div class="field">
+              <label for="s-name">Full name <i>*</i></label>
+              <input class="inp" id="s-name" name="name" autocomplete="name" placeholder="As on your ID, e.g. Sangeetha Prakash" required>
+            </div>
+            <div class="form-grid two">
+              <div class="field">
+                <label for="s-phone">Mobile number <i>*</i></label>
+                <div class="inp"><span class="pre">+91</span><input dir="auto" id="s-phone" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="98940 56721" required></div>
+              </div>
+              <div class="field">
+                <label for="s-dob">Date of birth</label>
+                <input class="inp" id="s-dob" name="dob" type="date" min="1900-01-01" max="2026-11-05" placeholder="DD / MM / YYYY">
+              </div>
+            </div>
+            <div class="field">
+              <label for="s-email">Email <i>*</i></label>
+              <input class="inp" dir="auto" id="s-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+            </div>
+            <div class="field">
+              <label for="s-pw">Password <i>*</i></label>
+              <div class="inp">{{icon lock}}<input dir="auto" id="s-pw" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters, a letter and a number" required><button class="pw-eye" type="button" aria-label="Show password" aria-pressed="false" data-pw-eye>{{icon eye}}{{icon eye-off}}</button></div>
+              <div class="pw-meter" aria-hidden="true" data-pw-meter><i></i><i></i><i></i><i></i></div>
+              <span class="msg hint" data-pw-hint>Use 8 or more characters with a letter and a number.</span>
+            </div>
+            <label class="check"><input type="checkbox" name="terms" id="s-terms" required><span>I agree to the <a class="link" href="terms.html">Terms of use</a> and <a class="link" href="privacy.html">Privacy policy</a>.</span></label>
+            <button class="btn btn-cta btn-lg btn-block" type="submit" data-submit>Create account</button>
+          </form>
+          <p class="auth-foot">Already registered? <a class="link" href="login.html">Log in</a></p>
+        </div>
+        <div class="auth-view done" data-view="done" hidden>
+          <div class="auth-head">
+            <span class="badge-ic ok big">{{icon circle-check}}</span>
+            <h2 class="auth-title" tabindex="-1">Welcome, <span data-first>Sangeetha</span></h2>
+            <p>Your patient account is ready. We've linked your existing booking to it.</p>
+          </div>
+          <div class="card done-card">
+            <div class="row-set"><span>Mobile verified</span><span class="ok-ic">{{icon circle-check}}</span></div>
+            <div class="row-set"><span>Patient ID</span><b class="tnum" data-pid>TRD-04418</b></div>
+            <div class="row-set"><span>Linked bookings</span><b>1 upcoming</b></div>
+          </div>
+          <a class="btn btn-cta btn-lg btn-block" href="dashboard.html">Go to my dashboard</a>
+        </div>

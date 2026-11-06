@@ -1,0 +1,36 @@
+/* privacy.html + terms.html */
+.lg-sec{padding-top:56px}
+.lg-grid{align-items:start}
+.lg-aside,.lg-main{min-width:0}
+.lg-aside .aside{top:96px}
+.lg-toc{padding:22px;display:grid;gap:10px}
+.lg-toc h2{font-size:17px;margin:0}
+.lg-toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.lg-toc a{display:block;padding:7px 10px;border-radius:8px;color:var(--ink-2);text-decoration:none;font-size:15px;line-height:1.4}
+.lg-toc a:hover,.lg-toc a:focus-visible{background:var(--teal-soft);color:var(--ink)}
+.lg-help{padding:20px;display:flex;gap:14px;align-items:flex-start}
+.lg-help b{color:var(--ink)}
+.lg-help p{margin:4px 0 0;font-size:15px;color:var(--ink-2)}
+.lg-help a,.lg-prose a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
+.lg-updated{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--teal-soft);color:var(--ink);font-size:14px;margin-bottom:24px}
+.lg-updated .ico{color:var(--teal)}
+.lg-prose{max-width:780px}
+.lg-prose .lg-intro{font-size:19px;color:var(--ink)}
+.lg-prose h2{font-size:24px;scroll-margin-top:100px;padding-top:12px;border-top:1px solid var(--line)}
+.lg-prose strong{color:var(--ink)}
+.lg-prose .callout{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:14px;background:var(--danger-soft);border-inline-start:4px solid var(--danger)}
+.lg-prose .callout .ico{flex:none;color:var(--danger);margin-top:3px}
+.lg-prose .callout p{margin:0;color:var(--ink)}
+.lg-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);max-width:780px}
+@media (max-width:900px){
+  .lg-aside,.lg-main{grid-column:span 12!important}
+  .lg-aside .aside{position:static;grid-template-columns:1fr 1fr;align-items:start}
+}
+@media (max-width:760px){
+  .lg-aside .aside{grid-template-columns:1fr}
+  .lg-prose h2{font-size:22px}
+}
+@media print{
+  .lg-aside,.lg-foot{display:none}
+  .lg-main{grid-column:span 12!important}
+}

@@ -1,0 +1,56 @@
+  <!-- global overlays: search, emergency help, cookie banner + preferences, quick book (see COMPONENTS.md) -->
+  <div class="search-layer" id="searchLayer" hidden>
+    <div class="scrim" data-search-close></div>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search the site">
+      <div class="wrap" style="display:grid;gap:24px">
+        <label class="inp focus search-box">{{icon search}}<span class="sr-only">Search treatments, doctors and articles</span><input type="search" id="siteSearch" placeholder="Search treatments, doctors and articles" autocomplete="off" data-search-input><button type="button" class="icon-btn close" aria-label="Close search" data-search-close style="width:36px;height:36px">{{icon x 16}}</button></label>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="mono muted">Popular</span><button type="button" class="chip" data-search-term="Hearing test">Hearing test</button><button type="button" class="chip" data-search-term="Tonsil">Tonsil surgery</button><button type="button" class="chip" data-search-term="Vertigo">Vertigo</button><button type="button" class="chip" data-search-term="Snoring">Snoring</button><button type="button" class="chip" data-search-term="Wax">Ear wax</button></div>
+        <div class="search-results" data-search-results aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <dialog class="modal" id="dlg-emergency" aria-labelledby="dlg-emergency-t" style="width:min(540px,calc(100% - 32px))">
+    <span class="grab" aria-hidden="true"></span>
+    <div class="modal-h"><div class="t"><span class="badge-ic danger">{{icon siren}}</span><div><h3 id="dlg-emergency-t">Need urgent ENT care?</h3><p>If someone can't breathe, call 108 for an ambulance first.</p></div></div><button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+    <div class="modal-b">
+      <div class="card" style="padding:20px;display:grid;gap:6px;text-align:center;background:var(--danger-soft);border-color:transparent;box-shadow:none"><span class="mono" style="color:var(--danger)">24×7 ENT EMERGENCY LINE</span><a class="tnum" href="tel:+914222456799" style="font:700 32px/1.2 var(--f-display);color:var(--danger)">+91 422 245 6799</a></div>
+      <div><b>Come in straight away for</b><ul style="margin:10px 0 0;padding-inline-start:20px;color:var(--ink-2);display:grid;gap:6px"><li>A nosebleed that doesn't stop after 20 minutes of pressure</li><li>Something stuck in the ear, nose or throat</li><li>Sudden hearing loss in one ear</li><li>Trouble breathing, or swallowing saliva</li></ul></div>
+      <div class="alert info">{{icon info}}<span><b>Emergency entrance</b>Ground floor, left of the main gate, 42 Race Course Road.</span></div>
+    </div>
+    <div class="modal-f"><button class="btn btn-ghost" type="button" data-copy="+91 422 245 6799">{{icon copy}}Copy number</button><a class="btn btn-danger" href="https://www.google.com/maps/dir/?api=1&amp;destination=42+Race+Course+Road+Coimbatore" target="_blank" rel="noopener">{{icon navigation}}Get directions</a></div>
+  </dialog>
+
+  <div class="cookie" id="cookieBanner" role="region" aria-label="Cookie notice" hidden>
+    <span class="badge-ic">{{icon shield-check}}</span>
+    <div><b>We use cookies to run this site</b><p class="muted" style="font-size:15px">Essential cookies keep you logged in to the patient portal. With your permission we also use analytics to improve the site. We never use cookies for advertising.</p></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-ghost" type="button" data-cookie-prefs>Manage preferences</button><button class="btn btn-ghost" type="button" data-cookie="essential">Essential only</button><button class="btn btn-cta" type="button" data-cookie="all">Accept all</button></div>
+  </div>
+
+  <dialog class="modal" id="dlg-cookies" aria-labelledby="dlg-cookies-t">
+    <span class="grab" aria-hidden="true"></span>
+    <div class="modal-h"><div class="t"><span class="badge-ic">{{icon shield-check}}</span><div><h3 id="dlg-cookies-t">Cookie preferences</h3><p>Choose what we can store in your browser.</p></div></div><button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+    <div class="modal-b"><div>
+      <div class="row-set"><div><b>Essential</b><p>Login, security and booking. Always on.</p></div><button class="switch" type="button" role="switch" aria-checked="true" aria-disabled="true" aria-label="Essential cookies (always on)" data-switch-lock></button></div>
+      <div class="row-set"><div><b>Analytics</b><p>Anonymous page visits to improve the site.</p></div><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Analytics cookies" data-cookie-key="analytics"></button></div>
+      <div class="row-set"><div><b>Preferences</b><p>Remember your theme, language and text direction.</p></div><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Preference cookies" data-cookie-key="preferences"></button></div>
+      <div class="row-set"><div><b>Marketing</b><p>Not used by Tridya ENT Clinic.</p></div><button class="switch" type="button" role="switch" aria-checked="false" aria-label="Marketing cookies" data-cookie-key="marketing"></button></div>
+    </div></div>
+    <div class="modal-f"><button class="btn btn-ghost" type="button" data-cookie="essential">Reject non-essential</button><button class="btn btn-cta" type="button" data-cookie="save">Save preferences</button></div>
+  </dialog>
+
+  <dialog class="modal" id="dlg-quickbook" aria-labelledby="dlg-qb-t" style="width:min(640px,calc(100% - 32px))">
+    <span class="grab" aria-hidden="true"></span>
+    <form method="dialog" data-validate novalidate data-quickbook-form style="display:contents">
+    <div class="modal-h"><div class="t"><span class="badge-ic" data-qb-avatar>{{icon calendar-days}}</span><div><h3 id="dlg-qb-t">Book with <span data-qb-name>a specialist</span></h3><p data-qb-sub>Pick a day and time</p></div></div><button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+    <div class="modal-b">
+      <div class="days" style="grid-template-columns:repeat(4,1fr)" role="group" aria-label="Day" data-qb-days></div>
+      <div><b style="font-size:15px" data-qb-session>OPD</b><div class="slots" style="margin-top:10px" role="group" aria-label="Time" data-qb-slots></div></div>
+      <div class="form-grid">
+        <div class="field"><label for="qb-name">Patient name</label><input class="inp" id="qb-name" name="name" autocomplete="name" placeholder="Full name" required><p class="msg err" id="qb-name-error"></p></div>
+        <div class="field"><label for="qb-phone">Mobile number</label><div class="inp"><span class="pre">+91</span><input id="qb-phone" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="98430 12345" required></div><p class="msg err" id="qb-phone-error"></p></div>
+      </div>
+    </div>
+    <div class="modal-f"><span class="sp tnum" data-qb-summary>Choose a slot</span><button class="btn btn-ghost" type="button" data-close>Cancel</button><button class="btn btn-cta" type="submit">Confirm booking</button></div>
+    </form>
+  </dialog>

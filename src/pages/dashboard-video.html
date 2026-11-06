@@ -1,0 +1,55 @@
+---
+title: Video consultation | Patient portal | Tridya ENT Clinic
+description: Your video consultation waiting room: check your camera, microphone and connection before the doctor joins.
+layout: app
+app: video
+app_title: Video consultation
+css: dashboard-video
+js: dashboard-video
+search: no
+---
+        <div class="d2 vc">
+          <div class="vc-main" style="grid-column:span 8">
+            <div class="video" id="vcStage">
+              <div class="ph vc-self">{{img video-self | Front camera preview of the patient seated at home in soft light | (max-width: 1100px) 100vw, 60vw | eager}}</div>
+              <div class="vc-off" data-cam-off hidden>{{icon video-off 32}}<b>Your camera is off</b><span>The doctor will see your initials until you turn it back on.</span></div>
+              <span class="vc-tag">{{icon user 14}}You · Sangeetha</span>
+              <span class="vc-live" data-live hidden><i></i>Live · <b class="tnum" data-elapsed>00:00</b></span>
+              <div class="vc-doc" data-doc-tile hidden><span class="ph">{{portrait doc-kavitha | Dr. Kavitha Sundaram | 160}}</span><b>Dr. Kavitha</b></div>
+              <div class="vctl" role="toolbar" aria-label="Call controls">
+                <button type="button" aria-pressed="true" aria-label="Turn microphone off" data-mic>{{icon mic}}{{icon mic-off}}</button>
+                <button type="button" aria-pressed="true" aria-label="Turn camera off" data-cam>{{icon video}}{{icon video-off}}</button>
+                <button type="button" class="off" aria-label="Leave the waiting room" data-open-dialog="dlg-leave">{{icon phone-off}}</button>
+              </div>
+            </div>
+            <div class="vc-checks" aria-live="polite">
+              <span class="pill ok" data-chk="cam">{{icon camera 14}}<span>Camera ready</span></span>
+              <span class="pill ok" data-chk="mic">{{icon mic 14}}<span>Microphone ready</span></span>
+              <span class="pill info" data-chk="net">{{icon wifi 14}}<span>Connection good · 24 Mbps</span></span>
+              <button class="btn btn-ghost btn-sm" type="button" data-test>{{icon refresh 16}}Test devices again</button>
+            </div>
+          </div>
+
+          <div class="vc-side" style="grid-column:span 4">
+            <div class="panel vc-card">
+              <span class="mono muted">VIDEO CONSULTATION · 18:30</span>
+              <a class="mini-doc" href="doctor-kavitha.html"><span class="ph round">{{portrait doc-kavitha | Dr. Kavitha Sundaram | 160}}</span><div><b>Dr. Kavitha Sundaram</b><small>Laryngology &amp; voice</small></div></a>
+              <div class="alert info" data-wait>{{icon clock}}<span><b data-wait-t>You're next in line</b><span data-wait-p>The doctor will join in about 3 minutes.</span></span></div>
+              <button class="btn btn-cta btn-lg btn-block" type="button" disabled data-join>Waiting for doctor</button>
+              <button class="link vc-notify" type="button" data-toast="We'll text you when the doctor joins" data-toast-text="SMS alert set for +91 98940 •••21." data-toast-type="ok">{{icon bell 16}}Text me when the doctor joins</button>
+            </div>
+            <div class="panel vc-card">
+              <h4>Before you start</h4>
+              <label class="check"><input type="checkbox" checked>Sit in a quiet, well-lit room</label>
+              <label class="check"><input type="checkbox" checked>Use headphones if you have them</label>
+              <label class="check"><input type="checkbox" checked>Keep your recent reports open</label>
+              <a class="link" href="dashboard-reports.html">{{icon file-heart 16}}Open my reports</a>
+            </div>
+          </div>
+        </div>
+
+        <dialog class="modal sm" id="dlg-leave" aria-labelledby="dlg-leave-t">
+          <span class="grab" aria-hidden="true"></span>
+          <div class="modal-h"><div class="t"><span class="badge-ic danger">{{icon phone-off}}</span><div><h3 id="dlg-leave-t">Leave the waiting room?</h3><p>You'll lose your place in line. You can rejoin from Appointments until 18:45.</p></div></div><button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+          <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Stay in the room</button><a class="btn btn-danger" href="dashboard-appointments.html" data-leave>{{icon phone-off}}Leave</a></div>
+        </dialog>

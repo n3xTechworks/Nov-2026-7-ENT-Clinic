@@ -1,0 +1,39 @@
+<body class="app {{body_class}}">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="dash">
+    <aside class="side" id="appSidebar" aria-label="Patient portal">
+      {{> logo}}
+      <div><p class="lbl">Patient portal</p><nav aria-label="Portal">
+        <a href="dashboard.html" data-cur="app:overview">{{icon layout-dashboard}}<span>Overview</span></a>
+        <a href="dashboard-book.html" data-cur="app:book">{{icon calendar-days}}<span>Book appointment</span></a>
+        <a href="dashboard-appointments.html" data-cur="app:appointments">{{icon calendar-check}}<span>Appointments</span></a>
+        <a href="dashboard-video.html" data-cur="app:video">{{icon video}}<span>Video consult</span></a>
+        <a href="dashboard-prescriptions.html" data-cur="app:prescriptions">{{icon pill}}<span>Prescriptions</span></a>
+        <a href="dashboard-reports.html" data-cur="app:reports">{{icon file-heart}}<span>Medical reports</span></a>
+      </nav></div>
+      <div><p class="lbl">Account</p><nav aria-label="Account">
+        <a href="dashboard-profile.html" data-cur="app:profile">{{icon users}}<span>Profile &amp; family</span></a>
+        <a href="index.html">{{icon globe}}<span>Back to website</span></a>
+        <button type="button" data-open-dialog="dlg-logout">{{icon log-out}}<span>Log out</span></button>
+      </nav></div>
+      <div class="side-help"><b>Need help?</b>Front desk, Mon–Sat<a class="tel" href="tel:+914222456780">+91 422 245 6780</a></div>
+    </aside>
+    <div class="dmain">
+      <header class="dtop" id="appHeader">
+        <button class="icon-btn app-burger" type="button" aria-label="Open portal menu" aria-controls="appSidebar" aria-expanded="false" data-side-toggle>{{icon menu}}</button>
+        <h1>{{app_title}}</h1><div class="sp"></div>
+        <button class="icon-btn" type="button" aria-label="Notifications" aria-expanded="false" aria-controls="ntfPanel" data-ntf-toggle>{{icon bell}}<span class="badge-dot" data-ntf-dot></span></button>
+        <button class="icon-btn" type="button" aria-label="Switch theme" data-theme-toggle><span class="ico t-moon" aria-hidden="true">{{svg moon}}</span><span class="ico t-sun" aria-hidden="true">{{svg sun}}</span></button>
+        <button class="icon-btn rtl-btn" type="button" aria-label="Switch text direction" aria-pressed="false" data-dir-toggle><span class="dir-txt" aria-hidden="true"><span class="d-to-rtl">RTL</span><span class="d-to-ltr">LTR</span></span></button>
+        <a class="me" href="dashboard-profile.html" aria-label="Your profile"><span class="avatar">SP</span><div><b>Sangeetha Prakash</b><small>UHID TRD-04418</small></div></a>
+        <div class="popover" id="ntfPanel" role="dialog" aria-label="Notifications" hidden>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)"><h3 style="font-size:17px">Notifications</h3><span class="pill info" data-ntf-count>2 new</span></div>
+          <a class="ntf unread" href="dashboard-appointments.html"><span class="badge-ic">{{icon calendar-check}}</span><div><b>Appointment confirmed</b><p>Thu 12 Nov · 17:10 with Dr. Meera Raghavan</p><small>2 min ago</small></div><i class="dot"></i></a>
+          <a class="ntf unread" href="dashboard-reports.html"><span class="badge-ic ok">{{icon file-text}}</span><div><b>New report ready</b><p>Pure-tone audiogram from 26 Oct is now in Medical reports</p><small>1 h ago</small></div><i class="dot"></i></a>
+          <a class="ntf" href="dashboard-prescriptions.html"><span class="badge-ic warn">{{icon pill}}</span><div><b>Medicine reminder</b><p>Betahistine 16 mg · due at 20:00</p><small>3 h ago</small></div><span></span></a>
+          <a class="ntf" href="dashboard-appointments.html"><span class="badge-ic warn">{{icon wallet}}</span><div><b>Payment pending</b><p>Hearing aid trial on 21 Nov · ₹1,500 deposit</p><small>Yesterday</small></div><span></span></a>
+          <div class="ntf"><span class="badge-ic">{{icon info}}</span><div><b>Clinic holiday</b><p>Closed Sun 8 Nov for Deepavali. Emergency line stays open.</p><small>2 days ago</small></div><span></span></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 18px"><button class="link" type="button" data-ntf-read>Mark all as read</button><a class="link" href="dashboard-profile.html">{{icon settings}}Settings</a></div>
+        </div>
+      </header>
+      <main class="dbody" id="main">

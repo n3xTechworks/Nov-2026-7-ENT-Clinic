@@ -1,0 +1,106 @@
+---
+title: Appointments | Patient portal | Tridya ENT Clinic
+description: See upcoming and past visits at Tridya ENT Clinic, reschedule or cancel an appointment and pay a deposit by UPI.
+layout: app
+app: appointments
+app_title: Appointments
+css: dash-appointments
+js: dash-appointments
+search: no
+---
+<div class="ap-bar">
+  <div class="chip-row" role="group" aria-label="Show appointments" id="apTabs">
+    <button class="chip on" type="button" aria-pressed="true" data-view="upcoming"><span>Upcoming · <span data-n="upcoming">2</span></span></button>
+    <button class="chip" type="button" aria-pressed="false" data-view="past"><span>Past · <span data-n="past">6</span></span></button>
+    <button class="chip" type="button" aria-pressed="false" data-view="cancelled"><span>Cancelled · <span data-n="cancelled">1</span></span></button>
+  </div>
+  <a class="btn btn-cta" href="dashboard-book.html">{{icon plus}}Book appointment</a>
+</div>
+
+<div class="ap-list" id="apList" aria-live="polite">
+  <div class="card appt ap-sk" aria-hidden="true"><span class="sk" style="width:72px;height:80px;border-radius:12px"></span><div class="stack-sm"><span class="sk" style="width:40%"></span><span class="sk" style="width:60%;height:20px"></span><span class="sk" style="width:30%"></span></div></div>
+</div>
+
+<section class="panel ap-hist" id="apHistory" aria-labelledby="apHistT">
+  <div class="panel-h">
+    <h2 id="apHistT">Appointment history</h2>
+    <div class="inp ap-search">{{icon search}}<input type="search" id="apSearch" placeholder="Search visits" aria-label="Search visits by doctor, visit or outcome" autocomplete="off"></div>
+  </div>
+  <div class="table-wrap">
+    <table class="table st-table" id="apTable">
+      <thead><tr><th scope="col">Date</th><th scope="col">Doctor</th><th scope="col">Visit</th><th scope="col">Outcome</th><th scope="col">Status</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead>
+      <tbody id="apRows">
+        <tr data-status="completed" data-id="h1"><td class="tnum" data-label="Date">26 Oct 2026</td><td data-label="Doctor"><b>Dr. Meera Raghavan</b></td><td data-label="Visit">Hearing assessment</td><td class="muted" data-label="Outcome">Mild bilateral high-frequency SNHL</td><td data-label="Status"><span class="pill ok">Completed</span></td><td class="act"><button class="link" type="button" data-summary>Summary</button></td></tr>
+        <tr data-status="completed" data-id="h2"><td class="tnum" data-label="Date">12 Sep 2026</td><td data-label="Doctor"><b>Dr. Arjun Venkatesh</b></td><td data-label="Visit">Sinus follow-up</td><td class="muted" data-label="Outcome">Post-FESS cavity healthy</td><td data-label="Status"><span class="pill ok">Completed</span></td><td class="act"><button class="link" type="button" data-summary>Summary</button></td></tr>
+        <tr data-status="completed" data-id="h3"><td class="tnum" data-label="Date">20 Aug 2026</td><td data-label="Doctor"><b>Dr. Arjun Venkatesh</b></td><td data-label="Visit">Day-care surgery</td><td class="muted" data-label="Outcome">FESS + septoplasty</td><td data-label="Status"><span class="pill ok">Completed</span></td><td class="act"><button class="link" type="button" data-summary>Summary</button></td></tr>
+        <tr data-status="completed" data-id="h4"><td class="tnum" data-label="Date">03 Aug 2026</td><td data-label="Doctor"><b>Dr. Arjun Venkatesh</b></td><td data-label="Visit">Nasal endoscopy</td><td class="muted" data-label="Outcome">Chronic rhinosinusitis with polyps</td><td data-label="Status"><span class="pill ok">Completed</span></td><td class="act"><button class="link" type="button" data-summary>Summary</button></td></tr>
+        <tr data-status="completed" data-id="h5"><td class="tnum" data-label="Date">18 Jul 2026</td><td data-label="Doctor"><b>Dr. Kavitha Sundaram</b></td><td data-label="Visit">Video consultation</td><td class="muted" data-label="Outcome">Throat clearing, LPR advice</td><td data-label="Status"><span class="pill ok">Completed</span></td><td class="act"><button class="link" type="button" data-summary>Summary</button></td></tr>
+        <tr data-status="cancelled" data-id="h6"><td class="tnum" data-label="Date">02 Jul 2026</td><td data-label="Doctor"><b>Dr. Arjun Venkatesh</b></td><td data-label="Visit">First consultation</td><td class="muted" data-label="Outcome">—</td><td data-label="Status"><span class="pill bad">Cancelled by patient</span></td><td class="act"><button class="link" type="button" data-summary>Summary</button></td></tr>
+        <tr data-status="completed" data-id="h7"><td class="tnum" data-label="Date">11 Mar 2026</td><td data-label="Doctor"><b>Dr. Rahul Menon</b></td><td data-label="Visit">Family member · Aarav</td><td class="muted" data-label="Outcome">Ear wax removal</td><td data-label="Status"><span class="pill ok">Completed</span></td><td class="act"><button class="link" type="button" data-summary>Summary</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="empty" id="apEmpty" hidden><span class="badge-ic">{{icon search}}</span><h3>No visits match</h3><p>Try a doctor's name, a visit type or an outcome.</p><button class="btn btn-ghost" type="button" data-clear-search>Clear search</button></div>
+</section>
+
+<!-- d3_34 Reschedule -->
+<dialog class="modal ap-620" id="dlg-resched" aria-labelledby="rs-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon calendar-clock}}</span><div><h3 id="rs-t">Reschedule appointment</h3><p data-rs-sub>Follow-up hearing test with Dr. Meera Raghavan</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b">
+    <div class="card ap-current"><span class="muted">Current</span><s class="tnum" data-rs-current>Thu 12 Nov · 17:10 · Dr. Meera Raghavan</s></div>
+    <div class="days ap-days" data-rs-days role="group" aria-label="Choose a day"></div>
+    <div><b class="ap-slot-h" data-rs-session>Mon 16 Nov · Evening OPD</b><div class="slots" data-rs-slots role="group" aria-label="Choose a time"></div></div>
+    <div class="field"><label for="rs-why">Reason (optional)</label>
+      <select class="inp" id="rs-why"><option value="">Choose a reason</option><option>Work commitment</option><option>Travel</option><option>Feeling unwell</option><option>Family reasons</option><option>Other</option></select></div>
+  </div>
+  <div class="modal-f"><span class="sp">Free to reschedule up to 2 h before</span><button class="btn btn-ghost" type="button" data-close>Keep current time</button><button class="btn btn-cta" type="button" data-rs-confirm>Confirm new time</button></div>
+</dialog>
+
+<!-- d3_35 Cancel appointment -->
+<dialog class="modal ap-500" id="dlg-cancel" aria-labelledby="cx-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic danger">{{icon circle-alert}}</span><div><h3 id="cx-t">Cancel this appointment?</h3><p data-cx-sub>Hearing aid trial · Sat 21 Nov · 10:30 with Divya Prakash</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b" role="radiogroup" aria-labelledby="cx-t">
+    <label class="radio"><input type="radio" name="cx-why" value="I'm feeling better"><i></i>I'm feeling better</label>
+    <label class="radio"><input type="radio" name="cx-why" value="I booked the wrong time"><i></i>I booked the wrong time</label>
+    <label class="radio"><input type="radio" name="cx-why" value="I can't travel that day"><i></i>I can't travel that day</label>
+    <label class="radio"><input type="radio" name="cx-why" value="Other reason"><i></i>Other reason</label>
+    <div class="field" data-cx-other hidden><label for="cx-note">Tell us more (optional)</label><textarea class="inp" id="cx-note" rows="3" placeholder="A short note for the front desk"></textarea></div>
+    <p class="msg err" data-cx-err hidden>Please choose a reason to continue.</p>
+    <p class="msg hint">{{icon info}}No cancellation fee more than 2 hours before the slot.</p>
+  </div>
+  <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Keep appointment</button><button class="btn btn-danger" type="button" data-cx-confirm>Cancel appointment</button></div>
+</dialog>
+
+<!-- d3_36 Pay deposit (UPI) -->
+<dialog class="modal" id="dlg-pay" aria-labelledby="pay-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon wallet}}</span><div><h3 id="pay-t">Pay deposit</h3><p data-pay-sub>Hearing aid trial · Sat 21 Nov · 10:30</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b">
+    <div class="sum"><div><span data-pay-label>Hearing aid trial deposit</span><b class="tnum" data-pay-amt>₹1,500</b></div><div><span>Refundable on return of device</span><b>Yes</b></div></div>
+    <div class="ap-upi">
+      <div class="qr" role="img" aria-label="UPI QR code for tridyaent@upi"></div>
+      <div class="stack-sm">
+        <b>Scan with any UPI app</b>
+        <p class="muted ap-upi-p">Or pay to the clinic's UPI ID</p>
+        <div class="inp ap-upi-id"><span class="tnum">tridyaent@upi</span><button class="ap-copy" type="button" data-copy="tridyaent@upi" aria-label="Copy UPI ID">{{icon copy}}</button></div>
+        <span class="mono muted">Payment is confirmed automatically</span>
+      </div>
+    </div>
+    <label class="radio"><input type="checkbox" id="payLater"><i></i>Pay at the clinic on the day instead</label>
+  </div>
+  <div class="modal-f"><span class="sp">Secured by your UPI app</span><button class="btn btn-ghost" type="button" data-close>Close</button><button class="btn btn-cta" type="button" data-pay-confirm>I have paid</button></div>
+</dialog>
+
+<!-- Visit summary -->
+<dialog class="modal" id="dlg-summary" aria-labelledby="sm-t">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="modal-h"><div class="t"><span class="badge-ic">{{icon clipboard-list}}</span><div><h3 id="sm-t" data-sm-title>Visit summary</h3><p data-sm-sub>26 Oct 2026 · Dr. Meera Raghavan</p></div></div>
+    <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+  <div class="modal-b"><div class="sum" data-sm-body></div><p class="muted ap-sm-note" data-sm-note></p></div>
+  <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Close</button><button class="btn btn-cta" type="button" data-sm-download>{{icon download}}Download summary</button></div>
+</dialog>

@@ -1,0 +1,16 @@
+<body class="auth-page {{body_class}}">
+  <div class="auth">
+    <aside class="auth-side">
+      <div class="ph">{{img {{auth_img}} | {{auth_alt}} | 50vw | eager}}</div>
+      <h2>{{auth_h}}</h2>
+      <p>{{auth_p}}</p>
+      <ul>{{#each auth_points}}<li>{{icon circle-check}}{{this}}</li>{{/each}}</ul>
+    </aside>
+    <main class="auth-main" id="main">
+      <a class="back" href="index.html">{{icon arrow-left 18 flip}}<span class="txt">Back to website</span></a>
+      <div class="auth-tools">
+        <button class="icon-btn" type="button" aria-label="Switch theme" data-theme-toggle><span class="ico t-moon" aria-hidden="true">{{svg moon}}</span><span class="ico t-sun" aria-hidden="true">{{svg sun}}</span></button>
+        <button class="icon-btn rtl-btn" type="button" aria-label="Switch text direction" aria-pressed="false" data-dir-toggle><span class="dir-txt" aria-hidden="true"><span class="d-to-rtl">RTL</span><span class="d-to-ltr">LTR</span></span></button>
+      </div>
+      <div class="auth-box">
+        {{> logo}}

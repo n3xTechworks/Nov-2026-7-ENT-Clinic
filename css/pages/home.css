@@ -1,0 +1,131 @@
+/* Home 1 (index.html) + Home 2 (home-2.html) */
+
+/* ---------- hero: lighter veil so the photo stays clearly visible in light + dark ---------- */
+.hero.hero-home1 .ph::after,.hero.hero-home2 .ph::after{
+  background:
+    radial-gradient(ellipse 44% 54% at 50% 44%,rgba(var(--veil),.80) 0%,rgba(var(--veil),.58) 55%,rgba(var(--veil),.16) 100%),
+    linear-gradient(180deg,rgba(var(--veil),.10) 0%,rgba(var(--veil),0) 40%,rgba(var(--veil),0) 78%,var(--bg) 100%)}
+[data-theme="dark"] .hero.hero-home1 .ph::after,[data-theme="dark"] .hero.hero-home2 .ph::after{
+  background:
+    radial-gradient(ellipse 44% 54% at 50% 44%,rgba(var(--veil),.82) 0%,rgba(var(--veil),.62) 55%,rgba(var(--veil),.24) 100%),
+    linear-gradient(180deg,rgba(var(--veil),.12) 0%,rgba(var(--veil),0) 40%,rgba(var(--veil),0) 78%,var(--bg) 100%)}
+.hero.hero-home1 h1,.hero.hero-home2 h1{text-shadow:0 1px 18px rgba(var(--veil),.9),0 0 2px rgba(var(--veil),.6)}
+.hero.hero-home1 .lead,.hero.hero-home2 .lead{color:var(--ink);text-shadow:0 1px 12px rgba(var(--veil),.95)}
+.hero-home1 .hero-proof,.hero-home2 .hero-proof{color:var(--ink);text-shadow:0 1px 10px rgba(var(--veil),.95)}
+.hero-home1 .hero-proof .avatar{overflow:hidden;padding:0}
+.hero-home1 .hero-proof .avatar img{width:100%;height:100%}
+.hero-strip [data-opd-text]{font-style:normal}
+.hero-strip .is-closed .dot-live{background:var(--cta);box-shadow:0 0 0 4px color-mix(in srgb,var(--cta) 25%,transparent)}
+
+/* Home 2 clinic shortcuts in the hero (links styled like the strip pills) */
+.clinic-strip>a{display:inline-flex;gap:8px;align-items:center;height:40px;padding-inline:14px 16px;border-radius:999px;background:color-mix(in srgb,var(--surface) 90%,transparent);border:1px solid var(--line);font-size:14.5px;font-weight:500;color:var(--ink-2);backdrop-filter:blur(6px);text-decoration:none;transition:border-color .2s,color .2s,transform .2s}
+.clinic-strip>a:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px)}
+.clinic-strip>a .ico{width:17px;height:17px;color:var(--teal)}
+@media (max-width:560px){
+  .clinic-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;background:none;border:0;box-shadow:none}
+  .clinic-strip>a{height:36px;font-size:13.5px}
+}
+
+/* ---------- symptom finder ---------- */
+.finder-band .card{align-items:stretch}
+.finder-main{display:grid;gap:18px;align-content:start}
+.finder-head{display:grid;gap:6px}
+.finder-head .h3{font-size:22px;margin:0}
+.finder-chips .chip{cursor:pointer;transition:background-color .25s ease,color .25s ease,border-color .25s ease,transform .15s ease}
+.finder-chips .chip:hover{border-color:var(--teal)}
+.finder-chips .chip:active{transform:scale(.96)}
+.finder-chips .chip[aria-pressed="true"]::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;margin-inline-end:2px}
+.match{transition:opacity .25s ease,transform .25s ease}
+.match.swap{opacity:0;transform:translateY(6px)}
+.match h3{font-size:22px}
+.match .m-doc{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line-2)}
+.match .m-doc:hover{color:var(--teal);border-color:var(--teal)}
+.match .m-slot{color:var(--ink)}
+.match .m-empty{color:var(--ink-2)}
+
+/* ---------- specialty cards (subgrid rows) ---------- */
+.organs .organ{row-gap:16px}
+.organ>.ph{display:block;aspect-ratio:4/3}
+.organ>.ph img{transition:transform .5s ease}
+.organ:hover>.ph img{transform:scale(1.04)}
+.organ-t{display:grid;gap:6px;align-content:start}
+.organ h3 a{color:inherit;text-decoration:none}
+.organ h3 a:hover{color:var(--teal)}
+.organ ul{align-content:start}
+
+/* ---------- steps (ol) ---------- */
+main ol.steps{list-style:none;margin:0;padding:0}
+@media (max-width:560px){main ol.steps{padding-inline-start:20px}}
+
+/* ---------- doctor cards ---------- */
+.docs .doc-mini{color:inherit;text-decoration:none;row-gap:16px}
+.docs .doc-mini .ph{aspect-ratio:4/5}
+.docs .doc-mini .ph img{object-position:50% 20%;transition:transform .5s ease}
+.docs .doc-mini:hover .ph img{transform:scale(1.04)}
+.docs .doc-mini:hover h3{color:var(--teal)}
+.doc-t{display:grid;gap:4px;align-content:start}
+.doc-t h3{transition:color .2s}
+
+/* ---------- facilities ---------- */
+.fac-grid{align-items:center}
+.fac-txt{display:grid;gap:28px}
+.fac-txt .sh{margin:0}
+
+/* ---------- testimonials ---------- */
+.cards>.tcard{transition:transform .2s ease,box-shadow .2s ease}
+.cards>.tcard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.tcard .who .avatar img{width:100%;height:100%}
+
+/* ---------- CTA band ---------- */
+.cta-sec{border:0}
+.cta-txt{display:grid;gap:14px}
+.cta-band a.tel{text-decoration:none}
+.cta-band a.tel:hover{text-decoration:underline}
+
+/* ================= Home 2 ================= */
+.clin-list .clin{scroll-margin-top:96px}
+.clin h3{font-size:24px}
+.clin .ph{position:relative}
+.clin .kv b a{color:inherit;text-decoration:none}
+.clin .kv b a:hover{color:var(--teal);text-decoration:underline}
+.clin .kv b.mono{font-size:14px}
+
+/* pathway cards */
+.path-cards>.card.sub.pcard{padding:28px;row-gap:14px}
+.path-cards>.card.sub.pcard>*{margin-inline:0}
+.path-cards>.card.sub.pcard>:last-child{align-self:start}
+.pcard .vis{font:600 13px var(--f-body);color:var(--teal-ink);background:var(--teal);height:28px;padding-inline:12px;border-radius:999px;display:inline-flex;align-items:center;justify-self:start}
+.pcard ul{margin:0;padding-inline-start:18px;color:var(--ink-2);display:grid;gap:6px}
+
+/* children's hearing feature */
+.kids{margin-top:24px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;overflow:hidden;padding:0}
+.kids>.ph{border-radius:0;min-height:320px}
+.kids-txt{padding:36px 40px;display:grid;gap:14px;align-content:center}
+.kids-txt h3{font-size:24px}
+.kids-txt p{color:var(--ink-2)}
+.kids-pts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.kids-pts li{display:flex;gap:10px;align-items:center;color:var(--ink)}
+.kids-pts .ico{width:18px;height:18px;color:var(--teal);flex:none}
+.kids-acts{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-top:6px}
+@media (max-width:900px){.kids{grid-template-columns:1fr}.kids>.ph{min-height:0;aspect-ratio:16/9}.kids-txt{padding:24px}}
+
+/* insurers */
+.ins-logos{list-style:none;margin:0;padding:0}
+.ins-logos li{height:72px;border:1px solid var(--line);background:var(--surface);border-radius:12px;display:flex;gap:8px;align-items:center;justify-content:center;padding:8px 12px;font:650 14px/1.25 var(--f-display);color:var(--ink-2);text-align:center;transition:border-color .2s,color .2s}
+.ins-logos li .ico{width:18px;height:18px;color:var(--teal);flex:none}
+.ins-logos li:hover{border-color:var(--teal);color:var(--ink)}
+
+/* article cards */
+.notes .note{row-gap:12px}
+.notes .note>.ph{display:block;aspect-ratio:3/2}
+.notes .note>.ph img{transition:transform .5s ease}
+.notes .note:hover>.ph img{transform:scale(1.04)}
+.notes .note h3 a{color:inherit;text-decoration:none}
+.notes .note h3 a:hover{color:var(--teal)}
+
+@media (max-width:560px){
+  .cta-band .acts{justify-items:stretch;width:100%}
+  .cta-band .acts .btn{width:100%}
+}
+
+@media (max-width:560px){.hero-home1 .hero-pill,.hero-home2 .hero-pill{height:auto;min-height:36px;padding-block:8px;font-size:13px;line-height:1.3;max-width:100%;text-align:center}}

@@ -1,0 +1,116 @@
+---
+title: Doctors | Tridya ENT Clinic
+description: Meet the five ENT consultants and lead audiologist at Tridya ENT Clinic, Coimbatore, with weekly OPD days, languages and online booking.
+nav: doctors
+css: doctors
+js: doctors
+pagehead: true
+crumbs: Doctors
+h1: Our specialists
+lead: Five ENT consultants and a lead audiologist. Every doctor has fixed OPD days, so you can plan your visit in advance.
+---
+    <section class="sec docs-page">
+      <div class="wrap">
+        <div class="filters docs-filters">
+          <div class="chip-row" role="group" aria-label="Filter by specialty" data-doc-chips>
+            <button class="chip" type="button" aria-pressed="true" data-spec="all">All specialists</button>
+            <button class="chip" type="button" aria-pressed="false" data-spec="ear">Ear</button>
+            <button class="chip" type="button" aria-pressed="false" data-spec="nose">Nose &amp; sinus</button>
+            <button class="chip" type="button" aria-pressed="false" data-spec="throat">Throat &amp; voice</button>
+            <button class="chip" type="button" aria-pressed="false" data-spec="headneck">Head &amp; neck</button>
+            <button class="chip" type="button" aria-pressed="false" data-spec="children">Children</button>
+            <button class="chip" type="button" aria-pressed="false" data-spec="audiology">Audiology</button>
+          </div>
+          <div class="docs-tools">
+            <label class="inp docs-search" for="doc-q">{{icon search}}<span class="sr-only">Search doctors</span><input id="doc-q" type="search" placeholder="Search by name or condition" autocomplete="off" data-doc-search></label>
+            <button class="btn btn-ghost docs-more" type="button" data-open-dialog="dlg-docfilters" aria-haspopup="dialog">{{icon sliders 18}}Filters<span class="docs-badge" data-doc-badge hidden>0</span></button>
+          </div>
+        </div>
+        <p class="docs-status muted" aria-live="polite"><span data-doc-status>Showing all 6 specialists</span> <button class="docs-reset" type="button" data-doc-clear hidden>Clear filters</button></p>
+
+        <div class="card docs-list" data-stagger>
+          {{#each doctors}}
+          <article class="drow" data-doc="{{slug}}" data-filters="{{filters_label}}" data-langs="{{languages_key}}" data-days="{{days_key}}" data-search="{{search}}" aria-labelledby="dn-{{slug}}">
+            <a class="ph" href="{{page}}" tabindex="-1" aria-hidden="true">{{portrait {{portrait}} | {{portrait_alt}} | 800}}</a>
+            <div class="info">
+              <span class="eyebrow">{{years}}</span>
+              <h2 id="dn-{{slug}}"><a href="{{page}}">{{name}}</a></h2>
+              <p class="drole">{{role}}</p>
+              <p class="muted dqual">{{qualifications}}</p>
+              <div class="tags">{{#each tags}}<span>{{this}}</span>{{/each}}</div>
+              <p class="muted dlang">{{icon languages 18}}<span>{{languages_label}}</span></p>
+            </div>
+            <div class="sch">
+              <span class="muted dsch-l">Weekly OPD</span>
+              <div class="week">{{#each days_label}}<div class="{{#if on}}on{{/if}}">{{day}}<small>{{#if on}}OPD{{else}}—{{/if}}</small></div>{{/each}}</div>
+              <p class="dnext">Next slot · <span data-next>{{next_slot}}</span></p>
+              <div class="dacts"><button class="btn btn-cta" type="button" data-quickbook="{{slug}}">Book appointment</button><a class="btn btn-ghost" href="{{page}}">View profile</a></div>
+            </div>
+          </article>
+          {{/each}}
+          <div class="empty docs-empty" data-doc-empty hidden>
+            <span class="badge-ic">{{icon user-round}}</span>
+            <h3>No specialist matches these filters</h3>
+            <p>Try a different day or language, or call us and the coordinator will find the right doctor.</p>
+            <button class="btn btn-ghost" type="button" data-doc-clear>{{icon rotate-ccw 16}}Clear filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt">
+      <div class="wrap">
+        <div class="sh center"><div class="sh-txt"><span class="eyebrow">Before you visit</span><h2>Choosing the right specialist</h2><p>Each consultant leads one clinic. If you are unsure, start with the symptom and we route you on the same day.</p></div></div>
+        <div class="cards c4 docs-help" style="--cols:4;--rows:3" data-stagger>
+          <article class="card sub"><span class="badge-ic">{{icon ear}}</span><h3>Hearing, ear or dizziness</h3><p>Dr. Meera Raghavan, with Divya Prakash for hearing tests and hearing aids.</p></article>
+          <article class="card sub"><span class="badge-ic">{{icon wind}}</span><h3>Sinus, allergy or snoring</h3><p>Dr. Arjun Venkatesh runs the Sinus &amp; Allergy Clinic and the sleep service.</p></article>
+          <article class="card sub"><span class="badge-ic">{{icon mic}}</span><h3>Voice, swallowing or reflux</h3><p>Dr. Kavitha Sundaram sees hoarseness, throat and swallowing problems.</p></article>
+          <article class="card sub"><span class="badge-ic">{{icon baby}}</span><h3>Children and neck lumps</h3><p>Dr. Rahul Menon for children; Dr. Farhana Iqbal for thyroid and neck lumps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="cta-band" data-reveal>
+          <div style="display:grid;gap:14px"><span class="eyebrow">Appointments</span><h2>Not sure who to see?</h2><p>Call the front desk and a coordinator will book you with the right specialist.</p></div>
+          <div class="acts"><a class="tel" href="tel:+914222456780">+91 422 245 6780</a><a class="btn btn-cta btn-lg" href="book.html">{{icon calendar-days}}Book appointment</a></div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="modal docs-sheet" id="dlg-docfilters" aria-labelledby="dlg-df-t">
+      <span class="grab" aria-hidden="true"></span>
+      <div class="modal-h"><div class="t"><div><h3 id="dlg-df-t">Filter doctors</h3><p>Specialty, day and language</p></div></div>
+        <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+      <div class="modal-b">
+        <fieldset class="df-set"><legend>Specialty</legend>
+          <div class="chip-row" data-df-spec>
+            <button class="chip" type="button" aria-pressed="false" data-v="ear">Ear</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="nose">Nose &amp; sinus</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="throat">Throat &amp; voice</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="headneck">Head &amp; neck</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="children">Children</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="audiology">Audiology</button>
+          </div>
+        </fieldset>
+        <fieldset class="df-set"><legend>Available on</legend>
+          <div class="chip-row" data-df-day>
+            <button class="chip" type="button" aria-pressed="false" data-v="today">Today</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="tomorrow">Tomorrow</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="week">This week</button>
+            <button class="chip" type="button" aria-pressed="false" data-v="sat">Saturday</button>
+          </div>
+        </fieldset>
+        <fieldset class="df-set"><legend>Language</legend>
+          <div class="df-langs" data-df-lang>
+            <label class="check"><input type="checkbox" value="tamil">Tamil</label>
+            <label class="check"><input type="checkbox" value="english">English</label>
+            <label class="check"><input type="checkbox" value="malayalam">Malayalam</label>
+            <label class="check"><input type="checkbox" value="hindi">Hindi</label>
+            <label class="check"><input type="checkbox" value="urdu">Urdu</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="modal-f df-foot"><button class="btn btn-ghost" type="button" data-df-clear>Clear all</button><button class="btn btn-cta" type="button" data-df-apply>Show 6 doctors</button></div>
+    </dialog>

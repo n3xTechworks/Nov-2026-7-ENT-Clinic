@@ -1,0 +1,84 @@
+/* Auth pages: login, signup, forgot-password (layout: auth) */
+.auth-form{display:grid;gap:20px}
+.auth-view{display:grid;gap:24px}
+.auth-view[hidden]{display:none}
+.auth-head h1,.auth-head .auth-title{font-size:32px;line-height:1.12;letter-spacing:-.03em}
+.auth-head .auth-title{font-family:var(--f-display);font-weight:600;color:var(--ink);outline:0}
+.auth-head p{max-width:420px;margin-inline:auto}
+.auth-head .badge-ic.big{width:64px;height:64px;border-radius:50%}
+.auth-head .badge-ic.big .ico{width:28px;height:28px}
+
+.lbl-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.lbl-row .link{font-size:15px;background:none;border:0;padding:0;cursor:pointer;font-family:inherit}
+.auth-foot .link{background:none;border:0;padding:0;cursor:pointer;font:inherit;font-weight:600}
+.field label i{color:var(--danger);font-style:normal}
+
+/* icon + input + eye */
+.auth-form .inp>input{min-width:0}
+.pw-eye{flex:none;width:32px;height:32px;margin-inline-end:-6px;border:0;background:transparent;color:var(--ink-3);display:grid;place-items:center;border-radius:8px;cursor:pointer}
+.pw-eye:hover{color:var(--teal);background:var(--sunk)}
+.pw-eye .ico{width:18px;height:18px}
+.pw-eye .ico+.ico{display:none}
+.pw-eye[aria-pressed="true"] .ico:first-child{display:none}
+.pw-eye[aria-pressed="true"] .ico+.ico{display:inline-block}
+
+.form-grid.two{grid-template-columns:1fr 1fr;gap:16px}
+.form-grid.two .field{align-content:start}
+input[type="date"].inp{min-height:48px;line-height:46px}
+input[type="date"].inp::-webkit-calendar-picker-indicator{opacity:.6;cursor:pointer}
+[data-theme="dark"] input[type="date"].inp::-webkit-calendar-picker-indicator{filter:invert(1)}
+
+.pw-meter{margin-top:2px}
+.pw-meter i{transition:background-color .2s}
+.pw-meter[data-level="1"] i.on{background:var(--danger)}
+.pw-meter[data-level="2"] i.on{background:var(--warn)}
+.msg.hint{font-size:13.5px}
+
+.check a.link{display:inline;font-weight:600}
+.check span{unicode-bidi:plaintext}
+
+/* error banner (wrong password) */
+.auth-box .alert.err{animation:auth-shake .35s ease-out}
+.auth-box .alert span span{display:block}
+html:not(.motion) .auth-box .alert.err{animation:none}
+@keyframes auth-shake{0%,100%{transform:none}25%{transform:translateX(-6px)}50%{transform:translateX(5px)}75%{transform:translateX(-3px)}}
+
+/* OTP boxes */
+.otp input{height:56px;width:100%;min-width:0;border-radius:12px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);text-align:center;font:600 22px var(--f-body);font-variant-numeric:tabular-nums;outline:0;padding:0;transition:border-color .15s,box-shadow .15s}
+.otp input::placeholder{color:var(--line-2)}
+.otp input:focus{border-color:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+.otp.err input{border-color:var(--danger)}
+.otp-field{gap:10px}
+.otp-field .msg.err:empty{display:none}
+.resend{justify-content:center}
+.resend .link{background:none;border:0;padding:0;cursor:pointer;font:inherit;font-weight:600}
+[dir="rtl"] .otp{direction:ltr}
+
+/* success views */
+.done-card{padding:6px 18px;display:grid}
+.done-card .row-set{padding-block:12px;font-size:15.5px;color:var(--ink-2)}
+.done-card .row-set b{color:var(--ink)}
+.done-card .ok-ic{color:var(--ok);display:inline-flex}
+.auth-view.done{animation:auth-in .35s ease-out}
+html:not(.motion) .auth-view.done{animation:none}
+@keyframes auth-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* side photo swap fade */
+.auth-side .ph img{transition:opacity .3s}
+
+@media (max-width:560px){
+  .auth-head h1,.auth-head .auth-title{font-size:28px}
+  .otp{gap:8px}
+  .otp input{height:50px;font-size:20px}
+}
+@media (max-width:400px){
+  .form-grid.two{grid-template-columns:1fr}
+  .otp{gap:6px}
+  .otp input{height:46px}
+}
+
+/* photo column stretches with the form (no blank strip under it on long forms like signup) */
+.auth-side{position:relative;top:auto;height:auto;min-height:100vh;min-height:100dvh;align-self:stretch}
+.auth-side .ph img{object-position:50% 30%}
+.auth-form .msg.err:empty{display:none}
+[dir="rtl"] .auth-form input[dir="auto"]{text-align:right}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book appointment | Patient portal | Tridya ENT Clinic</title>
+  <meta name="description" content="Book an ENT appointment from your Tridya patient portal: choose a specialty, doctor, date and time.">
+  <meta name="theme-color" content="#0A6B66">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>(function(){var d=document.documentElement;try{var t=localStorage.getItem('tridya.theme'),r=localStorage.getItem('tridya.dir');if(t==='dark')d.setAttribute('data-theme','dark');if(r==='rtl')d.setAttribute('dir','rtl');}catch(e){}if(!navigator.webdriver&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))d.classList.add('motion');})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;650;700;800&display=swap">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/pages/dashboard-book.css">
+</head>
+<body class="app ">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="dash">
+    <aside class="side" id="appSidebar" aria-label="Patient portal">
+      <a class="logo" href="index.html" aria-label="Tridya ENT Clinic home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="11" fill="var(--teal)"/><g fill="none" stroke="var(--teal-ink)" stroke-width="2.6" stroke-linecap="round"><path d="M17.5 15.2a6 6 0 0 1 0 9.6"/><path d="M20.8 11.4a11 11 0 0 1 0 17.2"/><path d="M24.2 7.8a16 16 0 0 1 0 24.4"/></g><circle cx="12.6" cy="20" r="2.6" fill="var(--teal-ink)"/></svg><span class="logo-word"><b>Tridya</b><span>ENT CLINIC</span></span></a>
+
+      <div><p class="lbl">Patient portal</p><nav aria-label="Portal">
+        <a href="dashboard.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg></span><span>Overview</span></a>
+        <a href="dashboard-book.html" aria-current="page"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v3"/><path d="M16 2v3"/><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M8 13h.01"/><path d="M12 13h.01"/><path d="M16 13h.01"/><path d="M8 17h.01"/><path d="M12 17h.01"/><path d="M16 17h.01"/></svg></span><span>Book appointment</span></a>
+        <a href="dashboard-appointments.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span><span>Appointments</span></a>
+        <a href="dashboard-video.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect width="14" height="12" x="2" y="6" rx="2"/></svg></span><span>Video consult</span></a>
+        <a href="dashboard-prescriptions.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg></span><span>Prescriptions</span></a>
+        <a href="dashboard-reports.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 22h5a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v7"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M3.62 18.8A2.25 2.25 0 1 1 7 15.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a1 1 0 0 1-1.507 0z"/></svg></span><span>Medical reports</span></a>
+      </nav></div>
+      <div><p class="lbl">Account</p><nav aria-label="Account">
+        <a href="dashboard-profile.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg></span><span>Profile &amp; family</span></a>
+        <a href="index.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span>Back to website</span></a>
+        <button type="button" data-open-dialog="dlg-logout"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg></span><span>Log out</span></button>
+      </nav></div>
+      <div class="side-help"><b>Need help?</b>Front desk, Mon–Sat<a class="tel" href="tel:+914222456780">+91 422 245 6780</a></div>
+    </aside>
+    <div class="dmain">
+      <header class="dtop" id="appHeader">
+        <button class="icon-btn app-burger" type="button" aria-label="Open portal menu" aria-controls="appSidebar" aria-expanded="false" data-side-toggle><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></span></button>
+        <h1>Book appointment</h1><div class="sp"></div>
+        <button class="icon-btn" type="button" aria-label="Notifications" aria-expanded="false" aria-controls="ntfPanel" data-ntf-toggle><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></span><span class="badge-dot" data-ntf-dot></span></button>
+        <button class="icon-btn" type="button" aria-label="Switch theme" data-theme-toggle><span class="ico t-moon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg></span><span class="ico t-sun" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span></button>
+        <button class="icon-btn rtl-btn" type="button" aria-label="Switch text direction" aria-pressed="false" data-dir-toggle><span class="dir-txt" aria-hidden="true"><span class="d-to-rtl">RTL</span><span class="d-to-ltr">LTR</span></span></button>
+        <a class="me" href="dashboard-profile.html" aria-label="Your profile"><span class="avatar">SP</span><div><b>Sangeetha Prakash</b><small>UHID TRD-04418</small></div></a>
+        <div class="popover" id="ntfPanel" role="dialog" aria-label="Notifications" hidden>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)"><h3 style="font-size:17px">Notifications</h3><span class="pill info" data-ntf-count>2 new</span></div>
+          <a class="ntf unread" href="dashboard-appointments.html"><span class="badge-ic"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span></span><div><b>Appointment confirmed</b><p>Thu 12 Nov · 17:10 with Dr. Meera Raghavan</p><small>2 min ago</small></div><i class="dot"></i></a>
+          <a class="ntf unread" href="dashboard-reports.html"><span class="badge-ic ok"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span></span><div><b>New report ready</b><p>Pure-tone audiogram from 26 Oct is now in Medical reports</p><small>1 h ago</small></div><i class="dot"></i></a>
+          <a class="ntf" href="dashboard-prescriptions.html"><span class="badge-ic warn"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg></span></span><div><b>Medicine reminder</b><p>Betahistine 16 mg · due at 20:00</p><small>3 h ago</small></div><span></span></a>
+          <a class="ntf" href="dashboard-appointments.html"><span class="badge-ic warn"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg></span></span><div><b>Payment pending</b><p>Hearing aid trial on 21 Nov · ₹1,500 deposit</p><small>Yesterday</small></div><span></span></a>
+          <div class="ntf"><span class="badge-ic"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span></span><div><b>Clinic holiday</b><p>Closed Sun 8 Nov for Deepavali. Emergency line stays open.</p><small>2 days ago</small></div><span></span></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 18px"><button class="link" type="button" data-ntf-read>Mark all as read</button><a class="link" href="dashboard-profile.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg></span>Settings</a></div>
+        </div>
+      </header>
+      <main class="dbody" id="main">
+        <form class="d2 bk" id="bkForm" data-validate data-validate-only novalidate>
+          <div class="bk-main" style="grid-column:span 8">
+            <section class="panel" aria-labelledby="bk-s1">
+              <div class="panel-h"><h3 id="bk-s1">1 · Specialty and doctor</h3></div>
+              <div class="panel-b bk-stack">
+                <div class="chip-row" role="group" aria-label="Specialty" data-spec>
+                  <button type="button" class="chip" aria-pressed="true" data-spec-key="ear">Ear &amp; hearing</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="nose">Nose &amp; sinus</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="throat">Throat &amp; voice</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="headneck">Head &amp; neck</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="children">Children</button>
+                </div>
+                <div class="docpick" role="radiogroup" aria-label="Doctor" data-docs>
+                  <button type="button" role="radio" aria-checked="true" class="on" data-doc="meera" data-spec-in="ear"><span class="ph round"><img class="portrait" src="images/doc-meera-160.webp" srcset="images/doc-meera-160.webp 160w, images/doc-meera-800.webp 800w" sizes="160px" width="160" height="160" alt="Dr. Meera Raghavan" loading="lazy" decoding="async"></span><span class="dp-t"><b>Dr. Meera Raghavan</b><small>Otology · ₹900</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="divya" data-spec-in="ear"><span class="ph round"><img class="portrait" src="images/doc-divya-160.webp" srcset="images/doc-divya-160.webp 160w, images/doc-divya-800.webp 800w" sizes="160px" width="160" height="160" alt="Divya Prakash" loading="lazy" decoding="async"></span><span class="dp-t"><b>Divya Prakash</b><small>Audiology · ₹500</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="rahul" data-spec-in="ear children"><span class="ph round"><img class="portrait" src="images/doc-rahul-160.webp" srcset="images/doc-rahul-160.webp 160w, images/doc-rahul-800.webp 800w" sizes="160px" width="160" height="160" alt="Dr. Rahul Menon" loading="lazy" decoding="async"></span><span class="dp-t"><b>Dr. Rahul Menon</b><small>Paediatric ENT · ₹700</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="arjun" data-spec-in="nose" hidden><span class="ph round"><img class="portrait" src="images/doc-arjun-160.webp" srcset="images/doc-arjun-160.webp 160w, images/doc-arjun-800.webp 800w" sizes="160px" width="160" height="160" alt="Dr. Arjun Venkatesh" loading="lazy" decoding="async"></span><span class="dp-t"><b>Dr. Arjun Venkatesh</b><small>Rhinology · ₹800</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="kavitha" data-spec-in="throat" hidden><span class="ph round"><img class="portrait" src="images/doc-kavitha-160.webp" srcset="images/doc-kavitha-160.webp 160w, images/doc-kavitha-800.webp 800w" sizes="160px" width="160" height="160" alt="Dr. Kavitha Sundaram" loading="lazy" decoding="async"></span><span class="dp-t"><b>Dr. Kavitha Sundaram</b><small>Laryngology · ₹800</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="farhana" data-spec-in="headneck" hidden><span class="ph round"><img class="portrait" src="images/doc-farhana-160.webp" srcset="images/doc-farhana-160.webp 160w, images/doc-farhana-800.webp 800w" sizes="160px" width="160" height="160" alt="Dr. Farhana Iqbal" loading="lazy" decoding="async"></span><span class="dp-t"><b>Dr. Farhana Iqbal</b><small>Head &amp; neck · ₹1,000</small></span></button>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" aria-labelledby="bk-s2">
+              <div class="panel-h"><h3 id="bk-s2">2 · Date and time</h3><span class="mono muted" data-doc-days>Dr. Meera · Mon, Wed, Thu, Fri</span></div>
+              <div class="panel-b bk-dt">
+                <div class="bk-cal">
+                  <div class="bk-cal-h"><b data-month>November 2026</b>
+                    <span class="bk-cal-nav"><button type="button" class="icon-btn sm" aria-label="Previous month" data-mprev><span class="ico flip" aria-hidden="true" style="width:18px;height:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></span></button><button type="button" class="icon-btn sm" aria-label="Next month" data-mnext><span class="ico flip" aria-hidden="true" style="width:18px;height:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></button></span>
+                  </div>
+                  <div class="cal" data-cal role="grid" aria-label="Choose a date"></div>
+                </div>
+                <div class="bk-slots">
+                  <b data-slot-head>Thu, 12 Nov · Evening OPD</b>
+                  <div class="slots" data-slots role="group" aria-label="Available times"></div>
+                  <p class="msg hint"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>Struck-out times are already booked.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" aria-labelledby="bk-s3">
+              <div class="panel-h"><h3 id="bk-s3">3 · Visit details</h3></div>
+              <div class="panel-b bk-stack">
+                <div class="vtype" role="radiogroup" aria-label="Visit mode">
+                  <label class="on"><input class="sr-only" type="radio" name="mode" value="clinic" checked><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 6v4"/><path d="M14 14h-4"/><path d="M14 18h-4"/><path d="M14 8h-4"/><path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"/><path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18"/></svg></span><b>In-clinic visit</b><small>Required for hearing tests</small></label>
+                  <label><input class="sr-only" type="radio" name="mode" value="video"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect width="14" height="12" x="2" y="6" rx="2"/></svg></span><b>Video consultation</b><small>Follow-ups and report reviews</small></label>
+                </div>
+                <div class="form-grid">
+                  <div class="field"><label for="db-for">Booking for</label>
+                    <select class="inp" id="db-for" name="patient" required>
+                      <option value="Sangeetha Prakash">Myself · Sangeetha Prakash</option>
+                      <option value="Arun Prakash">Arun Prakash · Husband</option>
+                      <option value="Diya Prakash">Diya Prakash · Daughter, 9</option>
+                      <option value="Kamala Raman">Kamala Raman · Mother</option>
+                    </select></div>
+                  <div class="field"><label for="db-type">Visit type</label>
+                    <select class="inp" id="db-type" name="visit" required>
+                      <option value="">Choose a visit type</option>
+                      <option value="New consultation">New consultation</option>
+                      <option value="Follow-up" selected>Follow-up</option>
+                      <option value="Report review">Report review</option>
+                      <option value="Hearing test">Hearing test</option>
+                    </select></div>
+                  <div class="field full"><label for="db-note">Note for the doctor</label>
+                    <textarea class="inp" dir="auto" id="db-note" name="note" maxlength="500" placeholder="Symptoms, how long you've had them, medicines you take">Ringing in the left ear is better, but still noticeable at night.</textarea></div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="bk-aside" style="grid-column:span 4">
+            <div class="panel bk-sum">
+              <div class="panel-h"><h3>Summary</h3></div>
+              <div class="panel-b bk-stack">
+                <div class="sum" aria-live="polite">
+                  <div><span>Doctor</span><b data-s-doc>Dr. Meera Raghavan</b></div>
+                  <div><span>Date</span><b data-s-date>Thu, 12 Nov 2026</b></div>
+                  <div><span>Time</span><b class="tnum" data-s-time>17:10</b></div>
+                  <div><span>Visit</span><b data-s-visit>In-clinic follow-up</b></div>
+                  <div><span>Fee</span><b class="tnum" data-s-fee>₹900</b></div>
+                </div>
+                <button class="btn btn-cta btn-lg btn-block" type="submit" data-confirm>Confirm booking</button>
+                <p class="msg hint"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></span>Reminders 24 h and 2 h before, by SMS and WhatsApp.</p>
+                <div class="alert ok-alert" data-booked hidden><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg></span><span><b>Appointment booked</b><span data-booked-txt>Booking ID TRD-24811</span><a class="link" href="dashboard-appointments.html">View my appointments<span class="ico flip" aria-hidden="true" style="width:16px;height:16px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a></span></div>
+              </div>
+            </div>
+          </aside>
+        </form>
+      </main>
+    </div>
+  </div>
+  <div class="app-scrim" data-side-close hidden></div>
+  <nav class="mobile-tabs" aria-label="Portal shortcuts">
+    <a href="dashboard.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg></span>Overview</a>
+    <a href="dashboard-book.html" aria-current="page"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v3"/><path d="M16 2v3"/><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M8 13h.01"/><path d="M12 13h.01"/><path d="M16 13h.01"/><path d="M8 17h.01"/><path d="M12 17h.01"/><path d="M16 17h.01"/></svg></span>Book</a>
+    <a href="dashboard-appointments.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span>Visits</a>
+    <a href="dashboard-prescriptions.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg></span>Medicines</a>
+    <a href="dashboard-reports.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 22h5a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v7"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M3.62 18.8A2.25 2.25 0 1 1 7 15.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a1 1 0 0 1-1.507 0z"/></svg></span>Reports</a>
+  </nav>
+  <dialog class="modal sm" id="dlg-logout" aria-labelledby="dlg-logout-t">
+    <span class="grab" aria-hidden="true"></span>
+    <div class="modal-h"><div class="t"><span class="badge-ic warn"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg></span></span><div><h3 id="dlg-logout-t">Log out of the portal?</h3><p>You'll need your mobile number and password to log back in.</p></div></div><button class="icon-btn close" type="button" aria-label="Close" data-close><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span></button></div>
+    <div class="modal-f"><button class="btn btn-ghost" type="button" data-close>Stay logged in</button><a class="btn btn-cta" href="index.html" data-logout><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg></span>Log out</a></div>
+  </dialog>
+  <dialog class="modal sm" id="dlg-session" aria-labelledby="dlg-session-t">
+    <span class="grab" aria-hidden="true"></span>
+    <div class="modal-h"><div class="t"><span class="badge-ic warn"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg></span></span><div><h3 id="dlg-session-t">Your session has expired</h3><p>For your privacy we log you out after 30 minutes without activity. Any form you were filling in has been saved as a draft.</p></div></div></div>
+    <div class="modal-f"><a class="btn btn-ghost" href="index.html">Go to website</a><a class="btn btn-cta" href="login.html"><span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/></svg></span>Log in again</a></div>
+  </dialog>
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+  <script src="data/site-data.js" defer></script>
+  <script src="js/validation.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/pages/dashboard-book.js" defer></script>
+</body>
+</html>

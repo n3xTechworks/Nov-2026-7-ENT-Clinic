@@ -1,0 +1,11 @@
+/* 404 page */
+main .nf{min-height:62vh;background:radial-gradient(ellipse 60% 55% at 50% 40%,var(--teal-soft),transparent 70%)}
+.nf-in{display:grid;gap:18px;justify-items:center}
+.nf-in h1{font-size:36px;letter-spacing:-.02em}
+.nf .code{font-family:var(--f-display);font-weight:800}
+.nf-lead{max-width:520px;font-size:18px}
+.nf-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;margin-top:18px}
+.nf-links .chip{text-decoration:none;cursor:pointer;transition:border-color .2s,color .2s}
+.nf-links .chip:hover{border-color:var(--teal);color:var(--teal)}
+.nf-links .chip .ico{width:16px;height:16px;color:var(--teal)}
+@media (max-width:560px){.nf-in h1{font-size:28px}.nf-links>span{width:100%}}

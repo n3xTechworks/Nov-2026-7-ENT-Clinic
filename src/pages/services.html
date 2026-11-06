@@ -1,0 +1,81 @@
+---
+title: Services | Tridya ENT Clinic
+description: Twenty-six ear, nose, throat, head and neck and sleep treatments at Tridya ENT Clinic, Coimbatore, with setting, typical time and cost guide.
+nav: services
+css: services
+js: services
+pagehead: true
+crumbs: Services
+h1: Treatments and procedures
+lead: Twenty-six ENT treatments across five specialties. Each row shows whether it is done in the OPD, as day-care, or with an overnight stay.
+---
+    <section class="sec svc-page">
+      <div class="wrap">
+        <div class="svc">
+          <!-- left column: search, filters, specialty index and help stay in view (desktop) while the treatment list scrolls -->
+          <aside class="idx" aria-label="Find a treatment">
+            <div class="filters svc-filters" role="search">
+              <label class="inp svc-search" for="svc-q">{{icon search}}<span class="sr-only">Search treatments</span><input id="svc-q" type="search" placeholder="Search treatments" autocomplete="off" data-svc-search></label>
+              <div class="chip-row" role="group" aria-label="Filter by setting" data-svc-chips>
+                <button class="chip" type="button" aria-pressed="true" data-setting="all">All</button>
+                <button class="chip" type="button" aria-pressed="false" data-setting="opd">OPD</button>
+                <button class="chip" type="button" aria-pressed="false" data-setting="daycare">Day-care</button>
+                <button class="chip" type="button" aria-pressed="false" data-setting="inpatient">Inpatient</button>
+              </div>
+            </div>
+            <p class="svc-status muted" aria-live="polite" data-svc-status>Showing all 26 treatments</p>
+            <nav class="idx-links" aria-label="Jump to a specialty">
+              {{#each specialties}}<a class="{{#if @first}}on{{/if}}" href="#{{anchor}}" data-idx="{{anchor}}">{{label}}<span data-idx-count>{{count_label}}</span></a>{{/each}}
+            </nav>
+          </aside>
+
+          <div class="svc-groups">
+            {{#each specialties}}
+            <div class="grp" id="{{anchor}}" data-grp>
+              <div class="grp-h">
+                <div class="ph">{{img {{photo}} | {{photo_alt}} | (max-width: 560px) 100vw, 240px}}</div>
+                <div class="grp-txt">
+                  <span class="eyebrow" data-grp-count>{{count_text}}</span>
+                  <h2>{{label}}</h2>
+                  <p>{{intro}}</p>
+                </div>
+              </div>
+              <div class="card svc-table">
+                <div class="trow th" aria-hidden="true"><span>Treatment</span><span>What it helps with</span><span>Setting</span><span>Typical time</span><span></span></div>
+                {{#each rows}}<a class="trow" href="{{page}}" data-row data-setting="{{setting_class}}" data-search="{{search}}"><b>{{name}}</b><span class="d">{{helps}}</span><span>{{badge {{setting}}}}</span><span class="tnum">{{time}}</span>{{icon chevron-right 18 flip}}</a>{{/each}}
+              </div>
+            </div>
+            {{/each}}
+            <div class="empty svc-empty" data-svc-empty hidden>
+              <span class="badge-ic">{{icon search}}</span>
+              <h3>No treatments match your search</h3>
+              <p>Try another word, such as “ear”, “snoring” or “thyroid”, or clear the filters.</p>
+              <button class="btn btn-ghost" type="button" data-svc-clear>{{icon rotate-ccw 16}}Clear filters</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt svc-how">
+      <div class="wrap">
+        <div class="sh center">
+          <div class="sh-txt"><span class="eyebrow">How treatment works</span><h2>From first visit to recovery</h2><p>Every procedure starts with a consultation. Nothing is booked for theatre until you and your specialist agree on a plan.</p></div>
+        </div>
+        <div class="cards c4 svc-steps" style="--cols:4;--rows:3" data-stagger>
+          <article class="card sub"><span class="badge-ic">{{icon stethoscope}}</span><h3>Consultation</h3><p>Examination with an endoscope or microscope in the OPD, usually in under 30 minutes.</p></article>
+          <article class="card sub"><span class="badge-ic">{{icon scan}}</span><h3>Tests on site</h3><p>Hearing tests, endoscopy, ultrasound and allergy panels are done in the same building.</p></article>
+          <article class="card sub"><span class="badge-ic">{{icon wallet}}</span><h3>Clear estimate</h3><p>A written cost estimate in ₹ and cashless pre-authorisation with most insurers.</p></article>
+          <article class="card sub"><span class="badge-ic">{{icon calendar-check}}</span><h3>Follow-up booked</h3><p>Review visits are added to your patient portal, with video follow-ups where suitable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="cta-band" data-reveal>
+          <div style="display:grid;gap:14px"><span class="eyebrow">Appointments</span><h2>Ready to see a specialist?</h2><p>Book a consultation first. Procedures are planned only after examination.</p></div>
+          <div class="acts"><a class="tel" href="tel:+914222456780">+91 422 245 6780</a><a class="btn btn-cta btn-lg" href="book.html">{{icon calendar-days}}Book appointment</a></div>
+        </div>
+      </div>
+    </section>

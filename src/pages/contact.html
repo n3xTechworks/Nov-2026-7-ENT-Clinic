@@ -1,0 +1,110 @@
+---
+title: Contact | Tridya ENT Clinic
+description: Call, WhatsApp, email or visit Tridya ENT Clinic at 42 Race Course Road, Coimbatore. OPD hours, directions, map and answers to common questions.
+nav: contact
+css: contact
+js: contact
+pagehead: true
+crumbs: Contact
+h1: Contact and directions
+lead: Call, message or visit us. For medical emergencies, use the 24×7 ENT line.
+---
+    <section class="sec ct-sec">
+      <div class="wrap grid">
+        <div class="ct-side" style="grid-column: span 5;" data-stagger>
+          <a class="card ccard lift" href="tel:+914222456780">{{icon phone}}<b>Call the front desk</b><p>Mon–Sat, 08:30–20:30</p><span class="v">+91 422 245 6780</span></a>
+          <a class="card ccard lift" href="https://wa.me/919894022110" target="_blank" rel="noopener">{{icon message-circle}}<b>WhatsApp</b><p>Replies within 30 minutes</p><span class="v">+91 98940 22110</span></a>
+          <a class="card ccard lift" href="mailto:care@tridyaent.in">{{icon mail}}<b>Email</b><p>For reports, billing and records</p><span class="v">care@tridyaent.in</span></a>
+          <button class="card ccard lift ct-emg" type="button" data-open-dialog="dlg-emergency">{{icon siren}}<b>ENT emergency</b><p>Nosebleeds, foreign bodies, sudden hearing loss</p><span class="v">24×7 · +91 422 245 6799</span></button>
+          <div class="card ct-hours">
+            <table class="table">
+              <caption class="sr-only">OPD hours</caption>
+              <thead><tr><th scope="col">OPD hours</th><th scope="col">Morning</th><th scope="col">Evening</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Mon – Fri</th><td class="tnum">09:00–13:00</td><td class="tnum">16:30–20:00</td></tr>
+                <tr><th scope="row">Saturday</th><td class="tnum">09:00–13:00</td><td class="tnum">16:30–19:00</td></tr>
+                <tr><th scope="row">Sunday</th><td colspan="2" class="muted">Emergency only</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="ct-form-col" style="grid-column: span 7;">
+          <form class="card form-card" id="ct-form" data-validate novalidate data-no-reset data-reveal>
+            <div class="ct-form-h"><h2>Send us a message</h2><p class="muted">We reply within one working day. Do not use this form for emergencies.</p></div>
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Full name <i>*</i></label><input class="inp" id="c-name" name="name" autocomplete="name" placeholder="e.g. Ramesh Kumar" required></div>
+              <div class="field"><label for="c-phone">Mobile number <i>*</i></label><div class="inp"><span class="pre">+91</span><input id="c-phone" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="98430 12345" required></div></div>
+              <div class="field full"><label for="c-email">Email <i>*</i></label><input class="inp" id="c-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required></div>
+              <div class="field"><label for="c-topic">Topic</label>
+                <select class="inp" id="c-topic" name="topic">
+                  <option>Appointment query</option><option>Reports and records</option><option>Billing and insurance</option><option>Hearing aids</option><option>Feedback</option><option>Something else</option>
+                </select></div>
+              <div class="field"><label for="c-doc">Preferred doctor</label>
+                <select class="inp" id="c-doc" name="doctor">
+                  <option value="">Any specialist</option>
+                  {{#each doctors}}<option value="{{slug}}">{{name}}</option>{{/each}}
+                </select></div>
+              <div class="field full"><label for="c-msg">Message <i>*</i></label><textarea class="inp" id="c-msg" name="message" rows="4" maxlength="1000" placeholder="How can we help? e.g. Can a hearing test be done on the same day as the consultation?" required></textarea><span class="msg hint ct-count" aria-live="polite"><span id="c-count">0</span> / 1000 characters</span></div>
+              <label class="full check"><input type="checkbox" name="consent" id="c-consent" required>I agree to be contacted about my enquiry.</label>
+            </div>
+            <div class="ct-form-f">
+              <p class="msg err" id="ct-summary" role="alert" hidden>{{icon circle-alert 16}}<span></span></p>
+              <button class="btn btn-cta btn-lg" type="submit" id="ct-send">{{icon send 18 flip}}Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt" id="location">
+      <div class="wrap">
+        <div class="sh">
+          <div class="sh-txt"><span class="eyebrow">Location</span><h2>Find us on Race Course Road</h2><p>Five minutes from Coimbatore Junction. Basement parking and step-free access.</p></div>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=42+Race+Course+Road+Coimbatore+641018" target="_blank" rel="noopener">{{icon navigation 18}}Get directions</a>
+        </div>
+        <div class="grid ct-loc">
+          <div class="map-embed ct-map" style="grid-column: span 8;" data-reveal>
+            <iframe src="https://www.google.com/maps?q=42+Race+Course+Road,+Coimbatore,+Tamil+Nadu+641018&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Tridya ENT Clinic, 42 Race Course Road, Coimbatore"></iframe>
+          </div>
+          <div class="card ct-visit" style="grid-column: span 4;" data-reveal>
+            <div class="ph ct-photo">{{img contact-front | Tridya ENT Clinic reception desk under a lit reception sign | (max-width: 900px) 100vw, 400px}}</div>
+            <div class="ct-visit-b">
+              <h3>Tridya ENT Clinic</h3>
+              <p class="muted">42 Race Course Road, Coimbatore, Tamil Nadu 641018</p>
+              <ul class="ct-how">
+                <li>{{icon parking 18}}<span>Free basement parking for 30 cars, lift to all floors</span></li>
+                <li>{{icon train 18}}<span>2.5 km from Coimbatore Junction, about 5 minutes by auto</span></li>
+                <li>{{icon accessibility 18}}<span>Step-free entrance and wheelchair at reception</span></li>
+              </ul>
+              <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=42+Race+Course+Road+Coimbatore+641018" target="_blank" rel="noopener">Open in Google Maps{{icon arrow-right 16 flip}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="faq">
+      <div class="wrap">
+        <div class="sh center"><div class="sh-txt"><span class="eyebrow">FAQ</span><h2>Frequently asked questions</h2><p>Can't find your answer? Call the front desk on <a href="tel:+914222456780">+91 422 245 6780</a>.</p></div></div>
+        <div class="faq center-list" data-accordion="single" data-reveal>
+          <details open><summary>Do I need a referral to see a specialist?{{icon plus}}</summary><p>No. You can book any of our ENT specialists directly. Bring any previous reports or scans you have.</p></details>
+          <details><summary>How long does a first visit take?{{icon plus}}</summary><p>Plan for 45–60 minutes, including registration and any tests such as endoscopy or a hearing test.</p></details>
+          <details><summary>Is there parking at the clinic?{{icon plus}}</summary><p>Yes, free parking for 30 cars in the basement, with a lift to all floors.</p></details>
+          <details><summary>Which insurance policies do you accept?{{icon plus}}</summary><p>We are empanelled with 30+ insurers and TPAs for cashless day-care procedures. Call the desk with your policy number to check.</p></details>
+          <details><summary>How do I get my reports?{{icon plus}}</summary><p>Reports are uploaded to your <a href="dashboard-reports.html">patient portal</a> the same day. You can also request printed copies at the front desk.</p></details>
+          <details><summary>Can I reschedule or cancel online?{{icon plus}}</summary><p>Yes. <a href="login.html">Log in</a> to the patient portal and open Appointments, or call the desk at least 2 hours before your slot.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="modal sm" id="dlg-sent" aria-labelledby="dlg-sent-t">
+      <span class="grab" aria-hidden="true"></span>
+      <div class="modal-h"><div class="t"><span class="badge-ic ok">{{icon send 22 flip}}</span><div><h3 id="dlg-sent-t">Message sent</h3><p>Reply within one working day</p></div></div>
+        <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+      <div class="modal-b">
+        <p class="muted" id="ct-sent-text">Thanks. Your message has reached our front desk. We'll reply within one working day.</p>
+        <div class="sum"><div><span>Reference</span><b class="tnum" id="ct-ref">ENQ-2611-219</b></div><div><span>Topic</span><b id="ct-topic">Appointment query</b></div></div>
+      </div>
+      <div class="modal-f"><button class="btn btn-ghost" type="button" data-close data-ct-again>Send another message</button><a class="btn btn-cta" href="book.html">{{icon calendar-days}}Book appointment</a></div>
+    </dialog>

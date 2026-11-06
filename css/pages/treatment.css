@@ -1,0 +1,75 @@
+/* Treatment detail template (d3_03 Service detail · FESS) */
+.tx-head .tx-badge{margin-bottom:14px;justify-self:start}
+.tx-head .wrap{display:grid;justify-items:start}
+.tx-head .crumbs{margin-bottom:18px}
+.tx-body{padding-top:48px}
+.tx-facts{margin-top:0;background:var(--surface)}
+.tx-facts div{flex:1 1 0;min-width:150px}
+.tx-grid{margin-top:48px;align-items:start}
+.tx-main{min-width:0}
+.tx-main>h2{scroll-margin-top:96px}
+.tx-photo{border-radius:var(--r-card);overflow:hidden}
+.tx-who{gap:10px}
+.tx-risks{padding:22px 24px;display:grid;gap:16px}
+.tx-risks ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.tx-risks li,.tx-check li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--ink-2)}
+.tx-risks li .ico{color:var(--teal);margin-top:3px;flex:none}
+.tx-note{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--ink-2);background:var(--teal-soft);border-radius:10px;padding:12px 14px}
+.tx-note .ico{color:var(--teal-deep);flex:none;margin-top:3px}
+[data-theme="dark"] .tx-note .ico{color:var(--teal)}
+.tx-cost{padding:22px 24px;display:grid;gap:16px}
+.tx-cost-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tx-cost-grid>div{padding:14px 16px;display:grid;gap:6px;align-content:start;border-inline-end:1px solid var(--line)}
+.tx-cost-grid>div:last-child{border-inline-end:0}
+.tx-cost-grid dt{font:500 11.5px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.tx-cost-grid dd{margin:0;font-weight:600;color:var(--ink);font-size:16px}
+.tx-cost p{font-size:15.5px}
+.tx-aside .mini-doc{color:var(--ink);border-radius:12px;padding:4px;margin:-4px;transition:background .15s}
+.tx-aside .mini-doc:hover{background:var(--sunk)}
+.tx-aside .mini-doc .ph{width:52px;height:52px;flex:none;border-radius:50%;overflow:hidden}
+.tx-aside .mini-doc b{display:block}
+.tx-aside .btn-ghost{justify-self:stretch}
+.tx-related .card.sub{padding-top:24px}
+.tx-related .card.sub h3{font-size:21px}
+.tx-check{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.tx-check li .ico{color:var(--ok);flex:none;margin-top:2px}
+@media (max-width:1000px){
+  .tx-grid>*{grid-column:1/-1!important}
+  .tx-aside .aside{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+  .tx-aside .aside>.card:first-child{grid-column:1/-1}
+}
+@media (max-width:760px){
+  .tx-cost-grid{grid-template-columns:1fr 1fr}
+  .tx-cost-grid>div:nth-child(2){border-inline-end:0}
+  .tx-cost-grid>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .tx-aside .aside{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .tx-body{padding-top:32px}
+  .tx-grid{margin-top:32px}
+  .tx-facts div{min-width:0;flex:1 1 40%;padding:14px 16px}
+  .tx-facts b{overflow-wrap:anywhere;font-size:15px}
+}
+@media print{
+  body *{visibility:hidden!important}
+  #dlg-prep,#dlg-prep *{visibility:visible!important}
+  #dlg-prep{position:absolute;inset:0 auto auto 0;transform:none;box-shadow:none;border:0;max-width:none;width:100%}
+  #dlg-prep .modal-f,#dlg-prep .close{display:none}
+}
+/* .pill.opd collides with the hero ".opd" strip class in site.css: reset it here */
+span.pill.opd{display:inline-flex;width:auto;margin:0;padding:0 11px;border:0;gap:6px;justify-content:center;align-items:center;font:600 12.5px/1 var(--f-body);color:var(--teal-deep);background:var(--teal-soft);flex-wrap:nowrap}
+[data-theme="dark"] span.pill.opd{color:var(--teal)}
+/* recovery timeline: share rows so titles and notes line up */
+@media (min-width:561px){
+  .tl{grid-template-rows:auto auto 1fr}
+  .tl>div{grid-row:span 3;display:grid;grid-template-rows:subgrid;row-gap:6px;align-content:start}
+}
+/* only the navbar is sticky */
+.tx-aside .aside{position:static}
+@media (max-width:560px){
+  .tx-head .tx-badge{margin-bottom:10px}
+  .tx-head h1{font-size:30px}
+  .page-head.tx-head{padding-block:28px 24px}
+  .tx-head p.lead{font-size:16px}
+  .tx-head .crumbs{margin-bottom:12px}
+}

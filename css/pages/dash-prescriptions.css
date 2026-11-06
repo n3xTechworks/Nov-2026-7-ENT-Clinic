@@ -1,0 +1,91 @@
+/* Portal: Prescriptions (d3_19) + preview dialog (d3_37) */
+.dbody .panel-h h2{font-size:17px;line-height:1.3}
+.rx-side{grid-column:span 4;overflow:hidden;align-self:start}
+.rx-main{grid-column:span 8;min-width:0}
+.rx-list a{color:var(--ink);transition:background-color .15s,border-color .15s}
+.rx-list a:last-child{border-bottom:0}
+.rx-list a:hover{background:color-mix(in srgb,var(--sunk) 60%,transparent)}
+.rx-list a b{color:var(--teal);font:600 17px/1.35 var(--f-display);letter-spacing:-.01em}
+.rx-list a .mono{font-size:12px}
+.rx-head h2{font-size:24px;line-height:1.25}
+.rx-acts{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.rx-body{display:grid;gap:22px}
+.rx-legend{display:flex;gap:16px;align-items:center}
+.rx-legend b{color:var(--ink)}
+.rx-table td b{font-weight:600}
+.rx-table small{display:block;color:var(--ink-2);font-size:14px}
+.rx-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.rx-card{padding:20px;display:grid;gap:8px;align-content:start}
+.rx-card h3{font-size:16px}
+.rx-advice{margin:0;padding-inline-start:18px;color:var(--ink-2);display:grid;gap:6px}
+.rx-card .link{justify-self:start;margin-top:4px}
+.rx-main.swap .rx-head,.rx-main.swap .rx-body{animation:rx-in .3s ease-out}
+@keyframes rx-in{from{opacity:0;transform:translateY(6px)}}
+
+/* preview */
+.rx-paper{background:var(--sunk);border-radius:12px;padding:24px;max-height:min(560px,calc(100dvh - 260px));overflow:auto}
+.letter{unicode-bidi:plaintext}
+.letter>*,.letter .lh-logo>div{min-width:0}
+.letter .lh-sub{overflow-wrap:anywhere}
+.letter .lh-logo{display:flex;gap:12px;align-items:center}
+.letter .lh-logo .mark{width:40px;height:40px;border-radius:10px;background:#0A6B66;color:#fff;display:grid;place-items:center;flex:none}
+.letter .lh-logo .mark svg{width:24px;height:24px}
+.letter .lh-name{font:600 18px var(--f-display);color:#14302F}
+.letter .lh-sub{font-size:12px;color:#5A6F6D}
+.letter .lh-ref{text-align:end;font:500 11px/1.5 var(--f-mono);color:#5A6F6D}
+.letter .pt{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;font-size:13px}
+.letter .pt span{color:#5A6F6D}
+.letter .rx{font:600 30px var(--f-display);color:#0A6B66}
+.letter .sign{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-top:20px;flex-wrap:wrap}
+.letter .sign .line{width:180px;border-bottom:1px solid #9FB3B0;height:36px;margin-inline:auto}
+.letter .review{font-size:12.5px;color:#405856}
+.letter .sig{text-align:center;font-size:12.5px}
+.letter .sig span{color:#5A6F6D}
+.rx-print{display:none}
+
+/* 1024: keep the list beside the detail */
+@media (min-width:901px) and (max-width:1100px){
+  .rx-page .rx-side{grid-column:span 4!important}.rx-page .rx-main{grid-column:span 8!important}
+  .rx-list a{padding:14px 16px}.rx-list a b{font-size:16px}
+  .rx-cards{grid-template-columns:1fr}
+}
+@media (max-width:900px){.rx-page>*{grid-column:1/-1!important}}
+
+/* tables become stacked cards */
+@media (max-width:900px){
+  .st-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .st-table,.st-table tbody,.st-table tr,.st-table td{display:block;width:100%}
+  .st-table tr{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .st-table tr:last-child{border-bottom:0}
+  .st-table td{border:0!important;padding:4px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:end}
+  .st-table td[data-label]::before{content:attr(data-label);font:600 12px var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);text-align:start;flex:none}
+  .rx-table td:first-child{display:block;text-align:start;padding-bottom:6px}
+  .rx-cards{grid-template-columns:1fr}
+  .rx-head h2{font-size:21px}
+}
+@media (max-width:560px){
+  dialog.modal.lg{width:100%}
+  .rx-acts{width:100%}.rx-acts .btn{flex:1}
+  .rx-paper{padding:10px;max-height:none}
+  .letter{padding:20px 16px;font-size:13px}
+  .letter .lh{flex-wrap:wrap;gap:10px}
+  .letter .pt{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .letter table,.letter tbody,.letter tr,.letter td{display:block;width:100%}
+  .letter thead{display:none}
+  .letter tr{padding:8px 0;border-bottom:1px solid #EEF4F3}
+  .letter td{border:0;padding:2px 0}
+  .letter td[data-label]::before{content:attr(data-label) ": ";color:#5A6F6D}
+}
+
+/* print only the prescription */
+@media print{
+  body *{visibility:hidden!important}
+  .rx-print,.rx-print *{visibility:visible!important}
+  .rx-print{display:block!important;position:absolute;inset:0 auto auto 0;width:100%}
+  .rx-print .letter{box-shadow:none;padding:0}
+  .dash{display:block}
+}
+[dir="rtl"] .table td.tnum{unicode-bidi:plaintext}
+[dir="rtl"] .rx-head-t>*,[dir="rtl"] .rx-list a>*,[dir="rtl"] .rx-card>*{text-align:right}
+.dose{direction:ltr}
+.rx-table td:nth-child(2),.rx-table td:nth-child(4){white-space:nowrap}

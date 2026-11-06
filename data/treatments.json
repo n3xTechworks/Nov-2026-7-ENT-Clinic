@@ -1,0 +1,4419 @@
+{
+  "specialties": [
+    {
+      "key": "ear",
+      "label": "Ear",
+      "intro": "Hearing, balance and infections of the outer, middle and inner ear.",
+      "count": 7,
+      "anchor": "ear",
+      "photo": "svc-ear",
+      "photo_alt": "Silicone model of a human ear on a white background",
+      "count_label": "07",
+      "count_text": "7 treatments",
+      "rows": [
+        {
+          "slug": "microsuction",
+          "name": "Microsuction ear cleaning",
+          "helps": "Wax and debris removal under a microscope",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "15 min",
+          "page": "treatment-microsuction.html",
+          "search": "microsuction ear cleaning wax and debris removal under a microscope microsuction blocked or muffled ear from impacted wax wax that did not clear with drops, or a history of eardrum perforation ear canal debris or discharge from an outer-ear infection (otitis externa) hearing aid users who need regular canal cleaning anyone advised against syringing or water irrigation"
+        },
+        {
+          "slug": "myringoplasty",
+          "name": "Myringoplasty",
+          "helps": "Repair of a perforated eardrum",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-myringoplasty.html",
+          "search": "myringoplasty repair of a perforated eardrum myringoplasty a dry eardrum perforation that has not healed after 3 months repeated ear discharge whenever water enters the ear mild hearing loss caused by the hole in the eardrum people who want to swim or bathe without ear plugs"
+        },
+        {
+          "slug": "tympanoplasty",
+          "name": "Tympanoplasty & mastoidectomy",
+          "helps": "Chronic ear infection and cholesteatoma surgery",
+          "setting": "Inpatient",
+          "setting_class": "inpatient",
+          "time": "1 night",
+          "page": "treatment-tympanoplasty.html",
+          "search": "tympanoplasty & mastoidectomy chronic ear infection and cholesteatoma surgery tympanoplasty chronic, foul-smelling ear discharge that keeps returning cholesteatoma (a skin cyst that erodes bone) seen on examination or ct damaged hearing bones causing conductive hearing loss ear disease that has caused dizziness or facial weakness"
+        },
+        {
+          "slug": "grommet",
+          "name": "Grommet insertion",
+          "helps": "Fluid behind the eardrum, mostly in children",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-grommet.html",
+          "search": "grommet insertion fluid behind the eardrum, mostly in children grommets glue ear in both ears lasting more than 3 months with hearing loss speech delay or school difficulties linked to poor hearing repeated middle-ear infections, several a year adults with persistent fluid after a cold or flight"
+        },
+        {
+          "slug": "hearing-aid",
+          "name": "Hearing aid trial & fitting",
+          "helps": "Digital hearing aids with 7-day home trial",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "3 visits",
+          "page": "treatment-hearing-aid.html",
+          "search": "hearing aid trial & fitting digital hearing aids with 7-day home trial hearing aids difficulty following conversation, especially in noisy places turning the tv up louder than others like age-related or noise-induced hearing loss confirmed on an audiogram existing hearing aid users who need a review or upgrade"
+        },
+        {
+          "slug": "vertigo",
+          "name": "Vertigo assessment & repositioning",
+          "helps": "BPPV diagnosis and Epley manoeuvre",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "40 min",
+          "page": "treatment-vertigo.html",
+          "search": "vertigo assessment & repositioning bppv diagnosis and epley manoeuvre vertigo brief spinning when turning in bed, lying down or looking up dizziness with ringing, fullness or hearing change in one ear recurring attacks of vertigo lasting minutes to hours imbalance after an ear infection or head injury"
+        },
+        {
+          "slug": "cochlear",
+          "name": "Cochlear implant evaluation",
+          "helps": "Candidacy tests for severe to profound loss",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "2 visits",
+          "page": "treatment-cochlear.html",
+          "search": "cochlear implant evaluation candidacy tests for severe to profound loss cochlear implants children born with profound hearing loss, ideally before age 2 children and adults who get little benefit from strong hearing aids adults who have lost hearing suddenly or over time in both ears families who want to know about government implant schemes"
+        }
+      ]
+    },
+    {
+      "key": "nose",
+      "label": "Nose & sinus",
+      "intro": "Breathing, sinus infections, allergy and smell.",
+      "count": 6,
+      "anchor": "nose",
+      "photo": "svc-nose",
+      "photo_alt": "Clinician in scrubs holding a slim nasal endoscope",
+      "count_label": "06",
+      "count_text": "6 treatments",
+      "rows": [
+        {
+          "slug": "fess",
+          "name": "Endoscopic sinus surgery (FESS)",
+          "helps": "Chronic sinusitis and polyps not settling with medicines",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day / 1 night",
+          "page": "treatment-fess.html",
+          "search": "endoscopic sinus surgery (fess) chronic sinusitis and polyps not settling with medicines endoscopic sinus surgery blocked nose and facial pressure for more than 12 weeks nasal polyps that return after steroid sprays repeated sinus infections, four or more a year loss of smell caused by sinus disease"
+        },
+        {
+          "slug": "septoplasty",
+          "name": "Septoplasty",
+          "helps": "Straightening a deviated nasal septum",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-septoplasty.html",
+          "search": "septoplasty straightening a deviated nasal septum septoplasty blocked nose on one or both sides that does not clear with sprays mouth breathing, dry mouth or snoring caused by a bent septum recurrent sinus infections linked to poor drainage nosebleeds from a sharp septal spur"
+        },
+        {
+          "slug": "turbinate",
+          "name": "Turbinate reduction",
+          "helps": "Persistent blocked nose from enlarged turbinates",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-turbinate.html",
+          "search": "turbinate reduction persistent blocked nose from enlarged turbinates turbinate reduction blocked nose that alternates sides or worsens lying down allergic rhinitis with swelling that persists despite sprays people dependent on decongestant sprays (rhinitis medicamentosa) patients having septoplasty who also have large turbinates"
+        },
+        {
+          "slug": "allergy",
+          "name": "Allergy testing & immunotherapy",
+          "helps": "Skin-prick panel and long-term desensitisation",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "45 min",
+          "page": "treatment-allergy.html",
+          "search": "allergy testing & immunotherapy skin-prick panel and long-term desensitisation allergy testing sneezing, runny or itchy nose for most of the year seasonal symptoms when grasses or parthenium pollinate allergic rhinitis with asthma or eczema people who want to reduce long-term reliance on tablets and sprays"
+        },
+        {
+          "slug": "nosebleed",
+          "name": "Nosebleed management",
+          "helps": "Cautery and packing for recurrent bleeds",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "30 min",
+          "page": "treatment-nosebleed.html",
+          "search": "nosebleed management cautery and packing for recurrent bleeds nosebleeds repeated nosebleeds from the same side children with frequent bleeds, often from scratching or dry air adults on blood thinners who bleed easily anyone with a heavy nosebleed that needed hospital packing"
+        },
+        {
+          "slug": "smell",
+          "name": "Smell disorder clinic",
+          "helps": "Testing and treatment for loss of smell",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "45 min",
+          "page": "treatment-smell.html",
+          "search": "smell disorder clinic testing and treatment for loss of smell smell clinic loss of smell after a viral infection, including covid-19 reduced smell with nasal polyps or chronic sinusitis distorted or unpleasant smells (parosmia) smell change after head injury"
+        }
+      ]
+    },
+    {
+      "key": "throat",
+      "label": "Throat & voice",
+      "intro": "Tonsils, voice box, swallowing and reflux.",
+      "count": 6,
+      "anchor": "throat",
+      "photo": "svc-throat",
+      "photo_alt": "Clinician in a surgical gown holding a flexible endoscope",
+      "count_label": "06",
+      "count_text": "6 treatments",
+      "rows": [
+        {
+          "slug": "tonsillectomy",
+          "name": "Tonsillectomy (coblation)",
+          "helps": "Recurrent tonsillitis and enlarged tonsils",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-tonsillectomy.html",
+          "search": "tonsillectomy (coblation) recurrent tonsillitis and enlarged tonsils tonsillectomy seven or more throat infections in one year, or five a year for two years repeated quinsy (abscess beside the tonsil) large tonsils causing snoring or pauses in breathing during sleep tonsil stones or one-sided tonsil enlargement needing examination"
+        },
+        {
+          "slug": "adenoidectomy",
+          "name": "Adenoidectomy",
+          "helps": "Mouth breathing and snoring in children",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-adenoidectomy.html",
+          "search": "adenoidectomy mouth breathing and snoring in children adenoidectomy children who breathe through the mouth day and night loud snoring or pauses in breathing during sleep glue ear or repeated ear infections linked to large adenoids persistent nasal discharge despite medical treatment"
+        },
+        {
+          "slug": "microlaryngeal",
+          "name": "Microlaryngeal surgery",
+          "helps": "Vocal cord nodules, polyps and cysts",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-microlaryngeal.html",
+          "search": "microlaryngeal surgery vocal cord nodules, polyps and cysts microlaryngeal surgery hoarseness for more than 3 weeks with a lesion seen on the vocal cords vocal polyps or cysts that have not improved with voice therapy teachers, singers and speakers whose voice limits their work white patches (leukoplakia) on the vocal cords that need a biopsy"
+        },
+        {
+          "slug": "voice-therapy",
+          "name": "Voice therapy",
+          "helps": "Sessions with a speech-language pathologist",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "6–8 sessions",
+          "page": "treatment-voice-therapy.html",
+          "search": "voice therapy sessions with a speech-language pathologist voice therapy teachers, call-centre staff, singers and others who use their voice all day vocal nodules or muscle-tension dysphonia before and after vocal cord surgery voice changes after a long illness or intubation"
+        },
+        {
+          "slug": "fees",
+          "name": "Swallowing assessment (FEES)",
+          "helps": "Endoscopic check of how you swallow",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "30 min",
+          "page": "treatment-fees.html",
+          "search": "swallowing assessment (fees) endoscopic check of how you swallow swallowing assessment coughing or choking when eating or drinking food sticking in the throat swallowing problems after a stroke or with parkinson's disease weight loss or chest infections that might be caused by aspiration"
+        },
+        {
+          "slug": "reflux",
+          "name": "Reflux (LPR) clinic",
+          "helps": "Throat-clearing, globus and chronic cough",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "30 min",
+          "page": "treatment-reflux.html",
+          "search": "reflux (lpr) clinic throat-clearing, globus and chronic cough reflux clinic constant throat clearing or excess mucus in the throat a lump-in-the-throat feeling (globus) chronic cough or morning hoarseness sour taste or burning throat, with or without heartburn"
+        }
+      ]
+    },
+    {
+      "key": "headneck",
+      "label": "Head & neck",
+      "intro": "Thyroid, salivary glands and neck lumps.",
+      "count": 4,
+      "anchor": "head-neck",
+      "photo": "svc-headneck",
+      "photo_alt": "Gloved hand holding an ultrasound probe at the scanner's control panel",
+      "count_label": "04",
+      "count_text": "4 treatments",
+      "rows": [
+        {
+          "slug": "neck-lump",
+          "name": "Neck lump evaluation",
+          "helps": "Ultrasound and FNAC on the same day",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "1 visit",
+          "page": "treatment-neck-lump.html",
+          "search": "neck lump evaluation ultrasound and fnac on the same day neck lump evaluation a lump in the neck present for more than 3 weeks a lump with hoarseness, difficulty swallowing or weight loss swelling in the thyroid or salivary gland area lymph nodes that have grown after an infection settled"
+        },
+        {
+          "slug": "thyroid",
+          "name": "Thyroidectomy",
+          "helps": "Thyroid nodules and goitre",
+          "setting": "Inpatient",
+          "setting_class": "inpatient",
+          "time": "2 nights",
+          "page": "treatment-thyroid.html",
+          "search": "thyroidectomy thyroid nodules and goitre thyroidectomy thyroid nodules that are suspicious or cancerous on fnac large goitre causing pressure, breathing or swallowing trouble overactive thyroid not controlled with medicines nodules that keep growing on follow-up scans"
+        },
+        {
+          "slug": "salivary",
+          "name": "Salivary gland surgery",
+          "helps": "Parotid and submandibular swellings",
+          "setting": "Inpatient",
+          "setting_class": "inpatient",
+          "time": "1–2 nights",
+          "page": "treatment-salivary.html",
+          "search": "salivary gland surgery parotid and submandibular swellings salivary gland surgery a lump in front of the ear or under the jaw, usually a benign tumour recurrent painful swelling with meals from stones chronic infection of a salivary gland tumours that need removal for diagnosis"
+        },
+        {
+          "slug": "cancer-screening",
+          "name": "Head & neck cancer screening",
+          "helps": "Oral, throat and voice-box check",
+          "setting": "OPD",
+          "setting_class": "opd",
+          "time": "45 min",
+          "page": "treatment-cancer-screening.html",
+          "search": "head & neck cancer screening oral, throat and voice-box check cancer screening current or former users of tobacco, gutka, paan or areca nut regular alcohol use, especially with smoking a mouth ulcer, white or red patch lasting more than 2 weeks hoarseness, ear pain or difficulty swallowing lasting more than 3 weeks"
+        }
+      ]
+    },
+    {
+      "key": "sleep",
+      "label": "Sleep & snoring",
+      "intro": "Snoring and obstructive sleep apnoea.",
+      "count": 3,
+      "anchor": "sleep",
+      "photo": "svc-sleep",
+      "photo_alt": "Pulse oximeter clipped on a man's finger beside a sleep questionnaire",
+      "count_label": "03",
+      "count_text": "3 treatments",
+      "rows": [
+        {
+          "slug": "sleep-study",
+          "name": "Home sleep study",
+          "helps": "Overnight test in your own bed",
+          "setting": "Home",
+          "setting_class": "home",
+          "time": "1 night",
+          "page": "treatment-sleep-study.html",
+          "search": "home sleep study overnight test in your own bed home sleep study loud snoring with pauses in breathing noticed by a partner daytime sleepiness, morning headaches or poor concentration high blood pressure, diabetes or obesity with snoring before snoring or airway surgery, to measure severity"
+        },
+        {
+          "slug": "dise",
+          "name": "Drug-induced sleep endoscopy",
+          "helps": "Finds the exact site of airway collapse",
+          "setting": "Day-care",
+          "setting_class": "daycare",
+          "time": "Same day",
+          "page": "treatment-dise.html",
+          "search": "drug-induced sleep endoscopy finds the exact site of airway collapse sleep endoscopy (dise) confirmed sleep apnoea when you cannot tolerate cpap planning snoring or airway surgery considering an oral appliance or positional therapy persistent apnoea after previous surgery"
+        },
+        {
+          "slug": "airway",
+          "name": "Palate & airway surgery",
+          "helps": "When CPAP is not tolerated",
+          "setting": "Inpatient",
+          "setting_class": "inpatient",
+          "time": "1 night",
+          "page": "treatment-airway.html",
+          "search": "palate & airway surgery when cpap is not tolerated palate & airway surgery obstructive sleep apnoea when cpap is not tolerated loud snoring affecting a partner, with collapse at the palate large tonsils with sleep apnoea in adults nasal blockage that prevents cpap use"
+        }
+      ]
+    }
+  ],
+  "treatments": [
+    {
+      "slug": "microsuction",
+      "name": "Microsuction ear cleaning",
+      "short": "Microsuction",
+      "specialty": "ear",
+      "specialty_label": "Ear",
+      "setting": "OPD",
+      "time": "15 min",
+      "helps": "Wax and debris removal under a microscope",
+      "summary": "Gentle removal of impacted wax, debris or discharge using a fine suction tip under an operating microscope. No water, no syringing and no anaesthetic.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "10–20 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "None needed"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD room"
+        },
+        {
+          "k": "Back to work",
+          "v": "Same day"
+        },
+        {
+          "k": "Insurance",
+          "v": "OPD cover, if included"
+        }
+      ],
+      "who": [
+        "Blocked or muffled ear from impacted wax",
+        "Wax that did not clear with drops, or a history of eardrum perforation",
+        "Ear canal debris or discharge from an outer-ear infection (otitis externa)",
+        "Hearing aid users who need regular canal cleaning",
+        "Anyone advised against syringing or water irrigation"
+      ],
+      "steps": [
+        {
+          "t": "Quick history",
+          "d": "We ask about pain, discharge, past ear surgery and any eardrum hole, then look in with an otoscope."
+        },
+        {
+          "t": "Softening, if needed",
+          "d": "Very hard wax may need olive-oil or sodium-bicarbonate drops for 3–5 days before the visit."
+        },
+        {
+          "t": "Microsuction",
+          "d": "You lie on the couch while the doctor removes the wax under the microscope. You will hear a loud hissing sound, but it should not hurt."
+        },
+        {
+          "t": "Check and advice",
+          "d": "We examine the cleaned canal and eardrum, and book a hearing test if your hearing still feels reduced."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Minute 0",
+          "t": "Clearer hearing",
+          "d": "Most people notice the change at once"
+        },
+        {
+          "when": "First hour",
+          "t": "Mild dizziness",
+          "d": "Brief light-headedness can occur and settles"
+        },
+        {
+          "when": "Day 1",
+          "t": "Normal routine",
+          "d": "Bathing and work as usual"
+        },
+        {
+          "when": "Week 1",
+          "t": "Keep it dry",
+          "d": "Only if the canal was infected or inflamed"
+        },
+        {
+          "when": "6–12 months",
+          "t": "Repeat if needed",
+          "d": "Some ears make wax faster than others"
+        }
+      ],
+      "risks": [
+        "Brief dizziness or a loud noise sensation during suction",
+        "Minor scratch or small bleed from the canal skin",
+        "Rarely, temporary ringing (tinnitus) after the clean",
+        "Eardrum injury is very rare under direct microscope view"
+      ],
+      "faq": [
+        {
+          "q": "Is microsuction better than ear syringing?",
+          "a": "It is safer for most people. The doctor sees the canal throughout, so there is no water pressure on the eardrum and it can be used even if you have a perforation."
+        },
+        {
+          "q": "Does it hurt?",
+          "a": "It is usually painless. Some people find the noise loud or feel a cool draught; we pause whenever you ask."
+        },
+        {
+          "q": "Should I use cotton buds afterwards?",
+          "a": "No. Buds push wax deeper and can scratch the canal. Clean only the outer ear with a towel."
+        },
+        {
+          "q": "Can children have microsuction?",
+          "a": "Yes, if they can sit or lie still. Our paediatric ENT team sees younger children with a parent present."
+        }
+      ],
+      "lead": "meera",
+      "team": [
+        "meera",
+        "rahul"
+      ],
+      "related": [
+        "hearing-aid",
+        "myringoplasty",
+        "grommet"
+      ],
+      "fee": 900,
+      "photo": "tx-microsuction",
+      "alt": "Close-up of an otoscope placed in a woman's ear during an ear canal examination",
+      "page": "treatment-microsuction.html",
+      "setting_class": "opd",
+      "fee_label": "₹900",
+      "test_name": "Microsuction (both ears)",
+      "test_fee": "₹800",
+      "badge": "OPD procedure",
+      "recovery_title": "After the visit",
+      "book_title": "Book an ear clean",
+      "book_note": "Bring a list of your ear drops and tell us about any past ear surgery.",
+      "prep_title": "Before your visit",
+      "prep_text": "When to start softening drops and what to avoid putting in your ear.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹1,700",
+      "cost_note": "₹1,700 for consultation and microsuction of both ears.",
+      "team_info": [
+        {
+          "slug": "meera",
+          "name": "Dr. Meera Raghavan",
+          "page": "doctor-meera.html",
+          "portrait": "doc-meera",
+          "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+          "note": "Otologist · 18 years in ear care"
+        },
+        {
+          "slug": "rahul",
+          "name": "Dr. Rahul Menon",
+          "page": "doctor-rahul.html",
+          "portrait": "doc-rahul",
+          "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+          "note": "Paediatric ENT · children's ears"
+        }
+      ],
+      "anchor": "ear",
+      "search": "microsuction ear cleaning wax and debris removal under a microscope microsuction blocked or muffled ear from impacted wax wax that did not clear with drops, or a history of eardrum perforation ear canal debris or discharge from an outer-ear infection (otitis externa) hearing aid users who need regular canal cleaning anyone advised against syringing or water irrigation"
+    },
+    {
+      "slug": "myringoplasty",
+      "name": "Myringoplasty",
+      "short": "Myringoplasty",
+      "specialty": "ear",
+      "specialty_label": "Ear",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Repair of a perforated eardrum",
+      "summary": "A small operation that closes a hole in the eardrum with a graft of your own tissue, to stop repeated discharge and improve hearing.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "45–75 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Local or general"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Back to work",
+          "v": "5–7 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "A dry eardrum perforation that has not healed after 3 months",
+        "Repeated ear discharge whenever water enters the ear",
+        "Mild hearing loss caused by the hole in the eardrum",
+        "People who want to swim or bathe without ear plugs"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "Microscope examination, hearing test (audiogram) and, if needed, a CT scan of the ear."
+        },
+        {
+          "t": "On the day",
+          "d": "A small graft is taken from behind the ear or the cartilage of the ear, and placed under the hole using the microscope."
+        },
+        {
+          "t": "Recovery room",
+          "d": "A small dressing is placed. Most patients go home 3–4 hours later."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Pack removal at 2 weeks and a repeat hearing test at 6–8 weeks."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Ear dressing, mild ache"
+        },
+        {
+          "when": "Day 1–7",
+          "t": "Keep dry",
+          "d": "No water in the ear, no nose blowing"
+        },
+        {
+          "when": "Week 2",
+          "t": "Review",
+          "d": "Pack removed in the clinic"
+        },
+        {
+          "when": "Week 4",
+          "t": "Light exercise",
+          "d": "Avoid heavy lifting until then"
+        },
+        {
+          "when": "Week 8",
+          "t": "Hearing test",
+          "d": "Graft checked, swimming discussed"
+        }
+      ],
+      "risks": [
+        "Graft does not take in about 5–10% of cases and may need a second repair",
+        "Temporary taste change on one side of the tongue",
+        "Ringing, dizziness or, rarely, worse hearing",
+        "Small scar behind or in front of the ear"
+      ],
+      "faq": [
+        {
+          "q": "Will my hearing improve?",
+          "a": "If the hearing loss is due to the hole, most people gain some hearing once the graft heals. The audiogram before surgery tells us what to expect."
+        },
+        {
+          "q": "Is there a visible scar?",
+          "a": "Usually a small cut hidden behind the ear or in the ear canal. It fades within a few months."
+        },
+        {
+          "q": "When can I swim?",
+          "a": "Usually after the 8-week check, once the graft has healed fully."
+        },
+        {
+          "q": "Can it be done under local anaesthesia?",
+          "a": "Yes, for many adults. Children and anxious patients usually have a short general anaesthetic."
+        }
+      ],
+      "lead": "meera",
+      "team": [
+        "meera",
+        "rahul"
+      ],
+      "related": [
+        "tympanoplasty",
+        "microsuction",
+        "hearing-aid"
+      ],
+      "fee": 900,
+      "photo": "tx-myringoplasty",
+      "alt": "Surgeons in caps and gowns operating under a large surgical microscope",
+      "page": "treatment-myringoplasty.html",
+      "setting_class": "daycare",
+      "fee_label": "₹900",
+      "test_name": "Pure-tone audiogram",
+      "test_fee": "₹700",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book an ear consultation",
+      "book_note": "Surgery is planned only after a microscope examination and hearing test.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Fasting rules, medicines to pause and caring for the ear dressing.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹35,000–55,000",
+      "cost_note": "₹35,000–55,000 day-care package, including surgeon, theatre and first follow-up.",
+      "team_info": [
+        {
+          "slug": "meera",
+          "name": "Dr. Meera Raghavan",
+          "page": "doctor-meera.html",
+          "portrait": "doc-meera",
+          "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+          "note": "Otologist · 600+ ear surgeries"
+        },
+        {
+          "slug": "rahul",
+          "name": "Dr. Rahul Menon",
+          "page": "doctor-rahul.html",
+          "portrait": "doc-rahul",
+          "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+          "note": "Paediatric ENT · children's ear repair"
+        }
+      ],
+      "anchor": "ear",
+      "search": "myringoplasty repair of a perforated eardrum myringoplasty a dry eardrum perforation that has not healed after 3 months repeated ear discharge whenever water enters the ear mild hearing loss caused by the hole in the eardrum people who want to swim or bathe without ear plugs"
+    },
+    {
+      "slug": "tympanoplasty",
+      "name": "Tympanoplasty & mastoidectomy",
+      "short": "Tympanoplasty",
+      "specialty": "ear",
+      "specialty_label": "Ear",
+      "setting": "Inpatient",
+      "time": "1 night",
+      "helps": "Chronic ear infection and cholesteatoma surgery",
+      "summary": "Surgery to clear long-standing middle-ear and mastoid disease, including cholesteatoma, then rebuild the eardrum and, where possible, the hearing bones.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "2–3 hours"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "1 night"
+        },
+        {
+          "k": "Back to work",
+          "v": "2 weeks"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Chronic, foul-smelling ear discharge that keeps returning",
+        "Cholesteatoma (a skin cyst that erodes bone) seen on examination or CT",
+        "Damaged hearing bones causing conductive hearing loss",
+        "Ear disease that has caused dizziness or facial weakness"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "CT of the temporal bone, hearing tests and an anaesthesia check, usually over two visits."
+        },
+        {
+          "t": "On the day",
+          "d": "Through a cut behind the ear, disease is removed from the middle ear and mastoid bone, and the eardrum is rebuilt with a graft."
+        },
+        {
+          "t": "Overnight stay",
+          "d": "You stay one night with a head bandage and are monitored for dizziness and facial movement."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Dressing and pack removal at 2 weeks, then regular microscope checks; a second look may be planned at 9–12 months."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 1",
+          "t": "Discharge",
+          "d": "Head bandage removed"
+        },
+        {
+          "when": "Week 1",
+          "t": "Rest",
+          "d": "Keep ear dry, avoid straining"
+        },
+        {
+          "when": "Week 2",
+          "t": "Review",
+          "d": "Pack and stitches removed"
+        },
+        {
+          "when": "Week 3",
+          "t": "Back to work",
+          "d": "Desk work resumes"
+        },
+        {
+          "when": "Month 3",
+          "t": "Hearing test",
+          "d": "Healing and hearing checked"
+        }
+      ],
+      "risks": [
+        "Cholesteatoma can come back and needs long-term follow-up",
+        "Dizziness, ringing or change in taste for a few weeks",
+        "Hearing may not improve, and rarely can get worse",
+        "Facial nerve weakness is rare (under 1%); we monitor the nerve during surgery"
+      ],
+      "faq": [
+        {
+          "q": "Why do I need a mastoidectomy as well?",
+          "a": "Disease often spreads into the mastoid bone behind the ear. Clearing it there lowers the chance of the infection coming back."
+        },
+        {
+          "q": "Will I need a second operation?",
+          "a": "Some patients with cholesteatoma need a planned second look at 9–12 months, or an MRI scan instead, to make sure no disease is left."
+        },
+        {
+          "q": "Will my ear stop discharging?",
+          "a": "The aim is a dry, safe ear. More than 85% of patients have a dry ear after healing."
+        },
+        {
+          "q": "Is it covered by insurance?",
+          "a": "Yes, most insurers cover it as an inpatient procedure. Our desk arranges cashless pre-authorisation."
+        }
+      ],
+      "lead": "meera",
+      "team": [
+        "meera"
+      ],
+      "related": [
+        "myringoplasty",
+        "hearing-aid",
+        "microsuction"
+      ],
+      "fee": 900,
+      "photo": "tx-tympanoplasty",
+      "alt": "Surgeon and colleague at an operating microscope in the theatre",
+      "page": "treatment-tympanoplasty.html",
+      "setting_class": "inpatient",
+      "fee_label": "₹900",
+      "test_name": "CT temporal bone",
+      "test_fee": "₹4,500",
+      "badge": "Inpatient procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book an ear consultation",
+      "book_note": "Surgery is planned only after a microscope examination, hearing test and CT review.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Tests to complete, medicines to pause and what to pack for the overnight stay.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night.",
+        "Pack loose clothes, toiletries and a phone charger for your stay."
+      ],
+      "cost_range": "₹65,000–1,10,000",
+      "cost_note": "₹65,000–1,10,000 including one night's stay.",
+      "team_info": [
+        {
+          "slug": "meera",
+          "name": "Dr. Meera Raghavan",
+          "page": "doctor-meera.html",
+          "portrait": "doc-meera",
+          "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+          "note": "Lead otologist · 600+ ear surgeries"
+        }
+      ],
+      "anchor": "ear",
+      "search": "tympanoplasty & mastoidectomy chronic ear infection and cholesteatoma surgery tympanoplasty chronic, foul-smelling ear discharge that keeps returning cholesteatoma (a skin cyst that erodes bone) seen on examination or ct damaged hearing bones causing conductive hearing loss ear disease that has caused dizziness or facial weakness"
+    },
+    {
+      "slug": "grommet",
+      "name": "Grommet insertion",
+      "short": "Grommets",
+      "specialty": "ear",
+      "specialty_label": "Ear",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Fluid behind the eardrum, mostly in children",
+      "summary": "Tiny ventilation tubes placed in the eardrum to drain sticky fluid (glue ear) and restore hearing. Children usually go home within a few hours.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "15–20 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General (children)"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Back to school",
+          "v": "1–2 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Glue ear in both ears lasting more than 3 months with hearing loss",
+        "Speech delay or school difficulties linked to poor hearing",
+        "Repeated middle-ear infections, several a year",
+        "Adults with persistent fluid after a cold or flight"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "Hearing test and tympanometry confirm fluid. We often wait and watch for 3 months first."
+        },
+        {
+          "t": "On the day",
+          "d": "Under a short anaesthetic, a tiny cut is made in the eardrum, the fluid is suctioned and a grommet is placed."
+        },
+        {
+          "t": "Recovery room",
+          "d": "Children wake within minutes and usually go home after a drink and a snack."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Ear check and hearing test at 6 weeks, then every 6 months until the grommets fall out."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Hearing often better at once"
+        },
+        {
+          "when": "Day 1–2",
+          "t": "Back to school",
+          "d": "Mild ear ache settles with paracetamol"
+        },
+        {
+          "when": "Week 6",
+          "t": "Review",
+          "d": "Ear check and hearing test"
+        },
+        {
+          "when": "Month 6–12",
+          "t": "Grommets fall out",
+          "d": "Pushed out naturally, hole heals"
+        },
+        {
+          "when": "Year 1",
+          "t": "Final check",
+          "d": "Hearing and eardrum reviewed"
+        }
+      ],
+      "risks": [
+        "Some discharge from the ear, treated with drops",
+        "Grommets may fall out early or, rarely, stay too long and need removal",
+        "A small hole may remain in the eardrum (about 1–2%)",
+        "Fluid can return after the grommets come out"
+      ],
+      "faq": [
+        {
+          "q": "Can my child swim with grommets?",
+          "a": "Surface swimming is usually fine after 2 weeks. Avoid diving and dirty water; we may suggest earplugs for bath time."
+        },
+        {
+          "q": "Do grommets need to be removed?",
+          "a": "Usually not. They fall out on their own in 6–12 months as the eardrum grows."
+        },
+        {
+          "q": "Will adenoids be removed at the same time?",
+          "a": "Sometimes. If large adenoids are causing the fluid, removing them can lower the chance of glue ear returning."
+        },
+        {
+          "q": "Is it painful?",
+          "a": "Most children have little or no pain afterwards. Paracetamol for a day is usually enough."
+        }
+      ],
+      "lead": "rahul",
+      "team": [
+        "rahul",
+        "meera"
+      ],
+      "related": [
+        "adenoidectomy",
+        "microsuction",
+        "myringoplasty"
+      ],
+      "fee": 700,
+      "photo": "tx-grommet",
+      "alt": "Hand holding an otoscope to a teddy bear's ear, a child-friendly ear check",
+      "page": "treatment-grommet.html",
+      "setting_class": "daycare",
+      "fee_label": "₹700",
+      "test_name": "Hearing test + tympanometry",
+      "test_fee": "₹1,100",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a children's ENT visit",
+      "book_note": "We test hearing on the same visit so you leave with a clear plan.",
+      "prep_title": "Preparing your child",
+      "prep_text": "Fasting times for children, what to bring and how to explain the day.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹25,000–40,000",
+      "cost_note": "₹25,000–40,000 for both ears as day-care.",
+      "team_info": [
+        {
+          "slug": "rahul",
+          "name": "Dr. Rahul Menon",
+          "page": "doctor-rahul.html",
+          "portrait": "doc-rahul",
+          "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+          "note": "Paediatric ENT · 1,000+ grommets"
+        },
+        {
+          "slug": "meera",
+          "name": "Dr. Meera Raghavan",
+          "page": "doctor-meera.html",
+          "portrait": "doc-meera",
+          "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+          "note": "Otologist · adult middle-ear fluid"
+        }
+      ],
+      "anchor": "ear",
+      "search": "grommet insertion fluid behind the eardrum, mostly in children grommets glue ear in both ears lasting more than 3 months with hearing loss speech delay or school difficulties linked to poor hearing repeated middle-ear infections, several a year adults with persistent fluid after a cold or flight"
+    },
+    {
+      "slug": "hearing-aid",
+      "name": "Hearing aid trial & fitting",
+      "short": "Hearing aids",
+      "specialty": "ear",
+      "specialty_label": "Ear",
+      "setting": "OPD",
+      "time": "3 visits",
+      "helps": "Digital hearing aids with 7-day home trial",
+      "summary": "Full hearing assessment, a 7-day home trial of digital hearing aids, and careful fine-tuning by our audiologist, so you choose a device that suits your ears and your budget.",
+      "facts": [
+        {
+          "k": "Visits",
+          "v": "3 over 2–3 weeks"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "None"
+        },
+        {
+          "k": "Setting",
+          "v": "Audiology suite"
+        },
+        {
+          "k": "Home trial",
+          "v": "7 days"
+        },
+        {
+          "k": "Warranty",
+          "v": "2–4 years"
+        }
+      ],
+      "who": [
+        "Difficulty following conversation, especially in noisy places",
+        "Turning the TV up louder than others like",
+        "Age-related or noise-induced hearing loss confirmed on an audiogram",
+        "Existing hearing aid users who need a review or upgrade"
+      ],
+      "steps": [
+        {
+          "t": "Assessment",
+          "d": "Ear check, pure-tone audiogram, speech tests and a discussion of your listening needs."
+        },
+        {
+          "t": "Trial fitting",
+          "d": "Aids are programmed to your audiogram and you take them home for 7 days."
+        },
+        {
+          "t": "Fine-tuning",
+          "d": "We adjust the settings based on your feedback from the trial week."
+        },
+        {
+          "t": "Aftercare",
+          "d": "Free checks at 1 month and every 6 months, plus cleaning and battery help."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 1",
+          "t": "First fit",
+          "d": "Sounds seem sharp and new"
+        },
+        {
+          "when": "Week 1",
+          "t": "Home trial",
+          "d": "Wear 4–6 hours a day"
+        },
+        {
+          "when": "Week 2",
+          "t": "Fine-tune",
+          "d": "Settings adjusted"
+        },
+        {
+          "when": "Month 1",
+          "t": "All-day use",
+          "d": "Brain adapts to sound"
+        },
+        {
+          "when": "6 months",
+          "t": "Review",
+          "d": "Re-test and clean"
+        }
+      ],
+      "risks": [
+        "Feedback whistle if the fit is loose; fixed by adjusting the dome or mould",
+        "Mild ear-canal soreness in the first week",
+        "Your own voice may sound loud at first",
+        "Unrealistic expectations: aids help a lot but do not restore normal hearing"
+      ],
+      "faq": [
+        {
+          "q": "How much do hearing aids cost?",
+          "a": "Digital aids range from about ₹25,000 to ₹1,80,000 per ear depending on technology level. We show options at every price point during the trial."
+        },
+        {
+          "q": "Do I need two aids?",
+          "a": "If both ears have hearing loss, two aids give better clarity in noise and better sense of direction."
+        },
+        {
+          "q": "Can I return them after the trial?",
+          "a": "Yes. The trial is free; you only pay if you decide to keep the aids."
+        },
+        {
+          "q": "Are rechargeable aids available?",
+          "a": "Yes. Most models now come with a rechargeable option that lasts a full day."
+        }
+      ],
+      "lead": "divya",
+      "team": [
+        "divya",
+        "meera"
+      ],
+      "related": [
+        "cochlear",
+        "microsuction",
+        "vertigo"
+      ],
+      "fee": 500,
+      "photo": "tx-hearing-aid",
+      "alt": "Older man with glasses adjusting a behind-the-ear hearing aid",
+      "page": "treatment-hearing-aid.html",
+      "setting_class": "opd",
+      "fee_label": "₹500",
+      "test_name": "Full hearing assessment",
+      "test_fee": "₹1,200",
+      "badge": "OPD service",
+      "recovery_title": "Getting used to hearing aids",
+      "book_title": "Book a hearing assessment",
+      "book_note": "Allow 45 minutes for the first visit and bring any previous hearing reports.",
+      "prep_title": "Before your assessment",
+      "prep_text": "Questions to think about and how to prepare your ears for testing.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹25,000–1,80,000",
+      "cost_note": "₹25,000–1,80,000 per ear depending on the device; trial is free.",
+      "team_info": [
+        {
+          "slug": "divya",
+          "name": "Divya Prakash",
+          "page": "doctor-divya.html",
+          "portrait": "doc-divya",
+          "portrait_alt": "Portrait of Divya Prakash, Audiology & speech therapy",
+          "note": "Lead audiologist · hearing aid fitting"
+        },
+        {
+          "slug": "meera",
+          "name": "Dr. Meera Raghavan",
+          "page": "doctor-meera.html",
+          "portrait": "doc-meera",
+          "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+          "note": "Otologist · medical ear review"
+        }
+      ],
+      "anchor": "ear",
+      "search": "hearing aid trial & fitting digital hearing aids with 7-day home trial hearing aids difficulty following conversation, especially in noisy places turning the tv up louder than others like age-related or noise-induced hearing loss confirmed on an audiogram existing hearing aid users who need a review or upgrade"
+    },
+    {
+      "slug": "vertigo",
+      "name": "Vertigo assessment & repositioning",
+      "short": "Vertigo",
+      "specialty": "ear",
+      "specialty_label": "Ear",
+      "setting": "OPD",
+      "time": "40 min",
+      "helps": "BPPV diagnosis and Epley manoeuvre",
+      "summary": "A focused balance assessment to find the cause of spinning or dizziness, with same-visit repositioning manoeuvres for BPPV, the most common inner-ear cause.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "40–60 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "None"
+        },
+        {
+          "k": "Setting",
+          "v": "Balance lab"
+        },
+        {
+          "k": "Back to work",
+          "v": "Same or next day"
+        },
+        {
+          "k": "Insurance",
+          "v": "OPD cover, if included"
+        }
+      ],
+      "who": [
+        "Brief spinning when turning in bed, lying down or looking up",
+        "Dizziness with ringing, fullness or hearing change in one ear",
+        "Recurring attacks of vertigo lasting minutes to hours",
+        "Imbalance after an ear infection or head injury"
+      ],
+      "steps": [
+        {
+          "t": "History",
+          "d": "We note what triggers the dizziness, how long it lasts and any hearing symptoms."
+        },
+        {
+          "t": "Bedside tests",
+          "d": "Dix-Hallpike and roll tests, eye-movement checks and, if needed, video-nystagmography (VNG)."
+        },
+        {
+          "t": "Repositioning",
+          "d": "If BPPV is found, the Epley or a similar manoeuvre is done at once to move loose crystals back."
+        },
+        {
+          "t": "Plan",
+          "d": "Home exercises, a hearing test if needed and a review in 1–2 weeks."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Manoeuvre",
+          "d": "Some unsteadiness for a few hours"
+        },
+        {
+          "when": "Day 1–2",
+          "t": "Take it easy",
+          "d": "Sleep propped up if advised"
+        },
+        {
+          "when": "Week 1",
+          "t": "Exercises",
+          "d": "Brandt-Daroff at home"
+        },
+        {
+          "when": "Week 2",
+          "t": "Review",
+          "d": "Repeat test if needed"
+        },
+        {
+          "when": "Month 1",
+          "t": "Most settled",
+          "d": "80–90% clear after 1–3 sessions"
+        }
+      ],
+      "risks": [
+        "The manoeuvre briefly brings on vertigo and may cause nausea",
+        "Crystals can move into another canal and need a different manoeuvre",
+        "BPPV can come back in some people over months or years",
+        "Dizziness from other causes may need MRI or a neurology referral"
+      ],
+      "faq": [
+        {
+          "q": "What is BPPV?",
+          "a": "Benign paroxysmal positional vertigo happens when tiny calcium crystals in the inner ear move into a balance canal. It causes short spins with head movement and is very treatable."
+        },
+        {
+          "q": "Should I come with someone?",
+          "a": "Yes, if possible. You may feel unsteady for a short time after the manoeuvre, so avoid driving yourself home."
+        },
+        {
+          "q": "Do I need medicines?",
+          "a": "Repositioning works better than medicines for BPPV. Anti-sickness tablets may be used for a day or two only."
+        },
+        {
+          "q": "What if it is not BPPV?",
+          "a": "We look for other causes such as vestibular neuritis or Ménière's disease and plan tests and treatment accordingly."
+        }
+      ],
+      "lead": "meera",
+      "team": [
+        "meera",
+        "divya"
+      ],
+      "related": [
+        "hearing-aid",
+        "microsuction",
+        "cochlear"
+      ],
+      "fee": 900,
+      "photo": "tx-vertigo",
+      "alt": "Young man with eyes closed holding his temples during a dizzy spell",
+      "page": "treatment-vertigo.html",
+      "setting_class": "opd",
+      "fee_label": "₹900",
+      "test_name": "VNG balance test",
+      "test_fee": "₹2,500",
+      "badge": "OPD assessment",
+      "recovery_title": "What to expect",
+      "book_title": "Book a balance assessment",
+      "book_note": "Avoid anti-vertigo tablets for 48 hours before the visit if it is safe to do so.",
+      "prep_title": "Before your assessment",
+      "prep_text": "Medicines to stop, what to wear and why to bring a companion.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹900–3,400",
+      "cost_note": "₹900–3,400 depending on whether VNG testing is needed.",
+      "team_info": [
+        {
+          "slug": "meera",
+          "name": "Dr. Meera Raghavan",
+          "page": "doctor-meera.html",
+          "portrait": "doc-meera",
+          "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+          "note": "Otologist · balance disorders"
+        },
+        {
+          "slug": "divya",
+          "name": "Divya Prakash",
+          "page": "doctor-divya.html",
+          "portrait": "doc-divya",
+          "portrait_alt": "Portrait of Divya Prakash, Audiology & speech therapy",
+          "note": "Audiologist · vestibular testing"
+        }
+      ],
+      "anchor": "ear",
+      "search": "vertigo assessment & repositioning bppv diagnosis and epley manoeuvre vertigo brief spinning when turning in bed, lying down or looking up dizziness with ringing, fullness or hearing change in one ear recurring attacks of vertigo lasting minutes to hours imbalance after an ear infection or head injury"
+    },
+    {
+      "slug": "cochlear",
+      "name": "Cochlear implant evaluation",
+      "short": "Cochlear implants",
+      "specialty": "ear",
+      "specialty_label": "Ear",
+      "setting": "OPD",
+      "time": "2 visits",
+      "helps": "Candidacy tests for severe to profound loss",
+      "summary": "A structured evaluation by our otology and audiology team to decide whether a cochlear implant will help a child or adult with severe to profound hearing loss.",
+      "facts": [
+        {
+          "k": "Visits",
+          "v": "2 over 1–2 weeks"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Sedation for some tests"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD + imaging"
+        },
+        {
+          "k": "Surgery stay",
+          "v": "1–2 nights"
+        },
+        {
+          "k": "Schemes",
+          "v": "CMCHIS / ADIP guidance"
+        }
+      ],
+      "who": [
+        "Children born with profound hearing loss, ideally before age 2",
+        "Children and adults who get little benefit from strong hearing aids",
+        "Adults who have lost hearing suddenly or over time in both ears",
+        "Families who want to know about government implant schemes"
+      ],
+      "steps": [
+        {
+          "t": "Hearing tests",
+          "d": "Audiogram, BERA/ASSR and aided speech testing to measure hearing with aids."
+        },
+        {
+          "t": "Imaging",
+          "d": "CT and MRI of the inner ear and hearing nerve to plan the implant."
+        },
+        {
+          "t": "Team review",
+          "d": "Otologist, audiologist and speech therapist meet the family to discuss results and expectations."
+        },
+        {
+          "t": "Decision",
+          "d": "If suitable, we plan surgery, device choice and help with scheme paperwork."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Week 0",
+          "t": "Evaluation",
+          "d": "Tests and imaging"
+        },
+        {
+          "when": "Week 2–4",
+          "t": "Surgery",
+          "d": "1–2 night stay"
+        },
+        {
+          "when": "Week 4",
+          "t": "Switch-on",
+          "d": "Implant activated"
+        },
+        {
+          "when": "Month 1–6",
+          "t": "Mapping",
+          "d": "Regular tuning sessions"
+        },
+        {
+          "when": "Year 1+",
+          "t": "Therapy",
+          "d": "Auditory-verbal therapy"
+        }
+      ],
+      "risks": [
+        "Evaluation itself is safe; young children may need sedation for some tests",
+        "Implant surgery carries small risks of infection, dizziness and taste change",
+        "Results depend on age at implant, duration of deafness and therapy",
+        "Long-term commitment to mapping and speech therapy is essential"
+      ],
+      "faq": [
+        {
+          "q": "What age is best for an implant?",
+          "a": "For children born deaf, implants before age 2 give the best speech results. Adults can benefit at any age."
+        },
+        {
+          "q": "Is the surgery covered?",
+          "a": "Implants for eligible children may be covered under the Tamil Nadu CMCHIS and the central ADIP scheme. Our coordinator helps with applications."
+        },
+        {
+          "q": "How much does an implant cost privately?",
+          "a": "Surgery and device together usually cost ₹6–12 lakh, depending on the implant brand and model."
+        },
+        {
+          "q": "Will my child speak normally?",
+          "a": "Many children implanted early develop speech close to their hearing peers with regular therapy."
+        }
+      ],
+      "lead": "meera",
+      "team": [
+        "meera",
+        "divya"
+      ],
+      "related": [
+        "hearing-aid",
+        "grommet",
+        "vertigo"
+      ],
+      "fee": 900,
+      "photo": "tx-cochlear",
+      "alt": "Woman wearing audiometry headphones raising a finger during a hearing test",
+      "page": "treatment-cochlear.html",
+      "setting_class": "opd",
+      "fee_label": "₹900",
+      "test_name": "Evaluation test package",
+      "test_fee": "₹7,500",
+      "badge": "OPD evaluation",
+      "recovery_title": "The implant journey",
+      "book_title": "Book an implant evaluation",
+      "book_note": "Bring previous hearing tests, hearing aid details and birth records for children.",
+      "prep_title": "Before the evaluation",
+      "prep_text": "Documents to bring, sedation advice for children and scheme eligibility.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹7,500",
+      "cost_note": "₹7,500 evaluation package; implant surgery ₹6–12 lakh unless covered by a scheme.",
+      "team_info": [
+        {
+          "slug": "meera",
+          "name": "Dr. Meera Raghavan",
+          "page": "doctor-meera.html",
+          "portrait": "doc-meera",
+          "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+          "note": "Cochlear implant surgeon · 120+ implants"
+        },
+        {
+          "slug": "divya",
+          "name": "Divya Prakash",
+          "page": "doctor-divya.html",
+          "portrait": "doc-divya",
+          "portrait_alt": "Portrait of Divya Prakash, Audiology & speech therapy",
+          "note": "Audiologist · mapping and therapy"
+        }
+      ],
+      "anchor": "ear",
+      "search": "cochlear implant evaluation candidacy tests for severe to profound loss cochlear implants children born with profound hearing loss, ideally before age 2 children and adults who get little benefit from strong hearing aids adults who have lost hearing suddenly or over time in both ears families who want to know about government implant schemes"
+    },
+    {
+      "slug": "fess",
+      "name": "Endoscopic sinus surgery (FESS)",
+      "short": "Endoscopic sinus surgery",
+      "specialty": "nose",
+      "specialty_label": "Nose & sinus",
+      "setting": "Day-care",
+      "time": "Same day / 1 night",
+      "helps": "Chronic sinusitis and polyps not settling with medicines",
+      "summary": "Keyhole surgery through the nostrils that opens blocked sinuses and removes polyps, for chronic sinusitis that has not improved with medicines.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "60–120 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day or 1 night"
+        },
+        {
+          "k": "Back to work",
+          "v": "7–10 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Blocked nose and facial pressure for more than 12 weeks",
+        "Nasal polyps that return after steroid sprays",
+        "Repeated sinus infections, four or more a year",
+        "Loss of smell caused by sinus disease"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "CT scan review, blood tests and an anaesthesia check, usually in one visit."
+        },
+        {
+          "t": "On the day",
+          "d": "Arrive fasting. Surgery is done through the nostrils with an endoscope, so there are no external cuts."
+        },
+        {
+          "t": "Recovery room",
+          "d": "You are monitored for 3–4 hours. Most patients go home the same evening."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Endoscopic cleaning at 1 week and 3 weeks, booked automatically in your portal."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Mild blocked feeling, light ooze"
+        },
+        {
+          "when": "Day 1–3",
+          "t": "Rest",
+          "d": "Saline rinses 3× a day"
+        },
+        {
+          "when": "Week 1",
+          "t": "Review",
+          "d": "First endoscopic clean"
+        },
+        {
+          "when": "Week 2",
+          "t": "Back to work",
+          "d": "Most office jobs resume"
+        },
+        {
+          "when": "Week 6",
+          "t": "Full recovery",
+          "d": "Exercise and flying allowed"
+        }
+      ],
+      "risks": [
+        "Minor bleeding in the first days; heavy bleeding is uncommon",
+        "Crusting and blocked feeling until the first cleaning",
+        "Polyps can recur, especially with asthma or allergy",
+        "Serious eye or brain-lining injury is very rare (under 1 in 1,000) with navigation and experienced surgeons"
+      ],
+      "faq": [
+        {
+          "q": "Will my nose be packed after surgery?",
+          "a": "We use dissolvable packs in most cases, so there is nothing to remove at follow-up."
+        },
+        {
+          "q": "Is the surgery covered by insurance?",
+          "a": "Yes, FESS is covered by most insurers as day-care. Our desk arranges cashless pre-authorisation."
+        },
+        {
+          "q": "Will my polyps come back?",
+          "a": "Polyps can recur. Regular steroid rinses and follow-up reduce the chance significantly."
+        },
+        {
+          "q": "Can I fly after sinus surgery?",
+          "a": "Wait at least 3 weeks, and until your surgeon has cleared you at the follow-up visit."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun",
+        "farhana"
+      ],
+      "related": [
+        "septoplasty",
+        "turbinate",
+        "allergy"
+      ],
+      "fee": 800,
+      "photo": "tx-fess",
+      "alt": "Surgical team watching a large endoscopy monitor in a modern operating theatre",
+      "page": "treatment-fess.html",
+      "setting_class": "daycare",
+      "fee_label": "₹800",
+      "test_name": "Nasal endoscopy",
+      "test_fee": "₹1,500",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a sinus consultation",
+      "book_note": "Surgery is planned only after an endoscopic examination and CT review.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Fasting rules, medicines to pause and what to bring on the day.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹55,000–95,000",
+      "cost_note": "₹55,000–95,000 day-care package depending on the extent of surgery.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Lead rhinologist · 1,400+ FESS"
+        },
+        {
+          "slug": "farhana",
+          "name": "Dr. Farhana Iqbal",
+          "page": "doctor-farhana.html",
+          "portrait": "doc-farhana",
+          "portrait_alt": "Portrait of Dr. Farhana Iqbal, Head & neck surgery",
+          "note": "Head & neck surgeon"
+        }
+      ],
+      "anchor": "nose",
+      "search": "endoscopic sinus surgery (fess) chronic sinusitis and polyps not settling with medicines endoscopic sinus surgery blocked nose and facial pressure for more than 12 weeks nasal polyps that return after steroid sprays repeated sinus infections, four or more a year loss of smell caused by sinus disease"
+    },
+    {
+      "slug": "septoplasty",
+      "name": "Septoplasty",
+      "short": "Septoplasty",
+      "specialty": "nose",
+      "specialty_label": "Nose & sinus",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Straightening a deviated nasal septum",
+      "summary": "An operation inside the nose that straightens a bent septum, the wall between the nostrils, to improve breathing. There are no cuts on the outside and the shape of the nose does not change.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "45–60 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Back to work",
+          "v": "5–7 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Blocked nose on one or both sides that does not clear with sprays",
+        "Mouth breathing, dry mouth or snoring caused by a bent septum",
+        "Recurrent sinus infections linked to poor drainage",
+        "Nosebleeds from a sharp septal spur"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "Nasal endoscopy confirms the bend; a CT scan is added if sinuses are also involved."
+        },
+        {
+          "t": "On the day",
+          "d": "Through a small cut inside the nostril, the bent cartilage and bone are reshaped or removed."
+        },
+        {
+          "t": "Recovery room",
+          "d": "Soft splints or light packs are placed. You go home the same evening."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Splints removed at 5–7 days; endoscopic check at 3 weeks."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Blocked nose, mild ooze"
+        },
+        {
+          "when": "Day 1–5",
+          "t": "Rest",
+          "d": "Saline sprays, no blowing"
+        },
+        {
+          "when": "Day 7",
+          "t": "Review",
+          "d": "Splints removed"
+        },
+        {
+          "when": "Week 2",
+          "t": "Back to work",
+          "d": "Desk work and light walks"
+        },
+        {
+          "when": "Week 6",
+          "t": "Full recovery",
+          "d": "Gym and contact sports"
+        }
+      ],
+      "risks": [
+        "Bleeding or a collection of blood on the septum (haematoma)",
+        "Small hole in the septum (perforation) in about 1–2%",
+        "Numbness of the upper front teeth for a few weeks",
+        "Some residual bend needing further treatment, rarely"
+      ],
+      "faq": [
+        {
+          "q": "Will my nose look different?",
+          "a": "No. Septoplasty works inside the nose. If you also want a change in shape, that is a separate septorhinoplasty discussion."
+        },
+        {
+          "q": "Is it painful?",
+          "a": "Most people describe it as a heavy cold for a few days. Paracetamol is usually enough."
+        },
+        {
+          "q": "Can it be combined with sinus surgery?",
+          "a": "Yes. If you also have sinus disease or large turbinates, these can be treated in the same anaesthetic."
+        },
+        {
+          "q": "When can I wear spectacles?",
+          "a": "Right away. Septoplasty does not affect the bridge of the nose."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun"
+      ],
+      "related": [
+        "turbinate",
+        "fess",
+        "nosebleed"
+      ],
+      "fee": 800,
+      "photo": "tx-septoplasty",
+      "alt": "Gloved surgeons working at a draped patient's nose with fine instruments",
+      "page": "treatment-septoplasty.html",
+      "setting_class": "daycare",
+      "fee_label": "₹800",
+      "test_name": "Nasal endoscopy",
+      "test_fee": "₹1,500",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a nose consultation",
+      "book_note": "We examine your nose with an endoscope on the first visit.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Fasting rules, blood thinners to stop and caring for nasal splints.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹40,000–65,000",
+      "cost_note": "₹40,000–65,000 day-care package.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Rhinologist · nasal airway surgery"
+        }
+      ],
+      "anchor": "nose",
+      "search": "septoplasty straightening a deviated nasal septum septoplasty blocked nose on one or both sides that does not clear with sprays mouth breathing, dry mouth or snoring caused by a bent septum recurrent sinus infections linked to poor drainage nosebleeds from a sharp septal spur"
+    },
+    {
+      "slug": "turbinate",
+      "name": "Turbinate reduction",
+      "short": "Turbinate reduction",
+      "specialty": "nose",
+      "specialty_label": "Nose & sinus",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Persistent blocked nose from enlarged turbinates",
+      "summary": "Shrinking the swollen turbinates, the natural humidifiers inside your nose, with coblation or radiofrequency so that air passes freely, while keeping their lining intact.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "20–30 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Local or general"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Back to work",
+          "v": "2–3 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Blocked nose that alternates sides or worsens lying down",
+        "Allergic rhinitis with swelling that persists despite sprays",
+        "People dependent on decongestant sprays (rhinitis medicamentosa)",
+        "Patients having septoplasty who also have large turbinates"
+      ],
+      "steps": [
+        {
+          "t": "Assessment",
+          "d": "Endoscopy before and after a decongestant spray shows how much the turbinates shrink."
+        },
+        {
+          "t": "On the day",
+          "d": "A thin probe heats tissue beneath the lining so that it shrinks over the next weeks."
+        },
+        {
+          "t": "Recovery room",
+          "d": "No packs in most cases. You go home within 2 hours."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Endoscopic check at 2–3 weeks to clear crusts."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Nose feels more blocked"
+        },
+        {
+          "when": "Day 1–7",
+          "t": "Crusting",
+          "d": "Saline rinses 2–3× a day"
+        },
+        {
+          "when": "Week 2",
+          "t": "Review",
+          "d": "Crusts cleared"
+        },
+        {
+          "when": "Week 3–4",
+          "t": "Breathing better",
+          "d": "Swelling settles"
+        },
+        {
+          "when": "Month 3",
+          "t": "Full effect",
+          "d": "Final result"
+        }
+      ],
+      "risks": [
+        "Temporary crusting and stuffiness for 1–2 weeks",
+        "Minor bleeding",
+        "Swelling can return over years, especially with allergy",
+        "Dry nose (empty nose syndrome) is rare with tissue-sparing techniques"
+      ],
+      "faq": [
+        {
+          "q": "Will I still need allergy sprays?",
+          "a": "Often yes, but at a lower dose. The procedure improves airflow; allergy control keeps it that way."
+        },
+        {
+          "q": "Can it be done without general anaesthesia?",
+          "a": "Yes. Many adults have it under local anaesthesia in our day-care unit."
+        },
+        {
+          "q": "How long does the result last?",
+          "a": "Most people have good relief for several years. It can be repeated safely if needed."
+        },
+        {
+          "q": "Is it the same as septoplasty?",
+          "a": "No. Septoplasty straightens the central wall; turbinate reduction shrinks the side structures. Many patients need both."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun"
+      ],
+      "related": [
+        "septoplasty",
+        "allergy",
+        "fess"
+      ],
+      "fee": 800,
+      "photo": "tx-turbinate",
+      "alt": "Doctor placing a thin instrument into a seated man's nostril",
+      "page": "treatment-turbinate.html",
+      "setting_class": "daycare",
+      "fee_label": "₹800",
+      "test_name": "Nasal endoscopy",
+      "test_fee": "₹1,500",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a nose consultation",
+      "book_note": "Stop decongestant sprays 48 hours before the visit if you can.",
+      "prep_title": "Before the procedure",
+      "prep_text": "Medicines to pause and how to rinse your nose after treatment.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹25,000–45,000",
+      "cost_note": "₹25,000–45,000 day-care package.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Rhinologist · coblation turbinate surgery"
+        }
+      ],
+      "anchor": "nose",
+      "search": "turbinate reduction persistent blocked nose from enlarged turbinates turbinate reduction blocked nose that alternates sides or worsens lying down allergic rhinitis with swelling that persists despite sprays people dependent on decongestant sprays (rhinitis medicamentosa) patients having septoplasty who also have large turbinates"
+    },
+    {
+      "slug": "allergy",
+      "name": "Allergy testing & immunotherapy",
+      "short": "Allergy testing",
+      "specialty": "nose",
+      "specialty_label": "Nose & sinus",
+      "setting": "OPD",
+      "time": "45 min",
+      "helps": "Skin-prick panel and long-term desensitisation",
+      "summary": "Skin-prick testing to find what you are allergic to, followed by a personalised plan of sprays, avoidance advice and, where suitable, sublingual immunotherapy to retrain the immune system.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "45 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "None"
+        },
+        {
+          "k": "Setting",
+          "v": "Allergy room"
+        },
+        {
+          "k": "Results",
+          "v": "Same visit"
+        },
+        {
+          "k": "Treatment course",
+          "v": "3–5 years (SLIT)"
+        }
+      ],
+      "who": [
+        "Sneezing, runny or itchy nose for most of the year",
+        "Seasonal symptoms when grasses or parthenium pollinate",
+        "Allergic rhinitis with asthma or eczema",
+        "People who want to reduce long-term reliance on tablets and sprays"
+      ],
+      "steps": [
+        {
+          "t": "Preparation",
+          "d": "Stop antihistamine tablets 5–7 days before the test (we tell you which ones)."
+        },
+        {
+          "t": "Skin-prick test",
+          "d": "Drops of common allergens such as dust mite, pollen, mould and pet dander are pricked onto the forearm."
+        },
+        {
+          "t": "Reading",
+          "d": "Results are read after 15–20 minutes and explained the same day."
+        },
+        {
+          "t": "Treatment plan",
+          "d": "Avoidance advice, nasal sprays and, if suitable, under-the-tongue drops or tablets started in the clinic."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Test",
+          "d": "Results in 20 minutes"
+        },
+        {
+          "when": "Week 1",
+          "t": "Start plan",
+          "d": "Sprays and avoidance"
+        },
+        {
+          "when": "Month 1",
+          "t": "First dose",
+          "d": "SLIT started in clinic"
+        },
+        {
+          "when": "Month 6",
+          "t": "Review",
+          "d": "Symptom scores compared"
+        },
+        {
+          "when": "Year 3–5",
+          "t": "Course complete",
+          "d": "Long-lasting benefit"
+        }
+      ],
+      "risks": [
+        "Itchy bumps on the test site that fade in an hour",
+        "Mild mouth itching with sublingual immunotherapy in the first weeks",
+        "Severe allergic reactions are rare; the first dose is always given in the clinic",
+        "Results can be falsely negative if antihistamines were not stopped"
+      ],
+      "faq": [
+        {
+          "q": "Is skin-prick testing painful?",
+          "a": "No. It feels like a light scratch, without bleeding. Children over 3 years can be tested."
+        },
+        {
+          "q": "Can I take my asthma inhalers before the test?",
+          "a": "Yes. Keep using inhalers and steroid nasal sprays; only antihistamine tablets need to be stopped."
+        },
+        {
+          "q": "How does immunotherapy work?",
+          "a": "Small daily doses of the allergen gradually make your immune system less reactive. Benefit builds over months and can last years after stopping."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "The skin-prick panel is ₹2,500. Sublingual immunotherapy costs about ₹2,000–3,500 a month."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun"
+      ],
+      "related": [
+        "turbinate",
+        "fess",
+        "smell"
+      ],
+      "fee": 800,
+      "photo": "tx-allergy",
+      "alt": "Woman using a nasal spray for allergic rhinitis",
+      "page": "treatment-allergy.html",
+      "setting_class": "opd",
+      "fee_label": "₹800",
+      "test_name": "Skin-prick panel (30 allergens)",
+      "test_fee": "₹2,500",
+      "badge": "OPD service",
+      "recovery_title": "Your treatment journey",
+      "book_title": "Book an allergy test",
+      "book_note": "Stop antihistamine tablets 5–7 days before your appointment.",
+      "prep_title": "Before your test",
+      "prep_text": "A list of medicines to stop and when to restart them.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹3,300",
+      "cost_note": "₹3,300 for consultation and testing; immunotherapy ₹2,000–3,500 a month.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Rhinologist · allergy and immunotherapy"
+        }
+      ],
+      "anchor": "nose",
+      "search": "allergy testing & immunotherapy skin-prick panel and long-term desensitisation allergy testing sneezing, runny or itchy nose for most of the year seasonal symptoms when grasses or parthenium pollinate allergic rhinitis with asthma or eczema people who want to reduce long-term reliance on tablets and sprays"
+    },
+    {
+      "slug": "nosebleed",
+      "name": "Nosebleed management",
+      "short": "Nosebleeds",
+      "specialty": "nose",
+      "specialty_label": "Nose & sinus",
+      "setting": "OPD",
+      "time": "30 min",
+      "helps": "Cautery and packing for recurrent bleeds",
+      "summary": "Finding the bleeding vessel with an endoscope and sealing it with silver nitrate or electric cautery, to stop recurrent nosebleeds in children and adults.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "20–30 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Local spray"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD room"
+        },
+        {
+          "k": "Back to work",
+          "v": "Same day"
+        },
+        {
+          "k": "Emergency",
+          "v": "24×7 line"
+        }
+      ],
+      "who": [
+        "Repeated nosebleeds from the same side",
+        "Children with frequent bleeds, often from scratching or dry air",
+        "Adults on blood thinners who bleed easily",
+        "Anyone with a heavy nosebleed that needed hospital packing"
+      ],
+      "steps": [
+        {
+          "t": "Examination",
+          "d": "Endoscopy finds the vessel, usually at the front of the septum, and checks for other causes."
+        },
+        {
+          "t": "Numbing",
+          "d": "A local anaesthetic spray or soaked cotton numbs the area for 5–10 minutes."
+        },
+        {
+          "t": "Cautery",
+          "d": "The vessel is sealed with a silver nitrate stick or bipolar cautery. It stings briefly."
+        },
+        {
+          "t": "Aftercare",
+          "d": "Antiseptic ointment for 1–2 weeks and advice on humidity and blood pressure."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Mild crusting"
+        },
+        {
+          "when": "Day 1–7",
+          "t": "Ointment",
+          "d": "Twice daily inside the nostril"
+        },
+        {
+          "when": "Week 1",
+          "t": "No picking",
+          "d": "Avoid hot drinks and lifting"
+        },
+        {
+          "when": "Week 2",
+          "t": "Healed",
+          "d": "Lining recovers"
+        },
+        {
+          "when": "Month 1",
+          "t": "Review",
+          "d": "Only if bleeds return"
+        }
+      ],
+      "risks": [
+        "Stinging or a small bleed during cautery",
+        "Recurrence, especially in dry weather, may need repeat treatment",
+        "Over-cautery of both sides can cause a septal hole; we treat one side at a time",
+        "Heavy or posterior bleeds may need admission and further treatment"
+      ],
+      "faq": [
+        {
+          "q": "What should I do during a nosebleed?",
+          "a": "Sit up, lean forward and pinch the soft part of the nose firmly for 10–15 minutes without letting go. Use an ice pack on the bridge."
+        },
+        {
+          "q": "When should I come to emergency?",
+          "a": "If bleeding does not stop after 20 minutes of pressure, is very heavy, or you feel faint. Call our 24×7 line on the way."
+        },
+        {
+          "q": "Should I stop my blood thinner?",
+          "a": "Never stop it on your own. We will speak to your physician if a change is needed."
+        },
+        {
+          "q": "Can children have cautery?",
+          "a": "Yes. Most children tolerate it well with a numbing spray; very young children may need a short anaesthetic."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun",
+        "rahul"
+      ],
+      "related": [
+        "septoplasty",
+        "allergy",
+        "fess"
+      ],
+      "fee": 800,
+      "photo": "tx-nosebleed",
+      "alt": "Woman with a small trickle of blood from one nostril",
+      "page": "treatment-nosebleed.html",
+      "setting_class": "opd",
+      "fee_label": "₹800",
+      "test_name": "Endoscopy + cautery",
+      "test_fee": "₹2,500",
+      "badge": "OPD procedure",
+      "recovery_title": "After cautery",
+      "book_title": "Book a nose consultation",
+      "book_note": "Tell us about any blood thinners or blood pressure medicines you take.",
+      "prep_title": "Nosebleed first aid",
+      "prep_text": "How to stop a bleed at home and when to call our emergency line.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹1,500–3,300",
+      "cost_note": "₹1,500–3,300 for consultation, endoscopy and cautery.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Rhinologist · endoscopic cautery"
+        },
+        {
+          "slug": "rahul",
+          "name": "Dr. Rahul Menon",
+          "page": "doctor-rahul.html",
+          "portrait": "doc-rahul",
+          "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+          "note": "Paediatric ENT · bleeds in children"
+        }
+      ],
+      "anchor": "nose",
+      "search": "nosebleed management cautery and packing for recurrent bleeds nosebleeds repeated nosebleeds from the same side children with frequent bleeds, often from scratching or dry air adults on blood thinners who bleed easily anyone with a heavy nosebleed that needed hospital packing"
+    },
+    {
+      "slug": "smell",
+      "name": "Smell disorder clinic",
+      "short": "Smell clinic",
+      "specialty": "nose",
+      "specialty_label": "Nose & sinus",
+      "setting": "OPD",
+      "time": "45 min",
+      "helps": "Testing and treatment for loss of smell",
+      "summary": "A dedicated clinic for reduced, lost or distorted smell, combining endoscopy, standardised smell testing and structured olfactory training.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "45 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "None"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD clinic"
+        },
+        {
+          "k": "Results",
+          "v": "Same visit"
+        },
+        {
+          "k": "Training",
+          "v": "12–24 weeks"
+        }
+      ],
+      "who": [
+        "Loss of smell after a viral infection, including COVID-19",
+        "Reduced smell with nasal polyps or chronic sinusitis",
+        "Distorted or unpleasant smells (parosmia)",
+        "Smell change after head injury"
+      ],
+      "steps": [
+        {
+          "t": "History and endoscopy",
+          "d": "We look for polyps, swelling or blockage in the smell area of the nose."
+        },
+        {
+          "t": "Smell test",
+          "d": "A standardised test with scented pens scores your sense of smell against age norms."
+        },
+        {
+          "t": "Treatment",
+          "d": "Steroid rinses for inflammation and a 12-week olfactory training kit with four scents."
+        },
+        {
+          "t": "Re-test",
+          "d": "Repeat smell testing at 3 and 6 months to track progress."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Test",
+          "d": "Baseline score"
+        },
+        {
+          "when": "Week 1",
+          "t": "Start training",
+          "d": "Twice daily, 4 scents"
+        },
+        {
+          "when": "Month 3",
+          "t": "Re-test",
+          "d": "Score compared"
+        },
+        {
+          "when": "Month 6",
+          "t": "Review",
+          "d": "Change scents if needed"
+        },
+        {
+          "when": "Year 1",
+          "t": "Most improve",
+          "d": "Recovery can be slow"
+        }
+      ],
+      "risks": [
+        "No risk from testing itself",
+        "Steroid rinses can cause mild nasal dryness",
+        "Recovery is not guaranteed, especially after a long time",
+        "Sudden smell loss with other neurological symptoms needs MRI and specialist review"
+      ],
+      "faq": [
+        {
+          "q": "Will my smell come back after COVID?",
+          "a": "Most people recover within a year. Olfactory training improves the chance and speed of recovery."
+        },
+        {
+          "q": "What is olfactory training?",
+          "a": "Smelling four strong scents such as rose, lemon, clove and eucalyptus for 20 seconds each, twice a day, to stimulate the smell nerves."
+        },
+        {
+          "q": "Why does food taste different?",
+          "a": "Much of flavour comes from smell. When smell is reduced, food tastes bland even though taste on the tongue is normal."
+        },
+        {
+          "q": "Do I need a scan?",
+          "a": "Only if the endoscopy is normal and the cause is unclear, or if there are other neurological symptoms."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun"
+      ],
+      "related": [
+        "fess",
+        "allergy",
+        "turbinate"
+      ],
+      "fee": 800,
+      "photo": "tx-smell",
+      "alt": "Woman smelling a bunch of lavender in a field",
+      "page": "treatment-smell.html",
+      "setting_class": "opd",
+      "fee_label": "₹800",
+      "test_name": "Smell test",
+      "test_fee": "₹1,800",
+      "badge": "OPD clinic",
+      "recovery_title": "What to expect",
+      "book_title": "Book a smell assessment",
+      "book_note": "Avoid perfume and strong food 1 hour before the visit.",
+      "prep_title": "Smell training guide",
+      "prep_text": "Step-by-step training plan with a daily tracking sheet.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹2,600",
+      "cost_note": "₹2,600 for consultation and testing; training kit ₹1,200.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Rhinologist · smell disorders"
+        }
+      ],
+      "anchor": "nose",
+      "search": "smell disorder clinic testing and treatment for loss of smell smell clinic loss of smell after a viral infection, including covid-19 reduced smell with nasal polyps or chronic sinusitis distorted or unpleasant smells (parosmia) smell change after head injury"
+    },
+    {
+      "slug": "tonsillectomy",
+      "name": "Tonsillectomy (coblation)",
+      "short": "Tonsillectomy",
+      "specialty": "throat",
+      "specialty_label": "Throat & voice",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Recurrent tonsillitis and enlarged tonsils",
+      "summary": "Removal of the tonsils with coblation, a low-temperature technique that means less pain and a quicker return to normal eating than traditional methods.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "30–45 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Back to work",
+          "v": "10–14 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Seven or more throat infections in one year, or five a year for two years",
+        "Repeated quinsy (abscess beside the tonsil)",
+        "Large tonsils causing snoring or pauses in breathing during sleep",
+        "Tonsil stones or one-sided tonsil enlargement needing examination"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "Throat examination, blood tests and an anaesthesia check. Surgery is done when you are free of infection for 2–3 weeks."
+        },
+        {
+          "t": "On the day",
+          "d": "Both tonsils are removed through the mouth; there are no external cuts."
+        },
+        {
+          "t": "Recovery room",
+          "d": "You start sipping cold drinks within an hour and go home the same evening if comfortable."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Phone check at day 3 and clinic review at 2 weeks."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Cold, soft food from day one"
+        },
+        {
+          "when": "Day 3–7",
+          "t": "Peak soreness",
+          "d": "Regular pain relief, fluids"
+        },
+        {
+          "when": "Day 10",
+          "t": "White patches fade",
+          "d": "Normal healing, not infection"
+        },
+        {
+          "when": "Week 2",
+          "t": "Back to work",
+          "d": "School or office resumes"
+        },
+        {
+          "when": "Week 3",
+          "t": "Full recovery",
+          "d": "Normal diet and exercise"
+        }
+      ],
+      "risks": [
+        "Bleeding after surgery in about 2–4%, most often around days 5–10; come to emergency at once if you spit fresh blood",
+        "Sore throat and ear ache for 7–10 days",
+        "Temporary taste change or tooth/lip soreness from the mouth gag",
+        "Dehydration if drinking is avoided because of pain"
+      ],
+      "faq": [
+        {
+          "q": "Why coblation?",
+          "a": "Coblation removes tissue at around 60–70°C instead of several hundred degrees, so there is less heat damage to surrounding tissue and usually less pain."
+        },
+        {
+          "q": "What can I eat afterwards?",
+          "a": "Normal soft food from day one. Chewing and swallowing help healing. Avoid very hot, spicy or sharp foods for 2 weeks."
+        },
+        {
+          "q": "Is tonsillectomy suitable for adults?",
+          "a": "Yes. Adults often have a slightly longer recovery than children but benefit just as much."
+        },
+        {
+          "q": "What if bleeding happens at home?",
+          "a": "Rinse with cold water, sit up and come to our emergency immediately, or call the 24×7 line on the way."
+        }
+      ],
+      "lead": "kavitha",
+      "team": [
+        "kavitha",
+        "rahul"
+      ],
+      "related": [
+        "adenoidectomy",
+        "reflux",
+        "airway"
+      ],
+      "fee": 800,
+      "photo": "tx-tonsillectomy",
+      "alt": "Boy with his mouth wide open showing his throat and tonsils",
+      "page": "treatment-tonsillectomy.html",
+      "setting_class": "daycare",
+      "fee_label": "₹800",
+      "test_name": "Pre-op blood tests",
+      "test_fee": "₹1,200",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a throat consultation",
+      "book_note": "Bring a list of throat infections and antibiotics from the last two years.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Fasting rules, soft-food list and how to manage pain at home.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹45,000–70,000",
+      "cost_note": "₹45,000–70,000 day-care package.",
+      "team_info": [
+        {
+          "slug": "kavitha",
+          "name": "Dr. Kavitha Sundaram",
+          "page": "doctor-kavitha.html",
+          "portrait": "doc-kavitha",
+          "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+          "note": "Laryngologist · adult throat surgery"
+        },
+        {
+          "slug": "rahul",
+          "name": "Dr. Rahul Menon",
+          "page": "doctor-rahul.html",
+          "portrait": "doc-rahul",
+          "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+          "note": "Paediatric ENT · tonsils in children"
+        }
+      ],
+      "anchor": "throat",
+      "search": "tonsillectomy (coblation) recurrent tonsillitis and enlarged tonsils tonsillectomy seven or more throat infections in one year, or five a year for two years repeated quinsy (abscess beside the tonsil) large tonsils causing snoring or pauses in breathing during sleep tonsil stones or one-sided tonsil enlargement needing examination"
+    },
+    {
+      "slug": "adenoidectomy",
+      "name": "Adenoidectomy",
+      "short": "Adenoidectomy",
+      "specialty": "throat",
+      "specialty_label": "Throat & voice",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Mouth breathing and snoring in children",
+      "summary": "Removal of enlarged adenoids at the back of the nose, guided by an endoscope, to ease mouth breathing, snoring and repeated ear problems in children.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "20–30 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Back to school",
+          "v": "3–5 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Children who breathe through the mouth day and night",
+        "Loud snoring or pauses in breathing during sleep",
+        "Glue ear or repeated ear infections linked to large adenoids",
+        "Persistent nasal discharge despite medical treatment"
+      ],
+      "steps": [
+        {
+          "t": "Assessment",
+          "d": "Nasal endoscopy or a lateral neck X-ray shows adenoid size; hearing is checked too."
+        },
+        {
+          "t": "On the day",
+          "d": "Adenoids are removed through the mouth using an endoscope and coblation or suction diathermy."
+        },
+        {
+          "t": "Recovery room",
+          "d": "Children usually eat and play within a few hours and go home the same day."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Review at 2–3 weeks with a hearing check if grommets were also placed."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Mild sore throat"
+        },
+        {
+          "when": "Day 1–3",
+          "t": "Rest",
+          "d": "Blocked nose, nasal voice"
+        },
+        {
+          "when": "Day 5",
+          "t": "Back to school",
+          "d": "Normal diet"
+        },
+        {
+          "when": "Week 2–3",
+          "t": "Review",
+          "d": "Breathing checked"
+        },
+        {
+          "when": "Month 2",
+          "t": "Settled",
+          "d": "Snoring usually much better"
+        }
+      ],
+      "risks": [
+        "Bleeding is uncommon (under 1%)",
+        "Temporary nasal-sounding voice for a few weeks",
+        "Bad breath for a week as the area heals",
+        "Adenoids can regrow slightly in young children"
+      ],
+      "faq": [
+        {
+          "q": "At what age can adenoids be removed?",
+          "a": "Usually from age 2–3 onwards, and earlier if sleep apnoea is significant."
+        },
+        {
+          "q": "Do adenoids shrink on their own?",
+          "a": "They shrink naturally after age 7–8. Surgery is advised when symptoms are affecting sleep, hearing or growth before then."
+        },
+        {
+          "q": "Will tonsils be removed too?",
+          "a": "Only if they are also large or causing infections or sleep apnoea. We discuss this before surgery."
+        },
+        {
+          "q": "Is it painful?",
+          "a": "Most children need only paracetamol for 2–3 days."
+        }
+      ],
+      "lead": "rahul",
+      "team": [
+        "rahul"
+      ],
+      "related": [
+        "tonsillectomy",
+        "grommet",
+        "sleep-study"
+      ],
+      "fee": 700,
+      "photo": "tx-adenoidectomy",
+      "alt": "Doctor talking with a young boy and his mother across a consultation desk",
+      "page": "treatment-adenoidectomy.html",
+      "setting_class": "daycare",
+      "fee_label": "₹700",
+      "test_name": "Nasal endoscopy",
+      "test_fee": "₹1,500",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a children's ENT visit",
+      "book_note": "A short phone video of your child snoring is very helpful.",
+      "prep_title": "Preparing your child",
+      "prep_text": "Fasting times for children and what to expect on the day.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹35,000–55,000",
+      "cost_note": "₹35,000–55,000; with tonsillectomy ₹50,000–75,000.",
+      "team_info": [
+        {
+          "slug": "rahul",
+          "name": "Dr. Rahul Menon",
+          "page": "doctor-rahul.html",
+          "portrait": "doc-rahul",
+          "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+          "note": "Paediatric ENT · adenoid and tonsil surgery"
+        }
+      ],
+      "anchor": "throat",
+      "search": "adenoidectomy mouth breathing and snoring in children adenoidectomy children who breathe through the mouth day and night loud snoring or pauses in breathing during sleep glue ear or repeated ear infections linked to large adenoids persistent nasal discharge despite medical treatment"
+    },
+    {
+      "slug": "microlaryngeal",
+      "name": "Microlaryngeal surgery",
+      "short": "Microlaryngeal surgery",
+      "specialty": "throat",
+      "specialty_label": "Throat & voice",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Vocal cord nodules, polyps and cysts",
+      "summary": "Precise surgery on the vocal cords through the mouth, using a microscope and fine instruments, to remove polyps, cysts and other lesions while protecting the voice.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "30–45 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Voice rest",
+          "v": "3–7 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Hoarseness for more than 3 weeks with a lesion seen on the vocal cords",
+        "Vocal polyps or cysts that have not improved with voice therapy",
+        "Teachers, singers and speakers whose voice limits their work",
+        "White patches (leukoplakia) on the vocal cords that need a biopsy"
+      ],
+      "steps": [
+        {
+          "t": "Voice assessment",
+          "d": "Video stroboscopy, voice recording and a session with the speech-language pathologist."
+        },
+        {
+          "t": "On the day",
+          "d": "Through a tube placed in the mouth, the lesion is removed under the microscope. No external cuts."
+        },
+        {
+          "t": "Recovery room",
+          "d": "You go home the same day with a plan for voice rest."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Stroboscopy at 2 weeks, then voice therapy to protect the result."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Home",
+          "d": "Mild sore throat"
+        },
+        {
+          "when": "Day 1–5",
+          "t": "Voice rest",
+          "d": "No speaking or whispering"
+        },
+        {
+          "when": "Week 2",
+          "t": "Review",
+          "d": "Stroboscopy check"
+        },
+        {
+          "when": "Week 3",
+          "t": "Back to work",
+          "d": "Gentle voice use"
+        },
+        {
+          "when": "Week 6–8",
+          "t": "Full voice",
+          "d": "Singing resumes gradually"
+        }
+      ],
+      "risks": [
+        "Temporary hoarseness while the cords heal",
+        "Sore throat, jaw ache or chipped tooth from the laryngoscope (rare)",
+        "Lesions can recur if voice habits do not change",
+        "Scar on the vocal cord affecting voice quality is uncommon"
+      ],
+      "faq": [
+        {
+          "q": "Do nodules need surgery?",
+          "a": "Usually not. Most nodules shrink with voice therapy. Surgery is mainly for polyps, cysts and lesions that do not respond."
+        },
+        {
+          "q": "Why is voice rest so important?",
+          "a": "The vocal cords heal best without vibration for a few days. Whispering strains them too."
+        },
+        {
+          "q": "When can I sing again?",
+          "a": "Usually after 6–8 weeks, guided by your stroboscopy findings and therapist."
+        },
+        {
+          "q": "Will the tissue be tested?",
+          "a": "Yes. Everything removed is sent for histopathology and the results are explained at your review."
+        }
+      ],
+      "lead": "kavitha",
+      "team": [
+        "kavitha",
+        "divya"
+      ],
+      "related": [
+        "voice-therapy",
+        "reflux",
+        "fees"
+      ],
+      "fee": 800,
+      "photo": "tx-microlaryngeal",
+      "alt": "Surgeon looking through an operating microscope during surgery",
+      "page": "treatment-microlaryngeal.html",
+      "setting_class": "daycare",
+      "fee_label": "₹800",
+      "test_name": "Video stroboscopy",
+      "test_fee": "₹2,500",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a voice consultation",
+      "book_note": "Surgery is planned only after video stroboscopy and a voice assessment.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Voice-rest rules, fasting and how to communicate in the first days.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹45,000–75,000",
+      "cost_note": "₹45,000–75,000 day-care package.",
+      "team_info": [
+        {
+          "slug": "kavitha",
+          "name": "Dr. Kavitha Sundaram",
+          "page": "doctor-kavitha.html",
+          "portrait": "doc-kavitha",
+          "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+          "note": "Laryngologist · phonosurgery"
+        },
+        {
+          "slug": "divya",
+          "name": "Divya Prakash",
+          "page": "doctor-divya.html",
+          "portrait": "doc-divya",
+          "portrait_alt": "Portrait of Divya Prakash, Audiology & speech therapy",
+          "note": "Speech-language pathologist · voice therapy"
+        }
+      ],
+      "anchor": "throat",
+      "search": "microlaryngeal surgery vocal cord nodules, polyps and cysts microlaryngeal surgery hoarseness for more than 3 weeks with a lesion seen on the vocal cords vocal polyps or cysts that have not improved with voice therapy teachers, singers and speakers whose voice limits their work white patches (leukoplakia) on the vocal cords that need a biopsy"
+    },
+    {
+      "slug": "voice-therapy",
+      "name": "Voice therapy",
+      "short": "Voice therapy",
+      "specialty": "throat",
+      "specialty_label": "Throat & voice",
+      "setting": "OPD",
+      "time": "6–8 sessions",
+      "helps": "Sessions with a speech-language pathologist",
+      "summary": "One-to-one sessions with our speech-language pathologist to treat hoarseness, vocal strain and nodules by changing how you breathe, speak and look after your voice.",
+      "facts": [
+        {
+          "k": "Sessions",
+          "v": "6–8, weekly"
+        },
+        {
+          "k": "Session length",
+          "v": "45 min"
+        },
+        {
+          "k": "Setting",
+          "v": "Voice studio"
+        },
+        {
+          "k": "Online",
+          "v": "Available after session 2"
+        },
+        {
+          "k": "Insurance",
+          "v": "Usually self-pay"
+        }
+      ],
+      "who": [
+        "Teachers, call-centre staff, singers and others who use their voice all day",
+        "Vocal nodules or muscle-tension dysphonia",
+        "Before and after vocal cord surgery",
+        "Voice changes after a long illness or intubation"
+      ],
+      "steps": [
+        {
+          "t": "Voice assessment",
+          "d": "Recording, acoustic analysis and questionnaires; we review your stroboscopy with the laryngologist."
+        },
+        {
+          "t": "Voice care",
+          "d": "Hydration, reflux control, rest periods and habits that strain the voice."
+        },
+        {
+          "t": "Exercises",
+          "d": "Breathing support, resonant voice and semi-occluded vocal tract exercises such as straw phonation."
+        },
+        {
+          "t": "Carry-over",
+          "d": "Using the new technique in real situations, with a home practice plan."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Week 1",
+          "t": "Assessment",
+          "d": "Baseline voice recording"
+        },
+        {
+          "when": "Week 2–3",
+          "t": "Voice care",
+          "d": "Habits and hydration"
+        },
+        {
+          "when": "Week 4–6",
+          "t": "Exercises",
+          "d": "Daily 10-minute practice"
+        },
+        {
+          "when": "Week 8",
+          "t": "Re-record",
+          "d": "Compare with baseline"
+        },
+        {
+          "when": "Month 3",
+          "t": "Maintenance",
+          "d": "Refresher if needed"
+        }
+      ],
+      "risks": [
+        "No medical risk",
+        "Short-term voice fatigue while learning new techniques",
+        "Progress depends on regular home practice",
+        "If no improvement, the laryngologist re-examines the vocal cords"
+      ],
+      "faq": [
+        {
+          "q": "Do I need to see a doctor first?",
+          "a": "Yes. A laryngologist should look at your vocal cords first, so we know the exact cause of hoarseness."
+        },
+        {
+          "q": "Can sessions be online?",
+          "a": "Yes. After the first two in-person sessions, many patients continue by video consultation through the patient portal."
+        },
+        {
+          "q": "How soon will my voice improve?",
+          "a": "Many people notice less strain within 3–4 weeks; nodules usually shrink over 6–8 weeks."
+        },
+        {
+          "q": "Is it only for singers?",
+          "a": "No. Most of our patients are teachers, lawyers, sales staff and parents of young children."
+        }
+      ],
+      "lead": "divya",
+      "team": [
+        "divya",
+        "kavitha"
+      ],
+      "related": [
+        "microlaryngeal",
+        "reflux",
+        "fees"
+      ],
+      "fee": 500,
+      "photo": "tx-voice-therapy",
+      "alt": "Young woman singing into a handheld microphone",
+      "page": "treatment-voice-therapy.html",
+      "setting_class": "opd",
+      "fee_label": "₹500",
+      "test_name": "Therapy session",
+      "test_fee": "₹800",
+      "badge": "OPD therapy",
+      "recovery_title": "Your therapy course",
+      "book_title": "Book a voice assessment",
+      "book_note": "Your first visit includes a short check by the laryngologist.",
+      "prep_title": "Voice care at home",
+      "prep_text": "Daily hydration, warm-ups and habits that protect your voice.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹1,500",
+      "cost_note": "₹1,500 assessment and ₹800 a session; 6–8 sessions typical.",
+      "team_info": [
+        {
+          "slug": "divya",
+          "name": "Divya Prakash",
+          "page": "doctor-divya.html",
+          "portrait": "doc-divya",
+          "portrait_alt": "Portrait of Divya Prakash, Audiology & speech therapy",
+          "note": "Speech-language pathologist · voice therapy"
+        },
+        {
+          "slug": "kavitha",
+          "name": "Dr. Kavitha Sundaram",
+          "page": "doctor-kavitha.html",
+          "portrait": "doc-kavitha",
+          "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+          "note": "Laryngologist · voice clinic"
+        }
+      ],
+      "anchor": "throat",
+      "search": "voice therapy sessions with a speech-language pathologist voice therapy teachers, call-centre staff, singers and others who use their voice all day vocal nodules or muscle-tension dysphonia before and after vocal cord surgery voice changes after a long illness or intubation"
+    },
+    {
+      "slug": "fees",
+      "name": "Swallowing assessment (FEES)",
+      "short": "Swallowing assessment",
+      "specialty": "throat",
+      "specialty_label": "Throat & voice",
+      "setting": "OPD",
+      "time": "30 min",
+      "helps": "Endoscopic check of how you swallow",
+      "summary": "Fibreoptic endoscopic evaluation of swallowing (FEES): a thin camera in the nose watches the throat while you eat and drink, to show exactly why food sticks or goes the wrong way.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "20–30 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Optional nasal spray"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD room"
+        },
+        {
+          "k": "Results",
+          "v": "Same visit"
+        },
+        {
+          "k": "Insurance",
+          "v": "OPD cover, if included"
+        }
+      ],
+      "who": [
+        "Coughing or choking when eating or drinking",
+        "Food sticking in the throat",
+        "Swallowing problems after a stroke or with Parkinson's disease",
+        "Weight loss or chest infections that might be caused by aspiration"
+      ],
+      "steps": [
+        {
+          "t": "History",
+          "d": "We ask about which foods are hard to swallow and check your medicines."
+        },
+        {
+          "t": "Scope",
+          "d": "A thin flexible endoscope is passed through the nose to view the throat and voice box."
+        },
+        {
+          "t": "Test swallows",
+          "d": "You swallow coloured water, puree and a biscuit while we record the video."
+        },
+        {
+          "t": "Plan",
+          "d": "We explain the findings on the screen and give diet and swallowing exercises at once."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Minute 0",
+          "t": "Video review",
+          "d": "Findings explained"
+        },
+        {
+          "when": "Hour 1",
+          "t": "Normal activity",
+          "d": "Eat once numbness wears off"
+        },
+        {
+          "when": "Week 1",
+          "t": "Exercises",
+          "d": "Start swallowing therapy"
+        },
+        {
+          "when": "Week 4",
+          "t": "Review",
+          "d": "Therapy progress"
+        },
+        {
+          "when": "Month 3",
+          "t": "Repeat if needed",
+          "d": "Track recovery"
+        }
+      ],
+      "risks": [
+        "Brief discomfort or watering eyes as the scope passes",
+        "Minor nosebleed (uncommon)",
+        "Small amount of food may go into the airway during testing; we watch closely and stop if needed",
+        "Fainting is very rare"
+      ],
+      "faq": [
+        {
+          "q": "How is FEES different from a barium swallow?",
+          "a": "FEES uses no radiation, can be done at the bedside and lets us test real foods. A barium study shows the gullet better, so we sometimes use both."
+        },
+        {
+          "q": "Can I eat before the test?",
+          "a": "Yes, a light meal 2 hours before is fine because we need you to swallow normally."
+        },
+        {
+          "q": "Is it suitable after a stroke?",
+          "a": "Yes. FEES is often the first test used to plan safe eating after a stroke."
+        },
+        {
+          "q": "Who does the test?",
+          "a": "Our laryngologist performs the scope with the speech-language pathologist, who plans therapy."
+        }
+      ],
+      "lead": "kavitha",
+      "team": [
+        "kavitha",
+        "divya"
+      ],
+      "related": [
+        "reflux",
+        "voice-therapy",
+        "microlaryngeal"
+      ],
+      "fee": 800,
+      "photo": "tx-fees",
+      "alt": "Stethoscope resting on a calculator keypad",
+      "page": "treatment-fees.html",
+      "setting_class": "opd",
+      "fee_label": "₹800",
+      "test_name": "FEES test",
+      "test_fee": "₹3,000",
+      "badge": "OPD assessment",
+      "recovery_title": "After the test",
+      "book_title": "Book a swallowing assessment",
+      "book_note": "Bring a list of medicines and any previous scans of your throat or gullet.",
+      "prep_title": "Before the test",
+      "prep_text": "What to eat beforehand and what to bring to the appointment.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹3,800",
+      "cost_note": "₹3,800 for consultation and FEES.",
+      "team_info": [
+        {
+          "slug": "kavitha",
+          "name": "Dr. Kavitha Sundaram",
+          "page": "doctor-kavitha.html",
+          "portrait": "doc-kavitha",
+          "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+          "note": "Laryngologist · swallowing disorders"
+        },
+        {
+          "slug": "divya",
+          "name": "Divya Prakash",
+          "page": "doctor-divya.html",
+          "portrait": "doc-divya",
+          "portrait_alt": "Portrait of Divya Prakash, Audiology & speech therapy",
+          "note": "Speech-language pathologist · dysphagia"
+        }
+      ],
+      "anchor": "throat",
+      "search": "swallowing assessment (fees) endoscopic check of how you swallow swallowing assessment coughing or choking when eating or drinking food sticking in the throat swallowing problems after a stroke or with parkinson's disease weight loss or chest infections that might be caused by aspiration"
+    },
+    {
+      "slug": "reflux",
+      "name": "Reflux (LPR) clinic",
+      "short": "Reflux clinic",
+      "specialty": "throat",
+      "specialty_label": "Throat & voice",
+      "setting": "OPD",
+      "time": "30 min",
+      "helps": "Throat-clearing, globus and chronic cough",
+      "summary": "Assessment and treatment of laryngopharyngeal reflux, where stomach contents irritate the throat, causing throat clearing, a lump sensation, hoarseness and cough, often without heartburn.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "30 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Optional nasal spray"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD clinic"
+        },
+        {
+          "k": "Results",
+          "v": "Same visit"
+        },
+        {
+          "k": "Treatment",
+          "v": "8–12 weeks"
+        }
+      ],
+      "who": [
+        "Constant throat clearing or excess mucus in the throat",
+        "A lump-in-the-throat feeling (globus)",
+        "Chronic cough or morning hoarseness",
+        "Sour taste or burning throat, with or without heartburn"
+      ],
+      "steps": [
+        {
+          "t": "Questionnaire",
+          "d": "Reflux symptom index and a review of diet, sleep and medicines."
+        },
+        {
+          "t": "Laryngoscopy",
+          "d": "A flexible endoscope checks the voice box for reflux changes and rules out other causes."
+        },
+        {
+          "t": "Treatment plan",
+          "d": "Diet and lifestyle changes, alginate after meals and, if needed, acid-reducing tablets."
+        },
+        {
+          "t": "Review",
+          "d": "Symptoms re-scored at 8–12 weeks; further tests if not improving."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Diagnosis",
+          "d": "Plan started"
+        },
+        {
+          "when": "Week 2",
+          "t": "Diet changes",
+          "d": "Late meals and triggers cut"
+        },
+        {
+          "when": "Week 6",
+          "t": "Easing",
+          "d": "Throat clearing reduces"
+        },
+        {
+          "when": "Week 12",
+          "t": "Review",
+          "d": "Re-score and scope"
+        },
+        {
+          "when": "Month 6",
+          "t": "Maintenance",
+          "d": "Lowest effective dose"
+        }
+      ],
+      "risks": [
+        "No risk from the consultation; mild discomfort from the scope",
+        "Acid-reducing medicines can cause headache or bowel change",
+        "Symptoms may return if lifestyle changes stop",
+        "Persistent symptoms need endoscopy of the food pipe"
+      ],
+      "faq": [
+        {
+          "q": "Can I have reflux without heartburn?",
+          "a": "Yes. Silent reflux into the throat is very common and often has no heartburn at all."
+        },
+        {
+          "q": "Which foods should I avoid?",
+          "a": "Late dinners, coffee, tea, fried and spicy food, chocolate, carbonated drinks and alcohol are common triggers."
+        },
+        {
+          "q": "How long before I feel better?",
+          "a": "Throat symptoms improve more slowly than heartburn, usually over 6–12 weeks."
+        },
+        {
+          "q": "Do I need an endoscopy of the stomach?",
+          "a": "Only if you have warning signs such as difficulty swallowing, weight loss or vomiting blood, or if treatment does not help."
+        }
+      ],
+      "lead": "kavitha",
+      "team": [
+        "kavitha"
+      ],
+      "related": [
+        "voice-therapy",
+        "fees",
+        "microlaryngeal"
+      ],
+      "fee": 800,
+      "photo": "tx-reflux",
+      "alt": "Woman holding her chest and upper stomach with reflux discomfort",
+      "page": "treatment-reflux.html",
+      "setting_class": "opd",
+      "fee_label": "₹800",
+      "test_name": "Flexible laryngoscopy",
+      "test_fee": "₹1,200",
+      "badge": "OPD clinic",
+      "recovery_title": "Treatment timeline",
+      "book_title": "Book a reflux consultation",
+      "book_note": "Note what you eat and when for a week before the visit.",
+      "prep_title": "Reflux diet guide",
+      "prep_text": "Foods to limit, meal timing and sleeping position tips.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹2,000",
+      "cost_note": "₹2,000 for consultation and laryngoscopy.",
+      "team_info": [
+        {
+          "slug": "kavitha",
+          "name": "Dr. Kavitha Sundaram",
+          "page": "doctor-kavitha.html",
+          "portrait": "doc-kavitha",
+          "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+          "note": "Laryngologist · reflux and voice"
+        }
+      ],
+      "anchor": "throat",
+      "search": "reflux (lpr) clinic throat-clearing, globus and chronic cough reflux clinic constant throat clearing or excess mucus in the throat a lump-in-the-throat feeling (globus) chronic cough or morning hoarseness sour taste or burning throat, with or without heartburn"
+    },
+    {
+      "slug": "neck-lump",
+      "name": "Neck lump evaluation",
+      "short": "Neck lump evaluation",
+      "specialty": "headneck",
+      "specialty_label": "Head & neck",
+      "setting": "OPD",
+      "time": "1 visit",
+      "helps": "Ultrasound and FNAC on the same day",
+      "summary": "A one-stop clinic for any new lump in the neck: examination, ultrasound and, if needed, a fine-needle sample (FNAC), all in one visit so you are not left waiting.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "1.5–2 hours"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "None or local"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD + imaging"
+        },
+        {
+          "k": "FNAC report",
+          "v": "2–3 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "OPD cover, if included"
+        }
+      ],
+      "who": [
+        "A lump in the neck present for more than 3 weeks",
+        "A lump with hoarseness, difficulty swallowing or weight loss",
+        "Swelling in the thyroid or salivary gland area",
+        "Lymph nodes that have grown after an infection settled"
+      ],
+      "steps": [
+        {
+          "t": "Examination",
+          "d": "Head and neck examination including a camera check of the nose and throat."
+        },
+        {
+          "t": "Ultrasound",
+          "d": "High-resolution ultrasound shows the size, type and blood supply of the lump."
+        },
+        {
+          "t": "FNAC",
+          "d": "A thin needle takes a sample under ultrasound guidance. It feels like a blood test."
+        },
+        {
+          "t": "Results visit",
+          "d": "Findings and next steps explained, in person or by video consultation."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Clinic visit",
+          "d": "Exam, scan and sample"
+        },
+        {
+          "when": "Day 0",
+          "t": "Back to normal",
+          "d": "No rest needed"
+        },
+        {
+          "when": "Day 2–3",
+          "t": "Report",
+          "d": "FNAC results ready"
+        },
+        {
+          "when": "Week 1",
+          "t": "Plan",
+          "d": "Treatment or monitoring"
+        },
+        {
+          "when": "Month 3",
+          "t": "Review",
+          "d": "Repeat scan if watching"
+        }
+      ],
+      "risks": [
+        "Mild bruising or soreness at the needle site",
+        "Occasionally the sample is not enough and needs repeating",
+        "Rarely a core biopsy or CT/MRI is needed for a clear answer",
+        "Most neck lumps are not cancer, but every persistent lump deserves a check"
+      ],
+      "faq": [
+        {
+          "q": "Is every neck lump cancer?",
+          "a": "No. Most are swollen lymph nodes from infections, thyroid nodules or benign cysts. Lumps lasting more than 3 weeks should still be checked."
+        },
+        {
+          "q": "Does FNAC hurt?",
+          "a": "It feels like a blood test. No anaesthetic is usually needed."
+        },
+        {
+          "q": "When will I get the result?",
+          "a": "Ultrasound findings are explained the same day; the FNAC report takes 2–3 working days."
+        },
+        {
+          "q": "Can the needle spread cancer?",
+          "a": "No. FNAC is a safe, standard test and does not spread disease."
+        }
+      ],
+      "lead": "farhana",
+      "team": [
+        "farhana"
+      ],
+      "related": [
+        "thyroid",
+        "salivary",
+        "cancer-screening"
+      ],
+      "fee": 1000,
+      "photo": "tx-neck-lump",
+      "alt": "Woman feeling both sides of her neck with her hands",
+      "page": "treatment-neck-lump.html",
+      "setting_class": "opd",
+      "fee_label": "₹1,000",
+      "test_name": "Neck ultrasound + FNAC",
+      "test_fee": "₹3,300",
+      "badge": "OPD one-stop clinic",
+      "recovery_title": "What to expect",
+      "book_title": "Book a neck lump clinic",
+      "book_note": "Bring any previous scans or blood reports. Allow 2 hours for the visit.",
+      "prep_title": "Before the clinic",
+      "prep_text": "Blood thinners to discuss and what the visit involves step by step.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹4,200",
+      "cost_note": "₹4,200 for consultation, ultrasound and FNAC.",
+      "team_info": [
+        {
+          "slug": "farhana",
+          "name": "Dr. Farhana Iqbal",
+          "page": "doctor-farhana.html",
+          "portrait": "doc-farhana",
+          "portrait_alt": "Portrait of Dr. Farhana Iqbal, Head & neck surgery",
+          "note": "Head & neck surgeon · one-stop lump clinic"
+        }
+      ],
+      "anchor": "head-neck",
+      "search": "neck lump evaluation ultrasound and fnac on the same day neck lump evaluation a lump in the neck present for more than 3 weeks a lump with hoarseness, difficulty swallowing or weight loss swelling in the thyroid or salivary gland area lymph nodes that have grown after an infection settled"
+    },
+    {
+      "slug": "thyroid",
+      "name": "Thyroidectomy",
+      "short": "Thyroidectomy",
+      "specialty": "headneck",
+      "specialty_label": "Head & neck",
+      "setting": "Inpatient",
+      "time": "2 nights",
+      "helps": "Thyroid nodules and goitre",
+      "summary": "Removal of part or all of the thyroid gland through a small neck crease incision, with nerve monitoring to protect your voice.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "1.5–3 hours"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "2 nights"
+        },
+        {
+          "k": "Back to work",
+          "v": "2 weeks"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "Thyroid nodules that are suspicious or cancerous on FNAC",
+        "Large goitre causing pressure, breathing or swallowing trouble",
+        "Overactive thyroid not controlled with medicines",
+        "Nodules that keep growing on follow-up scans"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "Ultrasound, FNAC, thyroid blood tests and a vocal cord check with a laryngoscope."
+        },
+        {
+          "t": "On the day",
+          "d": "Through a 4–6 cm crease incision, half or all of the gland is removed using nerve monitoring."
+        },
+        {
+          "t": "Hospital stay",
+          "d": "Calcium levels and voice are checked; most patients go home on day 2."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Wound check at 1 week, histology results and thyroid hormone plan at 2 weeks."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 1–2",
+          "t": "Ward",
+          "d": "Calcium and voice checked"
+        },
+        {
+          "when": "Week 1",
+          "t": "Review",
+          "d": "Wound check"
+        },
+        {
+          "when": "Week 2",
+          "t": "Back to work",
+          "d": "Light duties"
+        },
+        {
+          "when": "Week 6",
+          "t": "Bloods",
+          "d": "Thyroid level adjusted"
+        },
+        {
+          "when": "Month 3",
+          "t": "Scar fading",
+          "d": "Full activity"
+        }
+      ],
+      "risks": [
+        "Temporary hoarseness in about 5%; permanent voice change is rare (under 1%) with nerve monitoring",
+        "Low calcium after total thyroidectomy, usually temporary and treated with tablets",
+        "Bleeding in the neck in the first 24 hours (1–2%), which is why you stay in",
+        "Lifelong thyroid tablets after total thyroidectomy"
+      ],
+      "faq": [
+        {
+          "q": "Will I need thyroid tablets?",
+          "a": "After total thyroidectomy, yes, a daily tablet for life. After half-thyroidectomy, about 1 in 4 people need one."
+        },
+        {
+          "q": "How visible is the scar?",
+          "a": "The cut is placed in a natural neck crease and usually fades to a fine line within a year."
+        },
+        {
+          "q": "Will my voice change?",
+          "a": "We monitor the voice nerves throughout surgery. Most people have a normal voice; mild tiredness of the voice for a few weeks is common."
+        },
+        {
+          "q": "Is it covered by insurance?",
+          "a": "Yes, as an inpatient procedure. Our desk arranges cashless approval."
+        }
+      ],
+      "lead": "farhana",
+      "team": [
+        "farhana",
+        "kavitha"
+      ],
+      "related": [
+        "neck-lump",
+        "salivary",
+        "cancer-screening"
+      ],
+      "fee": 1000,
+      "photo": "tx-thyroid",
+      "alt": "Fingers touching the side of a woman's neck near the thyroid",
+      "page": "treatment-thyroid.html",
+      "setting_class": "inpatient",
+      "fee_label": "₹1,000",
+      "test_name": "Thyroid ultrasound",
+      "test_fee": "₹1,500",
+      "badge": "Inpatient procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a thyroid consultation",
+      "book_note": "Bring thyroid blood tests, ultrasound and FNAC reports if you have them.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Tests to complete, medicines to adjust and what to pack for two nights.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night.",
+        "Pack loose clothes, toiletries and a phone charger for your stay."
+      ],
+      "cost_range": "₹75,000–1,30,000",
+      "cost_note": "₹75,000–1,30,000 including a two-night stay.",
+      "team_info": [
+        {
+          "slug": "farhana",
+          "name": "Dr. Farhana Iqbal",
+          "page": "doctor-farhana.html",
+          "portrait": "doc-farhana",
+          "portrait_alt": "Portrait of Dr. Farhana Iqbal, Head & neck surgery",
+          "note": "Head & neck surgeon · thyroid surgery"
+        },
+        {
+          "slug": "kavitha",
+          "name": "Dr. Kavitha Sundaram",
+          "page": "doctor-kavitha.html",
+          "portrait": "doc-kavitha",
+          "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+          "note": "Laryngologist · voice checks"
+        }
+      ],
+      "anchor": "head-neck",
+      "search": "thyroidectomy thyroid nodules and goitre thyroidectomy thyroid nodules that are suspicious or cancerous on fnac large goitre causing pressure, breathing or swallowing trouble overactive thyroid not controlled with medicines nodules that keep growing on follow-up scans"
+    },
+    {
+      "slug": "salivary",
+      "name": "Salivary gland surgery",
+      "short": "Salivary gland surgery",
+      "specialty": "headneck",
+      "specialty_label": "Head & neck",
+      "setting": "Inpatient",
+      "time": "1–2 nights",
+      "helps": "Parotid and submandibular swellings",
+      "summary": "Surgery to remove tumours, stones or chronically infected salivary glands in front of the ear (parotid) or under the jaw (submandibular), with facial nerve monitoring.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "1.5–3 hours"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "1–2 nights"
+        },
+        {
+          "k": "Back to work",
+          "v": "10–14 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless available"
+        }
+      ],
+      "who": [
+        "A lump in front of the ear or under the jaw, usually a benign tumour",
+        "Recurrent painful swelling with meals from stones",
+        "Chronic infection of a salivary gland",
+        "Tumours that need removal for diagnosis"
+      ],
+      "steps": [
+        {
+          "t": "Before surgery",
+          "d": "Ultrasound and FNAC, with MRI for parotid lumps to plan the safest approach."
+        },
+        {
+          "t": "On the day",
+          "d": "The gland or part of it is removed through a neck-crease cut with continuous facial nerve monitoring."
+        },
+        {
+          "t": "Hospital stay",
+          "d": "A small drain is removed after 1–2 days before you go home."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Wound check at 1 week and histology results at 2 weeks."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 1–2",
+          "t": "Ward",
+          "d": "Drain removed"
+        },
+        {
+          "when": "Week 1",
+          "t": "Review",
+          "d": "Stitches out"
+        },
+        {
+          "when": "Week 2",
+          "t": "Back to work",
+          "d": "Light duties"
+        },
+        {
+          "when": "Month 1–3",
+          "t": "Numbness easing",
+          "d": "Ear lobe sensation returns"
+        },
+        {
+          "when": "Month 6",
+          "t": "Scar settles",
+          "d": "Final result"
+        }
+      ],
+      "risks": [
+        "Temporary facial weakness after parotid surgery in 10–20%, usually recovering over weeks",
+        "Permanent facial nerve weakness is rare (1–2%)",
+        "Numbness of the ear lobe; sweating on the cheek while eating (Frey's syndrome)",
+        "Collection of saliva or blood under the wound"
+      ],
+      "faq": [
+        {
+          "q": "Are most salivary lumps cancer?",
+          "a": "No. About 80% of parotid lumps are benign, most commonly a pleomorphic adenoma."
+        },
+        {
+          "q": "Why remove a benign lump?",
+          "a": "Some benign tumours slowly grow and can rarely turn malignant, so removal is usually advised."
+        },
+        {
+          "q": "Can stones be removed without surgery?",
+          "a": "Small stones near the duct opening can often be removed through the mouth. Larger or deep stones may need gland removal."
+        },
+        {
+          "q": "Will my mouth be dry?",
+          "a": "No. You have many other salivary glands, so saliva flow remains normal."
+        }
+      ],
+      "lead": "farhana",
+      "team": [
+        "farhana"
+      ],
+      "related": [
+        "neck-lump",
+        "thyroid",
+        "cancer-screening"
+      ],
+      "fee": 1000,
+      "photo": "tx-salivary",
+      "alt": "Gloved sonographer holding an ultrasound probe at the scanner's control panel",
+      "page": "treatment-salivary.html",
+      "setting_class": "inpatient",
+      "fee_label": "₹1,000",
+      "test_name": "Ultrasound + FNAC",
+      "test_fee": "₹3,300",
+      "badge": "Inpatient procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a head & neck consultation",
+      "book_note": "Bring any scans or FNAC reports of the swelling.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Fasting rules, medicines to pause and caring for the neck wound.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night.",
+        "Pack loose clothes, toiletries and a phone charger for your stay."
+      ],
+      "cost_range": "₹80,000–1,40,000",
+      "cost_note": "₹80,000–1,40,000 including the hospital stay.",
+      "team_info": [
+        {
+          "slug": "farhana",
+          "name": "Dr. Farhana Iqbal",
+          "page": "doctor-farhana.html",
+          "portrait": "doc-farhana",
+          "portrait_alt": "Portrait of Dr. Farhana Iqbal, Head & neck surgery",
+          "note": "Head & neck surgeon · parotid surgery"
+        }
+      ],
+      "anchor": "head-neck",
+      "search": "salivary gland surgery parotid and submandibular swellings salivary gland surgery a lump in front of the ear or under the jaw, usually a benign tumour recurrent painful swelling with meals from stones chronic infection of a salivary gland tumours that need removal for diagnosis"
+    },
+    {
+      "slug": "cancer-screening",
+      "name": "Head & neck cancer screening",
+      "short": "Cancer screening",
+      "specialty": "headneck",
+      "specialty_label": "Head & neck",
+      "setting": "OPD",
+      "time": "45 min",
+      "helps": "Oral, throat and voice-box check",
+      "summary": "A thorough check of the mouth, throat, voice box and neck with an endoscope, for early signs of head and neck cancer, especially in tobacco and areca-nut users.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "45 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Optional local spray"
+        },
+        {
+          "k": "Setting",
+          "v": "OPD clinic"
+        },
+        {
+          "k": "Results",
+          "v": "Same visit"
+        },
+        {
+          "k": "Repeat",
+          "v": "Yearly if at risk"
+        }
+      ],
+      "who": [
+        "Current or former users of tobacco, gutka, paan or areca nut",
+        "Regular alcohol use, especially with smoking",
+        "A mouth ulcer, white or red patch lasting more than 2 weeks",
+        "Hoarseness, ear pain or difficulty swallowing lasting more than 3 weeks"
+      ],
+      "steps": [
+        {
+          "t": "Risk review",
+          "d": "Tobacco, alcohol and family history, plus any symptoms you have noticed."
+        },
+        {
+          "t": "Mouth examination",
+          "d": "A careful look and feel of the lips, gums, tongue, cheeks and palate."
+        },
+        {
+          "t": "Endoscopy",
+          "d": "A flexible scope views the back of the nose, throat and voice box."
+        },
+        {
+          "t": "Next steps",
+          "d": "Same-day biopsy or scan if anything is found, and help to quit tobacco."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 0",
+          "t": "Screening",
+          "d": "Results discussed"
+        },
+        {
+          "when": "Day 0",
+          "t": "Quit plan",
+          "d": "Tobacco counselling"
+        },
+        {
+          "when": "Week 1",
+          "t": "Biopsy result",
+          "d": "Only if a sample was taken"
+        },
+        {
+          "when": "Month 6",
+          "t": "Self-check",
+          "d": "Monthly mouth check"
+        },
+        {
+          "when": "Year 1",
+          "t": "Re-screen",
+          "d": "For ongoing risk"
+        }
+      ],
+      "risks": [
+        "No risk from the examination; brief gagging with the scope",
+        "A biopsy, if needed, can cause mild soreness for a few days",
+        "Screening reduces but does not remove risk; report new symptoms early",
+        "Quitting tobacco is the single most effective prevention"
+      ],
+      "faq": [
+        {
+          "q": "Who should be screened?",
+          "a": "Anyone over 30 who uses or has used tobacco or areca nut in any form, and anyone with symptoms lasting more than 2–3 weeks."
+        },
+        {
+          "q": "How do I check my own mouth?",
+          "a": "Once a month, use a mirror and good light to look for ulcers, white or red patches and lumps. Our guide shows you how."
+        },
+        {
+          "q": "Is head and neck cancer curable?",
+          "a": "Found early, most head and neck cancers are highly treatable, which is why screening matters."
+        },
+        {
+          "q": "Do you help with quitting tobacco?",
+          "a": "Yes. Every screening includes counselling and a referral to our cessation programme."
+        }
+      ],
+      "lead": "farhana",
+      "team": [
+        "farhana",
+        "kavitha"
+      ],
+      "related": [
+        "neck-lump",
+        "thyroid",
+        "reflux"
+      ],
+      "fee": 1000,
+      "photo": "tx-cancer-screening",
+      "alt": "Close-up oral examination with a mirror and probe",
+      "page": "treatment-cancer-screening.html",
+      "setting_class": "opd",
+      "fee_label": "₹1,000",
+      "test_name": "Screening package",
+      "test_fee": "₹2,500",
+      "badge": "OPD screening",
+      "recovery_title": "What to expect",
+      "book_title": "Book a screening",
+      "book_note": "No preparation is needed. Tell us about any symptoms when you book.",
+      "prep_title": "Mouth self-check guide",
+      "prep_text": "A simple monthly self-examination with photos of warning signs.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹2,500",
+      "cost_note": "₹2,500 screening package including consultation and endoscopy.",
+      "team_info": [
+        {
+          "slug": "farhana",
+          "name": "Dr. Farhana Iqbal",
+          "page": "doctor-farhana.html",
+          "portrait": "doc-farhana",
+          "portrait_alt": "Portrait of Dr. Farhana Iqbal, Head & neck surgery",
+          "note": "Head & neck surgeon · oncology"
+        },
+        {
+          "slug": "kavitha",
+          "name": "Dr. Kavitha Sundaram",
+          "page": "doctor-kavitha.html",
+          "portrait": "doc-kavitha",
+          "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+          "note": "Laryngologist · voice-box checks"
+        }
+      ],
+      "anchor": "head-neck",
+      "search": "head & neck cancer screening oral, throat and voice-box check cancer screening current or former users of tobacco, gutka, paan or areca nut regular alcohol use, especially with smoking a mouth ulcer, white or red patch lasting more than 2 weeks hoarseness, ear pain or difficulty swallowing lasting more than 3 weeks"
+    },
+    {
+      "slug": "sleep-study",
+      "name": "Home sleep study",
+      "short": "Home sleep study",
+      "specialty": "sleep",
+      "specialty_label": "Sleep & snoring",
+      "setting": "Home",
+      "time": "1 night",
+      "helps": "Overnight test in your own bed",
+      "summary": "A small, easy-to-wear kit that records breathing, oxygen and snoring overnight in your own bed, to diagnose obstructive sleep apnoea without a hospital stay.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "1 night"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "None"
+        },
+        {
+          "k": "Setting",
+          "v": "Your home"
+        },
+        {
+          "k": "Report",
+          "v": "2–3 days"
+        },
+        {
+          "k": "Kit pickup",
+          "v": "Clinic or home"
+        }
+      ],
+      "who": [
+        "Loud snoring with pauses in breathing noticed by a partner",
+        "Daytime sleepiness, morning headaches or poor concentration",
+        "High blood pressure, diabetes or obesity with snoring",
+        "Before snoring or airway surgery, to measure severity"
+      ],
+      "steps": [
+        {
+          "t": "Consultation",
+          "d": "Sleep questionnaire, nose and throat examination and a check of your BMI and neck size."
+        },
+        {
+          "t": "Kit fitting",
+          "d": "Our technician shows you how to wear the chest belt, nasal sensor and finger probe."
+        },
+        {
+          "t": "Night at home",
+          "d": "Sleep as usual. The kit records automatically and you return it the next morning."
+        },
+        {
+          "t": "Results",
+          "d": "A sleep physician scores the study and you get a report with the AHI and a treatment plan."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Night 1",
+          "t": "Study",
+          "d": "Sleep in your own bed"
+        },
+        {
+          "when": "Day 1",
+          "t": "Return kit",
+          "d": "Clinic or home pickup"
+        },
+        {
+          "when": "Day 3",
+          "t": "Report",
+          "d": "AHI and oxygen levels"
+        },
+        {
+          "when": "Week 1",
+          "t": "Plan",
+          "d": "CPAP, device or surgery"
+        },
+        {
+          "when": "Month 3",
+          "t": "Follow-up",
+          "d": "Symptoms re-checked"
+        }
+      ],
+      "risks": [
+        "No medical risk",
+        "Sensors may slip off; the test is repeated free if data is incomplete",
+        "Home studies can underestimate mild apnoea; a lab study may be advised",
+        "Not suitable for some heart or lung conditions"
+      ],
+      "faq": [
+        {
+          "q": "Is a home study as good as a lab study?",
+          "a": "For most adults with suspected moderate to severe sleep apnoea, yes. It is more comfortable and you sleep more naturally."
+        },
+        {
+          "q": "Can I take my usual medicines?",
+          "a": "Yes, take your normal medicines. Avoid alcohol and sleeping pills that night."
+        },
+        {
+          "q": "What is AHI?",
+          "a": "The apnoea-hypopnoea index counts breathing pauses per hour. Under 5 is normal; 30 or more is severe."
+        },
+        {
+          "q": "What if I have sleep apnoea?",
+          "a": "Options include CPAP, weight loss, positional therapy, oral devices and, in selected cases, surgery."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun",
+        "rahul"
+      ],
+      "related": [
+        "dise",
+        "airway",
+        "septoplasty"
+      ],
+      "fee": 800,
+      "photo": "tx-sleep-study",
+      "alt": "Man asleep face-down on a pillow in a dark bedroom",
+      "page": "treatment-sleep-study.html",
+      "setting_class": "home",
+      "fee_label": "₹800",
+      "test_name": "Home sleep study",
+      "test_fee": "₹6,500",
+      "badge": "Home test",
+      "recovery_title": "What happens next",
+      "book_title": "Book a sleep consultation",
+      "book_note": "Bring your partner if possible; they often notice symptoms you do not.",
+      "prep_title": "Your night at home",
+      "prep_text": "How to wear the kit, bedtime tips and how to return it.",
+      "prep_items": [
+        "Bring previous reports, scans and a list of the medicines you take.",
+        "Arrive 15 minutes early to complete registration at the front desk.",
+        "Tell us if you take blood thinners or have any allergies.",
+        "Bring your OPD or insurance card, if you have one."
+      ],
+      "cost_range": "₹7,300",
+      "cost_note": "₹7,300 for consultation and home sleep study.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Sleep surgeon · snoring and apnoea"
+        },
+        {
+          "slug": "rahul",
+          "name": "Dr. Rahul Menon",
+          "page": "doctor-rahul.html",
+          "portrait": "doc-rahul",
+          "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+          "note": "Paediatric ENT · sleep in children"
+        }
+      ],
+      "anchor": "sleep",
+      "search": "home sleep study overnight test in your own bed home sleep study loud snoring with pauses in breathing noticed by a partner daytime sleepiness, morning headaches or poor concentration high blood pressure, diabetes or obesity with snoring before snoring or airway surgery, to measure severity"
+    },
+    {
+      "slug": "dise",
+      "name": "Drug-induced sleep endoscopy",
+      "short": "Sleep endoscopy (DISE)",
+      "specialty": "sleep",
+      "specialty_label": "Sleep & snoring",
+      "setting": "Day-care",
+      "time": "Same day",
+      "helps": "Finds the exact site of airway collapse",
+      "summary": "A short procedure under light sedation where a thin camera looks at your airway while you are asleep, to see exactly where it narrows or collapses before deciding on surgery or a device.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "20–30 min"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "Light sedation"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "Same day"
+        },
+        {
+          "k": "Back to work",
+          "v": "Next day"
+        },
+        {
+          "k": "Insurance",
+          "v": "Varies by policy"
+        }
+      ],
+      "who": [
+        "Confirmed sleep apnoea when you cannot tolerate CPAP",
+        "Planning snoring or airway surgery",
+        "Considering an oral appliance or positional therapy",
+        "Persistent apnoea after previous surgery"
+      ],
+      "steps": [
+        {
+          "t": "Before",
+          "d": "A recent sleep study and an anaesthesia check."
+        },
+        {
+          "t": "Sedation",
+          "d": "Propofol is given slowly until you are asleep and snoring as you do at night."
+        },
+        {
+          "t": "Endoscopy",
+          "d": "A flexible scope through the nose records the palate, tongue base, epiglottis and side walls."
+        },
+        {
+          "t": "Results",
+          "d": "Video findings explained the same day, with a tailored treatment plan."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Hour 0",
+          "t": "Wake",
+          "d": "Groggy for 1–2 hours"
+        },
+        {
+          "when": "Hour 3",
+          "t": "Home",
+          "d": "Someone must take you"
+        },
+        {
+          "when": "Day 1",
+          "t": "Normal",
+          "d": "Work and driving resume"
+        },
+        {
+          "when": "Week 1",
+          "t": "Plan",
+          "d": "Surgery or device decided"
+        },
+        {
+          "when": "Month 1",
+          "t": "Treatment",
+          "d": "Plan put into action"
+        }
+      ],
+      "risks": [
+        "Mild nosebleed or sore nose",
+        "Sedation side effects, monitored throughout by an anaesthetist",
+        "Temporary drop in oxygen during the test, which is expected and watched closely",
+        "Do not drive or sign documents for 24 hours"
+      ],
+      "faq": [
+        {
+          "q": "Why not just do surgery?",
+          "a": "Airway collapse can happen at several levels. DISE shows exactly where, so surgery targets the right place and success rates improve."
+        },
+        {
+          "q": "Will I remember the test?",
+          "a": "No. You will be asleep and usually remember nothing."
+        },
+        {
+          "q": "Do I need to fast?",
+          "a": "Yes, for 6 hours for food and 2 hours for clear fluids."
+        },
+        {
+          "q": "Can it be combined with surgery?",
+          "a": "Sometimes, if planned in advance. Usually we review the video first and decide with you."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun"
+      ],
+      "related": [
+        "sleep-study",
+        "airway",
+        "septoplasty"
+      ],
+      "fee": 800,
+      "photo": "tx-dise",
+      "alt": "Anaesthetist in scrub cap and mask adjusting a patient monitor",
+      "page": "treatment-dise.html",
+      "setting_class": "daycare",
+      "fee_label": "₹800",
+      "test_name": "DISE (day-care)",
+      "test_fee": "₹15,000",
+      "badge": "Day-care procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a sleep consultation",
+      "book_note": "DISE is planned only after a sleep study and examination.",
+      "prep_title": "Preparing for DISE",
+      "prep_text": "Fasting times, medicines and arranging an escort home.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night."
+      ],
+      "cost_range": "₹12,000–18,000",
+      "cost_note": "₹12,000–18,000 day-care package.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Sleep surgeon · airway assessment"
+        }
+      ],
+      "anchor": "sleep",
+      "search": "drug-induced sleep endoscopy finds the exact site of airway collapse sleep endoscopy (dise) confirmed sleep apnoea when you cannot tolerate cpap planning snoring or airway surgery considering an oral appliance or positional therapy persistent apnoea after previous surgery"
+    },
+    {
+      "slug": "airway",
+      "name": "Palate & airway surgery",
+      "short": "Palate & airway surgery",
+      "specialty": "sleep",
+      "specialty_label": "Sleep & snoring",
+      "setting": "Inpatient",
+      "time": "1 night",
+      "helps": "When CPAP is not tolerated",
+      "summary": "Tailored surgery to widen the airway at the palate, tonsils, nose or tongue base, planned from your sleep study and sleep endoscopy, for snoring and sleep apnoea when CPAP has not worked.",
+      "facts": [
+        {
+          "k": "Duration",
+          "v": "1–2 hours"
+        },
+        {
+          "k": "Anaesthesia",
+          "v": "General"
+        },
+        {
+          "k": "Hospital stay",
+          "v": "1 night"
+        },
+        {
+          "k": "Back to work",
+          "v": "10–14 days"
+        },
+        {
+          "k": "Insurance",
+          "v": "Cashless for OSA"
+        }
+      ],
+      "who": [
+        "Obstructive sleep apnoea when CPAP is not tolerated",
+        "Loud snoring affecting a partner, with collapse at the palate",
+        "Large tonsils with sleep apnoea in adults",
+        "Nasal blockage that prevents CPAP use"
+      ],
+      "steps": [
+        {
+          "t": "Planning",
+          "d": "Sleep study, DISE and examination decide which levels need surgery."
+        },
+        {
+          "t": "On the day",
+          "d": "Expansion sphincter pharyngoplasty, tonsillectomy, nasal surgery or tongue-base reduction as planned."
+        },
+        {
+          "t": "Overnight stay",
+          "d": "You stay one night with oxygen monitoring and pain control."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Review at 2 weeks and a repeat sleep study at 3 months."
+        }
+      ],
+      "recovery": [
+        {
+          "when": "Day 1",
+          "t": "Discharge",
+          "d": "Throat sore, soft diet"
+        },
+        {
+          "when": "Week 1",
+          "t": "Rest",
+          "d": "Regular pain relief"
+        },
+        {
+          "when": "Week 2",
+          "t": "Review",
+          "d": "Healing checked"
+        },
+        {
+          "when": "Week 3",
+          "t": "Back to work",
+          "d": "Normal diet"
+        },
+        {
+          "when": "Month 3",
+          "t": "Sleep study",
+          "d": "Result measured"
+        }
+      ],
+      "risks": [
+        "Sore throat for 10–14 days and bleeding risk similar to tonsillectomy",
+        "Temporary nasal regurgitation of liquids or voice change",
+        "Snoring may improve more than apnoea; some patients still need CPAP",
+        "Airway swelling in the first night, which is why you stay in"
+      ],
+      "faq": [
+        {
+          "q": "Will surgery cure my sleep apnoea?",
+          "a": "It can greatly reduce it, especially when the collapse is at one level. A repeat sleep study at 3 months measures the result."
+        },
+        {
+          "q": "Is surgery better than CPAP?",
+          "a": "CPAP is the most effective treatment if you can use it. Surgery is for people who cannot, or as a way to make CPAP easier."
+        },
+        {
+          "q": "Can I lose weight instead?",
+          "a": "Weight loss helps a lot and we encourage it alongside any treatment."
+        },
+        {
+          "q": "Is snoring surgery covered by insurance?",
+          "a": "Surgery for proven sleep apnoea is usually covered. Surgery only for snoring often is not."
+        }
+      ],
+      "lead": "arjun",
+      "team": [
+        "arjun",
+        "farhana"
+      ],
+      "related": [
+        "dise",
+        "sleep-study",
+        "tonsillectomy"
+      ],
+      "fee": 800,
+      "photo": "tx-airway",
+      "alt": "Older man in a hospital bed breathing through an oxygen mask",
+      "page": "treatment-airway.html",
+      "setting_class": "inpatient",
+      "fee_label": "₹800",
+      "test_name": "Home sleep study",
+      "test_fee": "₹6,500",
+      "badge": "Inpatient procedure",
+      "recovery_title": "Recovery timeline",
+      "book_title": "Book a sleep consultation",
+      "book_note": "Surgery is planned only after a sleep study and sleep endoscopy.",
+      "prep_title": "Preparing for surgery",
+      "prep_text": "Fasting rules, medicines to pause and soft-food plan for recovery.",
+      "prep_items": [
+        "Nothing to eat for 6 hours and no clear fluids for 2 hours before your admission time.",
+        "Ask your physician before pausing aspirin, clopidogrel or other blood thinners; we tell you exactly when.",
+        "Bring your scans, blood reports and a written list of all your medicines.",
+        "Bring photo ID and your insurance card so our desk can arrange cashless approval.",
+        "Arrange an adult to take you home and stay with you for the first night.",
+        "Pack loose clothes, toiletries and a phone charger for your stay."
+      ],
+      "cost_range": "₹70,000–1,40,000",
+      "cost_note": "₹70,000–1,40,000 depending on the levels treated.",
+      "team_info": [
+        {
+          "slug": "arjun",
+          "name": "Dr. Arjun Venkatesh",
+          "page": "doctor-arjun.html",
+          "portrait": "doc-arjun",
+          "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+          "note": "Sleep surgeon · airway surgery"
+        },
+        {
+          "slug": "farhana",
+          "name": "Dr. Farhana Iqbal",
+          "page": "doctor-farhana.html",
+          "portrait": "doc-farhana",
+          "portrait_alt": "Portrait of Dr. Farhana Iqbal, Head & neck surgery",
+          "note": "Head & neck surgeon · tongue-base surgery"
+        }
+      ],
+      "anchor": "sleep",
+      "search": "palate & airway surgery when cpap is not tolerated palate & airway surgery obstructive sleep apnoea when cpap is not tolerated loud snoring affecting a partner, with collapse at the palate large tonsils with sleep apnoea in adults nasal blockage that prevents cpap use"
+    }
+  ]
+}

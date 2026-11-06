@@ -1,0 +1,95 @@
+---
+title: {{doc.name}}, {{doc.specialty}} | Tridya ENT Clinic
+description: {{doc.lead}}
+nav: doctors
+css: doctor
+js: doctor
+---
+    <section class="prof-head" aria-labelledby="page-title" data-doc-page="{{doc.slug}}">
+      <div class="wrap">
+        {{crumbs Doctors=doctors.html | {{doc.name}}}}
+        <div class="prof">
+          <div class="ph">{{img {{doc.profile}} | {{doc.profile_alt}} | (max-width: 900px) 100vw, 400px | eager}}</div>
+          <div class="pinfo">
+            <span class="eyebrow">{{doc.specialty}}</span>
+            <h1 id="page-title">{{doc.name}}</h1>
+            <p class="lead">{{doc.lead}}</p>
+            <div class="facts" style="margin:0"><div><span>Experience</span><b>{{doc.experience}} years</b></div><div><span>Consultation</span><b class="tnum">{{doc.fee_label}}</b></div><div><span>Languages</span><b>{{doc.languages_label}}</b></div><div><span>Rating</span><b class="tnum">{{doc.reviews_label}}</b></div></div>
+            <div class="card slot-card" data-picker data-days="5">
+              <div class="slot-top"><h2 class="h3">Book a slot</h2><span class="mono muted">{{doc.session}}</span></div>
+              <div class="days" role="group" aria-label="Day" data-pk-days></div>
+              <div class="slots" role="group" aria-label="Time" data-pk-slots></div>
+              <div class="slot-foot"><span class="mono" data-pk-sel aria-live="polite">Next slot · {{doc.next_slot}}</span><a class="btn btn-cta" href="book.html?doctor={{doc.slug}}" data-pk-go>{{icon calendar-days}}Book appointment</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap grid prof-body">
+        <div class="g-md-6 prof-main" style="grid-column:span 7">
+          <div class="tabs" role="tablist" aria-label="About {{doc.short}}">
+            <button role="tab" type="button" id="t-about" aria-selected="true" aria-controls="p-about">About</button>
+            <button role="tab" type="button" id="t-edu" aria-selected="false" aria-controls="p-edu" tabindex="-1">Education</button>
+            <button role="tab" type="button" id="t-proc" aria-selected="false" aria-controls="p-proc" tabindex="-1">Procedures</button>
+            <button role="tab" type="button" id="t-rev" aria-selected="false" aria-controls="p-rev" tabindex="-1">Reviews</button>
+          </div>
+          <div id="p-about" role="tabpanel" aria-labelledby="t-about" class="tab-panel">
+            <div class="prose">{{#each doc.bio}}<p>{{this}}</p>{{/each}}</div>
+            <h3>Areas of focus</h3>
+            <div class="tags">{{#each doc.tags}}<span>{{this}}</span>{{/each}}</div>
+            <p class="muted side-meta">{{icon languages 16}}<span>Consults in {{doc.languages_label}}</span></p>
+          </div>
+          <div id="p-edu" role="tabpanel" aria-labelledby="t-edu" class="tab-panel" hidden>
+            <h3>Education and training</h3>
+            <p class="muted">{{doc.qualifications}}</p>
+            <div class="edu">{{#each doc.education}}<div><span>{{year}}</span><div><b>{{title}}</b><small>{{place}}</small></div></div>{{/each}}</div>
+          </div>
+          <div id="p-proc" role="tabpanel" aria-labelledby="t-proc" class="tab-panel" hidden>
+            <p class="muted">Treatments {{doc.short}} leads or performs at Tridya. Each opens a page with the steps, recovery and cost guide.</p>
+            <div class="card prof-tx">{{#each doc.tx_items}}<a href="{{page}}"><b>{{name}}</b><span>{{badge {{setting}}}}</span>{{icon chevron-right 18 flip}}</a>{{/each}}</div>
+          </div>
+          <div id="p-rev" role="tabpanel" aria-labelledby="t-rev" class="tab-panel" hidden>
+            <div class="rev-sum card"><b class="rev-big tnum">{{doc.rating}}</b><div>{{stars 5}}<p class="muted">Average from {{doc.reviews_count}} verified patient reviews collected after visits.</p></div></div>
+            <a class="link" href="#reviews">Read recent reviews{{icon chevron-down 16}}</a>
+          </div>
+        </div>
+        <div class="g-md-6 prof-side" style="grid-column:span 5">
+          <div class="card"><h3>Procedures</h3><div class="tags">{{#each doc.procedures}}<span>{{this}}</span>{{/each}}</div></div>
+          <div class="card"><h3>Weekly OPD</h3><div class="week">{{#each doc.days_label}}<div class="{{#if on}}on{{/if}}">{{day}}<small>{{#if on}}OPD{{else}}—{{/if}}</small></div>{{/each}}</div>
+            <p class="muted side-meta">{{icon clock 16}}<span>{{doc.session}}</span></p>
+            <p class="muted side-meta">{{icon map-pin 16}}<span>{{doc.clinic}} · {{doc.room}}</span></p>
+            <button class="btn btn-ghost btn-block" type="button" data-open-dialog="dlg-slots">{{icon calendar-clock 18}}Choose a time</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt">
+      <div class="wrap">
+        <div class="sh center"><div class="sh-txt"><span class="eyebrow">Experience</span><h2>Career at a glance</h2><p>Where {{doc.short}} trained and worked before leading {{doc.pron}} clinic at Tridya.</p></div></div>
+        <ol class="vtl" data-stagger>{{#each doc.career}}<li><span class="yr">{{years}}</span><h3>{{role}}</h3><p class="vtl-place">{{place}}</p><p>{{d}}</p></li>{{/each}}</ol>
+      </div>
+    </section>
+
+    <section class="sec" id="reviews">
+      <div class="wrap">
+        <div class="sh"><div class="sh-txt"><span class="eyebrow">Reviews</span><h2>What {{doc.pron}} patients say</h2></div></div>
+        <div class="cards" style="--cols:3;--rows:3" data-stagger>
+          {{#each doc.reviews}}<article class="card tcard sub">{{stars 5}}<blockquote>{{q}}</blockquote><div class="who"><span class="avatar" aria-hidden="true">{{initials}}</span><div><b>{{name}}</b><small>{{ctx}}</small></div></div></article>{{/each}}
+        </div>
+      </div>
+    </section>
+
+    <dialog class="modal slot-sheet" id="dlg-slots" aria-labelledby="dlg-slots-t" data-picker data-days="4">
+      <span class="grab" aria-hidden="true"></span>
+      <div class="modal-h"><div class="t"><div><h3 id="dlg-slots-t">Choose a time</h3><p>{{doc.session}}</p></div></div>
+        <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+      <div class="modal-b">
+        <div class="mini-doc"><span class="ph round"><img class="portrait" src="images/{{doc.portrait}}-160.webp" width="160" height="160" alt="{{doc.portrait_alt}}" decoding="async"></span><div><b>{{doc.name}}</b><small>{{doc.specialty}} · {{doc.fee_label}}</small></div></div>
+        <div class="days" style="grid-template-columns:repeat(4,1fr)" role="group" aria-label="Day" data-pk-days></div>
+        <div class="slots" role="group" aria-label="Time" data-pk-slots></div>
+      </div>
+      <div class="modal-f sheet-foot"><span class="mono sp" data-pk-sel aria-live="polite">Pick a time</span><a class="btn btn-cta" href="book.html?doctor={{doc.slug}}" data-pk-go>Continue</a></div>
+    </dialog>

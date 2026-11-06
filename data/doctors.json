@@ -1,0 +1,1040 @@
+{
+  "doctors": [
+    {
+      "slug": "meera",
+      "name": "Dr. Meera Raghavan",
+      "short": "Dr. Meera",
+      "initials": "MR",
+      "gender": "woman",
+      "role": "Senior Consultant · Otology & Cochlear Implants",
+      "specialty": "Otology & cochlear implants",
+      "clinic": "Hearing & Balance Clinic",
+      "filter": "ear",
+      "room": "First floor, Room 12",
+      "qualifications": "MS (ENT), DNB, Fellowship in Otology (Chennai)",
+      "experience": 18,
+      "languages": [
+        "Tamil",
+        "English"
+      ],
+      "days": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "session": "Evening OPD · 16:30–20:00",
+      "next_slot": "Today 17:10",
+      "fee": 900,
+      "rating": 4.9,
+      "reviews_count": 312,
+      "lead": "Senior consultant leading the Hearing & Balance Clinic. She has performed over 600 ear surgeries and 120 cochlear implants.",
+      "bio": [
+        "Dr. Meera completed her ENT training in Coimbatore and a fellowship in otology in Chennai. She founded the clinic's Hearing & Balance programme in 2014 and runs the newborn hearing screening service with partner maternity hospitals.",
+        "Her clinical focus is chronic ear disease, hearing restoration and vertigo. She sees adult and paediatric patients."
+      ],
+      "tags": [
+        "Hearing loss",
+        "Tinnitus",
+        "Ear surgery",
+        "Cochlear implants"
+      ],
+      "procedures": [
+        "Tympanoplasty",
+        "Mastoidectomy",
+        "Stapedotomy",
+        "Cochlear implant",
+        "Microsuction",
+        "Epley manoeuvre",
+        "BERA review",
+        "Grommets"
+      ],
+      "education": [
+        {
+          "year": "2008",
+          "title": "MS (ENT)",
+          "place": "PSG Institute of Medical Sciences, Coimbatore"
+        },
+        {
+          "year": "2010",
+          "title": "DNB (Otorhinolaryngology)",
+          "place": "National Board of Examinations, New Delhi"
+        },
+        {
+          "year": "2012",
+          "title": "Fellowship in Otology & Neurotology",
+          "place": "Madras ENT Research Foundation, Chennai"
+        },
+        {
+          "year": "2015",
+          "title": "Cochlear implant surgery training",
+          "place": "Hannover Medical School, Germany"
+        }
+      ],
+      "reviews": [
+        {
+          "q": "Dr. Meera walked us through every step of our daughter's implant. Six months on, she responds to her name.",
+          "name": "Lakshmi R.",
+          "initials": "LR",
+          "ctx": "Cochlear implant · Parent"
+        },
+        {
+          "q": "My ear had discharged for years. After the tympanoplasty it has been completely dry.",
+          "name": "Mohan S.",
+          "initials": "MS",
+          "ctx": "Ear surgery"
+        },
+        {
+          "q": "She took the time to explain why the ringing happens and gave me a plan that actually helped.",
+          "name": "Priya G.",
+          "initials": "PG",
+          "ctx": "Tinnitus"
+        }
+      ],
+      "treatments": [
+        "microsuction",
+        "myringoplasty",
+        "tympanoplasty",
+        "hearing-aid",
+        "vertigo",
+        "cochlear",
+        "grommet"
+      ],
+      "page": "doctor-meera.html",
+      "portrait": "doc-meera",
+      "profile": "prof-meera",
+      "portrait_alt": "Portrait of Dr. Meera Raghavan, Otology & cochlear implants",
+      "profile_alt": "Dr. Meera Raghavan seated at her desk in the clinic",
+      "years": "18 years experience",
+      "fee_label": "₹900",
+      "languages_label": "Tamil, English",
+      "days_label": [
+        {
+          "day": "Mon",
+          "on": true
+        },
+        {
+          "day": "Tue",
+          "on": false
+        },
+        {
+          "day": "Wed",
+          "on": true
+        },
+        {
+          "day": "Thu",
+          "on": true
+        },
+        {
+          "day": "Fri",
+          "on": true
+        },
+        {
+          "day": "Sat",
+          "on": false
+        }
+      ],
+      "filters": [
+        "ear",
+        "children"
+      ],
+      "filters_label": "ear children",
+      "languages_key": "tamil english",
+      "days_key": "mon wed thu fri",
+      "career": [
+        {
+          "years": "2008–2012",
+          "role": "Senior Resident, ENT",
+          "place": "PSG Hospitals, Coimbatore",
+          "d": "Trained in microscopic ear surgery and ran the vertigo OPD."
+        },
+        {
+          "years": "2012–2014",
+          "role": "Consultant Otologist",
+          "place": "Madras ENT Research Foundation, Chennai",
+          "d": "Part of the cochlear implant team for children under five."
+        },
+        {
+          "years": "2014",
+          "role": "Joined Tridya ENT Clinic",
+          "place": "Coimbatore",
+          "d": "Founded the Hearing & Balance programme and balance lab."
+        },
+        {
+          "years": "2019–now",
+          "role": "Head, Hearing & Balance Clinic",
+          "place": "Tridya ENT Clinic",
+          "d": "Leads the implant programme and newborn hearing screening."
+        }
+      ],
+      "pron": "her",
+      "search": "dr. meera raghavan senior consultant · otology & cochlear implants otology & cochlear implants hearing & balance clinic hearing loss tinnitus ear surgery cochlear implants tympanoplasty mastoidectomy stapedotomy cochlear implant microsuction epley manoeuvre bera review grommets microsuction ear cleaning wax and debris removal under a microscope myringoplasty repair of a perforated eardrum tympanoplasty & mastoidectomy chronic ear infection and cholesteatoma surgery grommet insertion fluid behind the eardrum, mostly in children hearing aid trial & fitting digital hearing aids with 7-day home trial vertigo assessment & repositioning bppv diagnosis and epley manoeuvre cochlear implant evaluation candidacy tests for severe to profound loss",
+      "reviews_label": "4.9 · 312 reviews"
+    },
+    {
+      "slug": "arjun",
+      "name": "Dr. Arjun Venkatesh",
+      "short": "Dr. Arjun",
+      "initials": "AV",
+      "gender": "man",
+      "role": "Consultant · Rhinology & Sleep Surgery",
+      "specialty": "Rhinology & sinus surgery",
+      "clinic": "Sinus & Allergy Clinic",
+      "filter": "nose",
+      "room": "Ground floor, Room 3",
+      "qualifications": "MS (ENT), FRCS (Edinburgh), Fellowship in Rhinology",
+      "experience": 14,
+      "languages": [
+        "Tamil",
+        "English",
+        "Hindi"
+      ],
+      "days": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "session": "Morning OPD · 09:00–13:00",
+      "next_slot": "Sat 09:30",
+      "fee": 800,
+      "rating": 4.9,
+      "reviews_count": 268,
+      "lead": "Lead rhinologist with more than 1,400 endoscopic sinus operations. He runs the clinic's sinus, allergy and snoring programmes.",
+      "bio": [
+        "Dr. Arjun trained in Coimbatore and Edinburgh, followed by a rhinology fellowship focused on endoscopic sinus and skull-base surgery. He introduced day-care FESS at Tridya in 2016.",
+        "He sees adults with chronic sinusitis, nasal polyps, a blocked nose and allergy, and works with the sleep team on snoring and sleep apnoea surgery."
+      ],
+      "tags": [
+        "Sinus surgery",
+        "Septoplasty",
+        "Allergy",
+        "Snoring"
+      ],
+      "procedures": [
+        "FESS",
+        "Septoplasty",
+        "Turbinate reduction",
+        "Polypectomy",
+        "Nasal endoscopy",
+        "Allergy immunotherapy",
+        "DISE",
+        "Palate surgery"
+      ],
+      "education": [
+        {
+          "year": "2010",
+          "title": "MS (ENT)",
+          "place": "Coimbatore Medical College"
+        },
+        {
+          "year": "2013",
+          "title": "FRCS (ENT)",
+          "place": "Royal College of Surgeons of Edinburgh"
+        },
+        {
+          "year": "2014",
+          "title": "Fellowship in Rhinology",
+          "place": "Amrita Institute of Medical Sciences, Kochi"
+        },
+        {
+          "year": "2018",
+          "title": "Advanced sleep surgery course",
+          "place": "Tel Aviv Sourasky Medical Center"
+        }
+      ],
+      "reviews": [
+        {
+          "q": "Ten years of blocked sinuses, and after FESS I breathe through my nose again. I went home the same evening.",
+          "name": "Ramesh K.",
+          "initials": "RK",
+          "ctx": "Sinus surgery · Day-care"
+        },
+        {
+          "q": "He showed me the endoscopy on screen and explained exactly why my septum needed straightening.",
+          "name": "Nikhil P.",
+          "initials": "NP",
+          "ctx": "Septoplasty"
+        },
+        {
+          "q": "The allergy plan finally worked. Fewer sneezing fits and no more weekly antihistamines.",
+          "name": "Deepa V.",
+          "initials": "DV",
+          "ctx": "Allergy clinic"
+        }
+      ],
+      "treatments": [
+        "fess",
+        "septoplasty",
+        "turbinate",
+        "allergy",
+        "nosebleed",
+        "smell",
+        "dise",
+        "airway",
+        "sleep-study"
+      ],
+      "page": "doctor-arjun.html",
+      "portrait": "doc-arjun",
+      "profile": "prof-arjun",
+      "portrait_alt": "Portrait of Dr. Arjun Venkatesh, Rhinology & sinus surgery",
+      "profile_alt": "Dr. Arjun Venkatesh seated at his desk, hands clasped",
+      "years": "14 years experience",
+      "fee_label": "₹800",
+      "languages_label": "Tamil, English, Hindi",
+      "days_label": [
+        {
+          "day": "Mon",
+          "on": false
+        },
+        {
+          "day": "Tue",
+          "on": true
+        },
+        {
+          "day": "Wed",
+          "on": false
+        },
+        {
+          "day": "Thu",
+          "on": true
+        },
+        {
+          "day": "Fri",
+          "on": false
+        },
+        {
+          "day": "Sat",
+          "on": true
+        }
+      ],
+      "filters": [
+        "nose"
+      ],
+      "filters_label": "nose",
+      "languages_key": "tamil english hindi",
+      "days_key": "tue thu sat",
+      "career": [
+        {
+          "years": "2009–2011",
+          "role": "Senior Resident, ENT",
+          "place": "Coimbatore Medical College Hospital",
+          "d": "Managed emergency nosebleeds and sinus complications."
+        },
+        {
+          "years": "2011–2014",
+          "role": "Specialty Registrar, ENT",
+          "place": "NHS Lothian, Edinburgh",
+          "d": "Rhinology and paediatric airway rotations."
+        },
+        {
+          "years": "2014",
+          "role": "Joined Tridya ENT Clinic",
+          "place": "Coimbatore",
+          "d": "Set up the Sinus & Allergy Clinic and allergy testing service."
+        },
+        {
+          "years": "2018–now",
+          "role": "Lead, Sinus & Sleep",
+          "place": "Tridya ENT Clinic",
+          "d": "Introduced home sleep studies and sleep endoscopy."
+        }
+      ],
+      "pron": "his",
+      "search": "dr. arjun venkatesh consultant · rhinology & sleep surgery rhinology & sinus surgery sinus & allergy clinic sinus surgery septoplasty allergy snoring fess septoplasty turbinate reduction polypectomy nasal endoscopy allergy immunotherapy dise palate surgery endoscopic sinus surgery (fess) chronic sinusitis and polyps not settling with medicines septoplasty straightening a deviated nasal septum turbinate reduction persistent blocked nose from enlarged turbinates allergy testing & immunotherapy skin-prick panel and long-term desensitisation nosebleed management cautery and packing for recurrent bleeds smell disorder clinic testing and treatment for loss of smell home sleep study overnight test in your own bed drug-induced sleep endoscopy finds the exact site of airway collapse palate & airway surgery when cpap is not tolerated",
+      "reviews_label": "4.9 · 268 reviews"
+    },
+    {
+      "slug": "kavitha",
+      "name": "Dr. Kavitha Sundaram",
+      "short": "Dr. Kavitha",
+      "initials": "KS",
+      "gender": "woman",
+      "role": "Consultant · Laryngology & Voice",
+      "specialty": "Laryngology & voice",
+      "clinic": "Voice & Swallowing Clinic",
+      "filter": "throat",
+      "room": "First floor, Room 8",
+      "qualifications": "MS (ENT), Fellowship in Laryngology (Singapore)",
+      "experience": 12,
+      "languages": [
+        "Tamil",
+        "English",
+        "Malayalam"
+      ],
+      "days": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "session": "Morning OPD · 09:00–13:00",
+      "next_slot": "Mon 10:15",
+      "fee": 800,
+      "rating": 4.8,
+      "reviews_count": 187,
+      "lead": "Voice specialist for teachers, singers and anyone whose work depends on speaking. She leads the Voice & Swallowing Clinic.",
+      "bio": [
+        "Dr. Kavitha completed her ENT training in Chennai and a laryngology fellowship in Singapore, where she worked with professional voice users. She set up Tridya's video stroboscopy service in 2019.",
+        "She treats hoarseness, vocal cord lesions, reflux and swallowing problems, working side by side with the clinic's speech-language pathologist."
+      ],
+      "tags": [
+        "Voice disorders",
+        "Swallowing",
+        "Reflux",
+        "Vocal cord surgery"
+      ],
+      "procedures": [
+        "Microlaryngeal surgery",
+        "Video stroboscopy",
+        "FEES",
+        "Vocal cord injection",
+        "Tonsillectomy",
+        "Reflux assessment"
+      ],
+      "education": [
+        {
+          "year": "2012",
+          "title": "MS (ENT)",
+          "place": "Madras Medical College, Chennai"
+        },
+        {
+          "year": "2015",
+          "title": "Fellowship in Laryngology",
+          "place": "Singapore General Hospital"
+        },
+        {
+          "year": "2017",
+          "title": "Certificate in Voice Science",
+          "place": "National Center for Voice and Speech"
+        },
+        {
+          "year": "2019",
+          "title": "Dysphagia and FEES training",
+          "place": "Manipal Hospitals, Bengaluru"
+        }
+      ],
+      "reviews": [
+        {
+          "q": "As a teacher I was losing my voice by Wednesday. Her therapy plan got me through the whole term.",
+          "name": "Revathi M.",
+          "initials": "RM",
+          "ctx": "Voice strain"
+        },
+        {
+          "q": "The nodule surgery took less than an hour and my singing voice came back better than before.",
+          "name": "Arun T.",
+          "initials": "AT",
+          "ctx": "Microlaryngeal surgery"
+        },
+        {
+          "q": "She found the reflux behind my constant throat clearing. Simple changes, real results.",
+          "name": "Sudha N.",
+          "initials": "SN",
+          "ctx": "Reflux clinic"
+        }
+      ],
+      "treatments": [
+        "microlaryngeal",
+        "voice-therapy",
+        "fees",
+        "reflux",
+        "tonsillectomy",
+        "thyroid",
+        "cancer-screening"
+      ],
+      "page": "doctor-kavitha.html",
+      "portrait": "doc-kavitha",
+      "profile": "prof-kavitha",
+      "portrait_alt": "Portrait of Dr. Kavitha Sundaram, Laryngology & voice",
+      "profile_alt": "Dr. Kavitha Sundaram seated in her consulting room",
+      "years": "12 years experience",
+      "fee_label": "₹800",
+      "languages_label": "Tamil, English, Malayalam",
+      "days_label": [
+        {
+          "day": "Mon",
+          "on": true
+        },
+        {
+          "day": "Tue",
+          "on": false
+        },
+        {
+          "day": "Wed",
+          "on": false
+        },
+        {
+          "day": "Thu",
+          "on": true
+        },
+        {
+          "day": "Fri",
+          "on": false
+        },
+        {
+          "day": "Sat",
+          "on": false
+        }
+      ],
+      "filters": [
+        "throat"
+      ],
+      "filters_label": "throat",
+      "languages_key": "tamil english malayalam",
+      "days_key": "mon thu",
+      "career": [
+        {
+          "years": "2012–2014",
+          "role": "Senior Resident, ENT",
+          "place": "Madras Medical College",
+          "d": "Head and neck and voice clinic rotations."
+        },
+        {
+          "years": "2014–2016",
+          "role": "Clinical Fellow",
+          "place": "Singapore General Hospital",
+          "d": "Voice and swallowing service."
+        },
+        {
+          "years": "2016",
+          "role": "Joined Tridya ENT Clinic",
+          "place": "Coimbatore",
+          "d": "Started the Voice & Swallowing Clinic."
+        },
+        {
+          "years": "2021–now",
+          "role": "Lead, Voice Lab",
+          "place": "Tridya ENT Clinic",
+          "d": "Runs voice workshops for teachers across the city."
+        }
+      ],
+      "pron": "her",
+      "search": "dr. kavitha sundaram consultant · laryngology & voice laryngology & voice voice & swallowing clinic voice disorders swallowing reflux vocal cord surgery microlaryngeal surgery video stroboscopy fees vocal cord injection tonsillectomy reflux assessment tonsillectomy (coblation) recurrent tonsillitis and enlarged tonsils microlaryngeal surgery vocal cord nodules, polyps and cysts voice therapy sessions with a speech-language pathologist swallowing assessment (fees) endoscopic check of how you swallow reflux (lpr) clinic throat-clearing, globus and chronic cough thyroidectomy thyroid nodules and goitre head & neck cancer screening oral, throat and voice-box check",
+      "reviews_label": "4.8 · 187 reviews"
+    },
+    {
+      "slug": "rahul",
+      "name": "Dr. Rahul Menon",
+      "short": "Dr. Rahul",
+      "initials": "RM",
+      "gender": "man",
+      "role": "Consultant · Paediatric ENT",
+      "specialty": "Paediatric ENT",
+      "clinic": "Children's ENT Clinic",
+      "filter": "children",
+      "room": "Ground floor, Room 5",
+      "qualifications": "DLO, DNB (ENT), Fellowship in Paediatric ENT",
+      "experience": 10,
+      "languages": [
+        "Malayalam",
+        "Tamil",
+        "English"
+      ],
+      "days": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "session": "Morning OPD · 09:00–13:00",
+      "next_slot": "Tomorrow 11:00",
+      "fee": 700,
+      "rating": 4.9,
+      "reviews_count": 226,
+      "lead": "Children's ENT surgeon for ear infections, tonsils, adenoids and newborn hearing. Calm, quick visits designed for young patients.",
+      "bio": [
+        "Dr. Rahul trained in Kochi and completed a paediatric ENT fellowship at a dedicated children's hospital. He joined Tridya in 2018 to build a child-friendly ENT service.",
+        "He treats glue ear, recurrent tonsillitis, adenoid problems and snoring in children, and works with the audiology team on newborn hearing screening."
+      ],
+      "tags": [
+        "Ear infections",
+        "Tonsils & adenoids",
+        "Newborn hearing",
+        "Grommets"
+      ],
+      "procedures": [
+        "Grommet insertion",
+        "Adenoidectomy",
+        "Tonsillectomy",
+        "Paediatric endoscopy",
+        "Foreign body removal",
+        "Tongue-tie release"
+      ],
+      "education": [
+        {
+          "year": "2013",
+          "title": "DLO",
+          "place": "Government Medical College, Kozhikode"
+        },
+        {
+          "year": "2016",
+          "title": "DNB (ENT)",
+          "place": "National Board of Examinations, New Delhi"
+        },
+        {
+          "year": "2017",
+          "title": "Fellowship in Paediatric ENT",
+          "place": "Rainbow Children's Hospital, Hyderabad"
+        },
+        {
+          "year": "2021",
+          "title": "Paediatric airway course",
+          "place": "Great Ormond Street Hospital, London"
+        }
+      ],
+      "reviews": [
+        {
+          "q": "My son had repeated ear infections. The team was patient with him and the grommet procedure took under an hour.",
+          "name": "Anitha N.",
+          "initials": "AN",
+          "ctx": "Parent · Paediatric ENT"
+        },
+        {
+          "q": "He explained the adenoid X-ray to my daughter with a drawing. She wasn't scared at all.",
+          "name": "Faisal H.",
+          "initials": "FH",
+          "ctx": "Adenoidectomy · Parent"
+        },
+        {
+          "q": "No more snoring and no more mouth breathing. Our whole family sleeps better.",
+          "name": "Kavya S.",
+          "initials": "KS",
+          "ctx": "Tonsils & adenoids"
+        }
+      ],
+      "treatments": [
+        "grommet",
+        "adenoidectomy",
+        "tonsillectomy",
+        "microsuction",
+        "myringoplasty",
+        "nosebleed",
+        "sleep-study"
+      ],
+      "page": "doctor-rahul.html",
+      "portrait": "doc-rahul",
+      "profile": "prof-rahul",
+      "portrait_alt": "Portrait of Dr. Rahul Menon, Paediatric ENT",
+      "profile_alt": "Dr. Rahul Menon in a white coat with a stethoscope, arms crossed",
+      "years": "10 years experience",
+      "fee_label": "₹700",
+      "languages_label": "Malayalam, Tamil, English",
+      "days_label": [
+        {
+          "day": "Mon",
+          "on": true
+        },
+        {
+          "day": "Tue",
+          "on": true
+        },
+        {
+          "day": "Wed",
+          "on": true
+        },
+        {
+          "day": "Thu",
+          "on": true
+        },
+        {
+          "day": "Fri",
+          "on": true
+        },
+        {
+          "day": "Sat",
+          "on": true
+        }
+      ],
+      "filters": [
+        "children",
+        "ear",
+        "throat"
+      ],
+      "filters_label": "children ear throat",
+      "languages_key": "malayalam tamil english",
+      "days_key": "mon tue wed thu fri sat",
+      "career": [
+        {
+          "years": "2014–2016",
+          "role": "Senior Resident, ENT",
+          "place": "Amrita Institute, Kochi",
+          "d": "Paediatric airway and cochlear implant team."
+        },
+        {
+          "years": "2016–2018",
+          "role": "Consultant, Paediatric ENT",
+          "place": "Kochi",
+          "d": "Children's ENT and hearing screening."
+        },
+        {
+          "years": "2018",
+          "role": "Joined Tridya ENT Clinic",
+          "place": "Coimbatore",
+          "d": "Started the daily children's OPD."
+        },
+        {
+          "years": "2022–now",
+          "role": "Lead, Children's ENT",
+          "place": "Tridya ENT Clinic",
+          "d": "Runs school hearing and snoring camps."
+        }
+      ],
+      "pron": "his",
+      "search": "dr. rahul menon consultant · paediatric ent paediatric ent children's ent clinic ear infections tonsils & adenoids newborn hearing grommets grommet insertion adenoidectomy tonsillectomy paediatric endoscopy foreign body removal tongue-tie release microsuction ear cleaning wax and debris removal under a microscope myringoplasty repair of a perforated eardrum grommet insertion fluid behind the eardrum, mostly in children nosebleed management cautery and packing for recurrent bleeds tonsillectomy (coblation) recurrent tonsillitis and enlarged tonsils adenoidectomy mouth breathing and snoring in children home sleep study overnight test in your own bed",
+      "reviews_label": "4.9 · 226 reviews"
+    },
+    {
+      "slug": "farhana",
+      "name": "Dr. Farhana Iqbal",
+      "short": "Dr. Farhana",
+      "initials": "FI",
+      "gender": "woman",
+      "role": "Consultant · Head & Neck Surgery",
+      "specialty": "Head & neck surgery",
+      "clinic": "Head & Neck Clinic",
+      "filter": "headneck",
+      "room": "First floor, Room 14",
+      "qualifications": "MS (ENT), MCh (Head & Neck Oncology)",
+      "experience": 15,
+      "languages": [
+        "English",
+        "Hindi",
+        "Urdu",
+        "Tamil"
+      ],
+      "days": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "session": "Evening OPD · 16:30–20:00",
+      "next_slot": "Sat 16:30",
+      "fee": 1000,
+      "rating": 4.9,
+      "reviews_count": 158,
+      "lead": "Head and neck surgeon for thyroid, salivary gland and neck lumps, with same-day ultrasound and FNAC in clinic.",
+      "bio": [
+        "Dr. Farhana completed her MS in ENT in Aligarh and an MCh in head and neck oncology in Mumbai. She joined Tridya in 2017 to start the one-stop neck lump clinic.",
+        "Her work covers thyroid and parathyroid surgery, salivary gland tumours and early detection of head and neck cancer, with a strong focus on preserving voice and swallowing."
+      ],
+      "tags": [
+        "Neck lumps",
+        "Thyroid",
+        "Salivary glands",
+        "Cancer screening"
+      ],
+      "procedures": [
+        "Thyroidectomy",
+        "Parotidectomy",
+        "Submandibular gland excision",
+        "Neck ultrasound",
+        "FNAC",
+        "Panendoscopy"
+      ],
+      "education": [
+        {
+          "year": "2009",
+          "title": "MS (ENT)",
+          "place": "Jawaharlal Nehru Medical College, Aligarh"
+        },
+        {
+          "year": "2013",
+          "title": "MCh (Head & Neck Oncology)",
+          "place": "Tata Memorial Hospital, Mumbai"
+        },
+        {
+          "year": "2015",
+          "title": "Fellowship in Thyroid Surgery",
+          "place": "Seoul National University Hospital"
+        },
+        {
+          "year": "2017",
+          "title": "Ultrasound-guided FNAC certification",
+          "place": "Indian Academy of Cytologists"
+        }
+      ],
+      "reviews": [
+        {
+          "q": "Ultrasound, biopsy and a clear answer on the same morning. That saved me a week of worrying.",
+          "name": "Joseph A.",
+          "initials": "JA",
+          "ctx": "Neck lump clinic"
+        },
+        {
+          "q": "My thyroid surgery scar is barely visible and my voice is exactly the same.",
+          "name": "Meena L.",
+          "initials": "ML",
+          "ctx": "Thyroidectomy"
+        },
+        {
+          "q": "She explained every option for my parotid swelling without rushing me.",
+          "name": "Imran K.",
+          "initials": "IK",
+          "ctx": "Salivary gland surgery"
+        }
+      ],
+      "treatments": [
+        "neck-lump",
+        "thyroid",
+        "salivary",
+        "cancer-screening",
+        "fess",
+        "airway"
+      ],
+      "page": "doctor-farhana.html",
+      "portrait": "doc-farhana",
+      "profile": "prof-farhana",
+      "portrait_alt": "Portrait of Dr. Farhana Iqbal, Head & neck surgery",
+      "profile_alt": "Dr. Farhana Iqbal in a cream blazer, standing in the clinic corridor",
+      "years": "15 years experience",
+      "fee_label": "₹1,000",
+      "languages_label": "English, Hindi, Urdu, Tamil",
+      "days_label": [
+        {
+          "day": "Mon",
+          "on": false
+        },
+        {
+          "day": "Tue",
+          "on": false
+        },
+        {
+          "day": "Wed",
+          "on": true
+        },
+        {
+          "day": "Thu",
+          "on": false
+        },
+        {
+          "day": "Fri",
+          "on": false
+        },
+        {
+          "day": "Sat",
+          "on": true
+        }
+      ],
+      "filters": [
+        "headneck"
+      ],
+      "filters_label": "headneck",
+      "languages_key": "english hindi urdu tamil",
+      "days_key": "wed sat",
+      "career": [
+        {
+          "years": "2008–2010",
+          "role": "Senior Resident, ENT",
+          "place": "Osmania General Hospital",
+          "d": "Head and neck emergency and tumour board."
+        },
+        {
+          "years": "2012–2016",
+          "role": "Consultant, Head & Neck Surgery",
+          "place": "Hyderabad",
+          "d": "Thyroid and salivary surgery."
+        },
+        {
+          "years": "2016",
+          "role": "Joined Tridya ENT Clinic",
+          "place": "Coimbatore",
+          "d": "Started the one-stop neck lump clinic."
+        },
+        {
+          "years": "2020–now",
+          "role": "Lead, Head & Neck",
+          "place": "Tridya ENT Clinic",
+          "d": "Runs community oral cancer screening camps."
+        }
+      ],
+      "pron": "her",
+      "search": "dr. farhana iqbal consultant · head & neck surgery head & neck surgery head & neck clinic neck lumps thyroid salivary glands cancer screening thyroidectomy parotidectomy submandibular gland excision neck ultrasound fnac panendoscopy endoscopic sinus surgery (fess) chronic sinusitis and polyps not settling with medicines neck lump evaluation ultrasound and fnac on the same day thyroidectomy thyroid nodules and goitre salivary gland surgery parotid and submandibular swellings head & neck cancer screening oral, throat and voice-box check palate & airway surgery when cpap is not tolerated",
+      "reviews_label": "4.9 · 158 reviews"
+    },
+    {
+      "slug": "divya",
+      "name": "Divya Prakash",
+      "short": "Divya",
+      "initials": "DP",
+      "gender": "woman",
+      "role": "Lead Audiologist & Speech-Language Pathologist",
+      "specialty": "Audiology & speech therapy",
+      "clinic": "Audiology Lab",
+      "filter": "audiology",
+      "room": "First floor, Audiology Lab",
+      "qualifications": "MASLP, Certified Hearing Aid Specialist",
+      "experience": 9,
+      "languages": [
+        "Tamil",
+        "English"
+      ],
+      "days": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "session": "All day · 09:00–13:00, 16:30–20:00",
+      "next_slot": "Today 18:00",
+      "fee": 500,
+      "rating": 4.9,
+      "reviews_count": 341,
+      "lead": "Lead audiologist running hearing tests, hearing aid fitting and voice therapy in the clinic's sound-treated lab.",
+      "bio": [
+        "Divya holds a master's degree in audiology and speech-language pathology from Mysuru and has fitted more than 3,000 hearing aids. She manages the clinic's audiometry booth, BERA and OAE testing.",
+        "She also runs voice therapy and cochlear implant mapping sessions, and trains families on living well with hearing loss."
+      ],
+      "tags": [
+        "Hearing tests",
+        "Hearing aids",
+        "Speech therapy",
+        "Voice therapy"
+      ],
+      "procedures": [
+        "Pure-tone audiometry",
+        "Tympanometry",
+        "BERA",
+        "OAE",
+        "Hearing aid fitting",
+        "Cochlear implant mapping",
+        "Voice therapy",
+        "Tinnitus counselling"
+      ],
+      "education": [
+        {
+          "year": "2014",
+          "title": "BASLP",
+          "place": "Dr. M.V. Shetty College of Speech & Hearing, Mangaluru"
+        },
+        {
+          "year": "2016",
+          "title": "MASLP",
+          "place": "All India Institute of Speech and Hearing, Mysuru"
+        },
+        {
+          "year": "2018",
+          "title": "Certified Hearing Aid Specialist",
+          "place": "Indian Speech & Hearing Association"
+        },
+        {
+          "year": "2021",
+          "title": "Cochlear implant programming",
+          "place": "MED-EL Academy, Bengaluru"
+        }
+      ],
+      "reviews": [
+        {
+          "q": "Divya set up my hearing aids and adjusted them twice in the trial week. I can hear my grandchildren again.",
+          "name": "Gopal R.",
+          "initials": "GR",
+          "ctx": "Hearing aid fitting"
+        },
+        {
+          "q": "The hearing test was quick and she explained the audiogram line by line.",
+          "name": "Sangeetha P.",
+          "initials": "SP",
+          "ctx": "Hearing assessment"
+        },
+        {
+          "q": "Six sessions of voice therapy and I can teach a full day without pain.",
+          "name": "Latha V.",
+          "initials": "LV",
+          "ctx": "Voice therapy"
+        }
+      ],
+      "treatments": [
+        "hearing-aid",
+        "voice-therapy",
+        "cochlear",
+        "vertigo",
+        "microlaryngeal",
+        "fees"
+      ],
+      "page": "doctor-divya.html",
+      "portrait": "doc-divya",
+      "profile": "prof-divya",
+      "portrait_alt": "Portrait of Divya Prakash, Audiology & speech therapy",
+      "profile_alt": "Divya Prakash seated in the clinic's glass-walled office",
+      "years": "9 years experience",
+      "fee_label": "₹500",
+      "languages_label": "Tamil, English",
+      "days_label": [
+        {
+          "day": "Mon",
+          "on": true
+        },
+        {
+          "day": "Tue",
+          "on": true
+        },
+        {
+          "day": "Wed",
+          "on": true
+        },
+        {
+          "day": "Thu",
+          "on": true
+        },
+        {
+          "day": "Fri",
+          "on": true
+        },
+        {
+          "day": "Sat",
+          "on": true
+        }
+      ],
+      "filters": [
+        "audiology",
+        "ear",
+        "children"
+      ],
+      "filters_label": "audiology ear children",
+      "languages_key": "tamil english",
+      "days_key": "mon tue wed thu fri sat",
+      "career": [
+        {
+          "years": "2017–2019",
+          "role": "Audiologist",
+          "place": "Hearing clinic, Bengaluru",
+          "d": "Paediatric testing and hearing aid fitting."
+        },
+        {
+          "years": "2019",
+          "role": "Joined Tridya ENT Clinic",
+          "place": "Coimbatore",
+          "d": "Set up the second sound booth and tele-audiology."
+        },
+        {
+          "years": "2021",
+          "role": "Voice therapy service",
+          "place": "Tridya ENT Clinic",
+          "d": "Started voice therapy with the laryngology team."
+        },
+        {
+          "years": "2023–now",
+          "role": "Lead Audiologist",
+          "place": "Tridya ENT Clinic",
+          "d": "Leads hearing aid and implant mapping programmes."
+        }
+      ],
+      "pron": "her",
+      "search": "divya prakash lead audiologist & speech-language pathologist audiology & speech therapy audiology lab hearing tests hearing aids speech therapy voice therapy pure-tone audiometry tympanometry bera oae hearing aid fitting cochlear implant mapping voice therapy tinnitus counselling hearing aid trial & fitting digital hearing aids with 7-day home trial vertigo assessment & repositioning bppv diagnosis and epley manoeuvre cochlear implant evaluation candidacy tests for severe to profound loss microlaryngeal surgery vocal cord nodules, polyps and cysts voice therapy sessions with a speech-language pathologist swallowing assessment (fees) endoscopic check of how you swallow",
+      "reviews_label": "4.9 · 341 reviews"
+    }
+  ]
+}

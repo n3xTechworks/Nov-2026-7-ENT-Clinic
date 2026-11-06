@@ -1,0 +1,96 @@
+---
+title: {{tx.name}} | Tridya ENT Clinic
+description: {{tx.summary}}
+nav: services
+css: treatment
+js: treatment
+---
+    <section class="page-head tx-head" aria-labelledby="page-title">
+      <div class="wrap">
+        {{crumbs Services=services.html | {{tx.short}}}}
+        <span class="pill {{tx.setting_class}} tx-badge">{{tx.badge}}</span>
+        <h1 id="page-title">{{tx.name}}</h1>
+        <p class="lead">{{tx.summary}}</p>
+      </div>
+    </section>
+    <section class="sec tx-body" data-tx="{{tx.slug}}" data-lead="{{tx.lead}}">
+      <div class="wrap">
+        <div class="facts tx-facts" data-reveal>{{#each tx.facts}}<div><span>{{k}}</span><b class="tnum">{{v}}</b></div>{{/each}}</div>
+      </div>
+      <div class="wrap grid tx-grid">
+        <div class="prose tx-main g-md-6" style="grid-column:span 8">
+          <div class="ph tx-photo" style="aspect-ratio:16/9">{{img {{tx.photo}} | {{tx.alt}} | (max-width: 900px) 100vw, 800px | eager}}</div>
+
+          <h2 id="who">Who it is for</h2>
+          <ul class="tx-who">{{#each tx.who}}<li>{{this}}</li>{{/each}}</ul>
+
+          <h2 id="how">How it is done</h2>
+          <div class="ol">{{#each tx.steps}}<div><h4>{{t}}</h4><p class="muted">{{d}}</p></div>{{/each}}</div>
+
+          <h2 id="recovery">{{tx.recovery_title}}</h2>
+          <div class="tl">{{#each tx.recovery}}<div><span>{{when}}</span><b>{{t}}</b><p>{{d}}</p></div>{{/each}}</div>
+
+          <h2 id="risks">Risks and safety</h2>
+          <div class="card tx-risks">
+            <ul>{{#each tx.risks}}<li>{{icon shield-check 18}}<span>{{this}}</span></li>{{/each}}</ul>
+            <p class="tx-note">{{icon info 16}}<span>Your specialist goes through the risks that apply to you before you sign a consent form. Ask as many questions as you need.</span></p>
+          </div>
+
+          <h2 id="cost">Setting and cost guide</h2>
+          <div class="card tx-cost">
+            <dl class="tx-cost-grid">
+              <div><dt>Setting</dt><dd><span class="pill {{tx.setting_class}}">{{tx.setting}}</span></dd></div>
+              <div><dt>Typical time</dt><dd class="tnum">{{tx.time}}</dd></div>
+              <div><dt>Consultation</dt><dd class="tnum">{{tx.fee_label}}</dd></div>
+              <div><dt>Estimated cost</dt><dd class="tnum">{{tx.cost_range}}</dd></div>
+            </dl>
+            <p class="muted">{{tx.cost_note}} Final cost depends on your examination and is confirmed in writing before any procedure. Most insurers and the Tamil Nadu CMCHIS scheme are accepted.</p>
+          </div>
+
+          <h2 id="faq">Common questions</h2>
+          <div class="faq" data-accordion="single">{{#each tx.faq}}<details{{#if @first}} open{{/if}}><summary>{{q}}{{icon plus}}</summary><p>{{a}}</p></details>{{/each}}</div>
+        </div>
+
+        <aside class="g-md-6 tx-aside" style="grid-column:span 4" aria-label="Book and specialists">
+          <div class="aside">
+            <div class="card">
+              <h3>{{tx.book_title}}</h3>
+              <p class="muted" style="font-size:15.5px">{{tx.book_note}}</p>
+              <div class="sum"><div><span>Consultation fee</span><b class="tnum">{{tx.fee_label}}</b></div><div><span>{{tx.test_name}}</span><b class="tnum">{{tx.test_fee}}</b></div><div><span>Next available</span><b data-tx-next>{{tx.lead_doc.next_slot}}</b></div></div>
+              <a class="btn btn-cta btn-block" href="book.html?treatment={{tx.slug}}&amp;doctor={{tx.lead}}">{{icon calendar-days}}Book appointment</a>
+            </div>
+            <div class="card">
+              <h4>Specialists for this treatment</h4>
+              {{#each tx.team_info}}<a class="mini-doc" href="{{page}}"><span class="ph round">{{portrait {{portrait}} | {{portrait_alt}} | 160}}</span><span><b>{{name}}</b><small>{{note}}</small></span></a>{{/each}}
+              <a class="link" href="doctors.html">All doctors{{icon arrow-right 16 flip}}</a>
+            </div>
+            <div class="card">
+              <h4>{{tx.prep_title}}</h4>
+              <p class="muted" style="font-size:15.5px">{{tx.prep_text}}</p>
+              <button class="btn btn-ghost" type="button" data-open-dialog="dlg-prep">{{icon clipboard-list}}View checklist</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sec alt">
+      <div class="wrap">
+        <div class="sh"><div class="sh-txt"><span class="eyebrow">Related treatments</span><h2>Often considered alongside {{tx.short}}</h2></div></div>
+        <div class="cards tx-related" style="--cols:3;--rows:4" data-stagger>
+          {{#each tx.related_tx}}<a class="card sub lift" href="{{page}}"><span class="eyebrow">{{specialty_label}}</span><h3>{{name}}</h3><span class="mono muted">{{setting}} · {{time}}</span><span class="link">View treatment{{icon arrow-right 16 flip}}</span></a>{{/each}}
+        </div>
+      </div>
+    </section>
+
+    <dialog class="modal" id="dlg-prep" aria-labelledby="dlg-prep-t">
+      <span class="grab" aria-hidden="true"></span>
+      <div class="modal-h"><div class="t"><span class="badge-ic">{{icon clipboard-list}}</span><div><h3 id="dlg-prep-t">{{tx.prep_title}}</h3><p>{{tx.name}}</p></div></div>
+        <button class="icon-btn close" type="button" aria-label="Close" data-close>{{icon x}}</button></div>
+      <div class="modal-b">
+        <p class="muted">{{tx.prep_text}}</p>
+        <ul class="tx-check">{{#each tx.prep_items}}<li>{{icon circle-check 18}}<span>{{this}}</span></li>{{/each}}</ul>
+        <p class="tx-note">{{icon phone 16}}<span>Questions before your visit? Call +91 422 245 6780, Mon–Sat 09:00–20:00.</span></p>
+      </div>
+      <div class="modal-f"><span class="sp">Keep this list handy for the day</span><button class="btn btn-ghost" type="button" data-print>{{icon printer 16}}Print</button><button class="btn btn-cta" type="button" data-close>Done</button></div>
+    </dialog>

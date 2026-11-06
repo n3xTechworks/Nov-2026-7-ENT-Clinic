@@ -1,0 +1,98 @@
+---
+title: Book appointment | Patient portal | Tridya ENT Clinic
+description: Book an ENT appointment from your Tridya patient portal: choose a specialty, doctor, date and time.
+layout: app
+app: book
+app_title: Book appointment
+css: dashboard-book
+js: dashboard-book
+search: no
+---
+        <form class="d2 bk" id="bkForm" data-validate data-validate-only novalidate>
+          <div class="bk-main" style="grid-column:span 8">
+            <section class="panel" aria-labelledby="bk-s1">
+              <div class="panel-h"><h3 id="bk-s1">1 · Specialty and doctor</h3></div>
+              <div class="panel-b bk-stack">
+                <div class="chip-row" role="group" aria-label="Specialty" data-spec>
+                  <button type="button" class="chip" aria-pressed="true" data-spec-key="ear">Ear &amp; hearing</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="nose">Nose &amp; sinus</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="throat">Throat &amp; voice</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="headneck">Head &amp; neck</button>
+                  <button type="button" class="chip" aria-pressed="false" data-spec-key="children">Children</button>
+                </div>
+                <div class="docpick" role="radiogroup" aria-label="Doctor" data-docs>
+                  <button type="button" role="radio" aria-checked="true" class="on" data-doc="meera" data-spec-in="ear"><span class="ph round">{{portrait doc-meera | Dr. Meera Raghavan | 160}}</span><span class="dp-t"><b>Dr. Meera Raghavan</b><small>Otology · ₹900</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="divya" data-spec-in="ear"><span class="ph round">{{portrait doc-divya | Divya Prakash | 160}}</span><span class="dp-t"><b>Divya Prakash</b><small>Audiology · ₹500</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="rahul" data-spec-in="ear children"><span class="ph round">{{portrait doc-rahul | Dr. Rahul Menon | 160}}</span><span class="dp-t"><b>Dr. Rahul Menon</b><small>Paediatric ENT · ₹700</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="arjun" data-spec-in="nose" hidden><span class="ph round">{{portrait doc-arjun | Dr. Arjun Venkatesh | 160}}</span><span class="dp-t"><b>Dr. Arjun Venkatesh</b><small>Rhinology · ₹800</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="kavitha" data-spec-in="throat" hidden><span class="ph round">{{portrait doc-kavitha | Dr. Kavitha Sundaram | 160}}</span><span class="dp-t"><b>Dr. Kavitha Sundaram</b><small>Laryngology · ₹800</small></span></button>
+                  <button type="button" role="radio" aria-checked="false" data-doc="farhana" data-spec-in="headneck" hidden><span class="ph round">{{portrait doc-farhana | Dr. Farhana Iqbal | 160}}</span><span class="dp-t"><b>Dr. Farhana Iqbal</b><small>Head &amp; neck · ₹1,000</small></span></button>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" aria-labelledby="bk-s2">
+              <div class="panel-h"><h3 id="bk-s2">2 · Date and time</h3><span class="mono muted" data-doc-days>Dr. Meera · Mon, Wed, Thu, Fri</span></div>
+              <div class="panel-b bk-dt">
+                <div class="bk-cal">
+                  <div class="bk-cal-h"><b data-month>November 2026</b>
+                    <span class="bk-cal-nav"><button type="button" class="icon-btn sm" aria-label="Previous month" data-mprev>{{icon chevron-left 18 flip}}</button><button type="button" class="icon-btn sm" aria-label="Next month" data-mnext>{{icon chevron-right 18 flip}}</button></span>
+                  </div>
+                  <div class="cal" data-cal role="grid" aria-label="Choose a date"></div>
+                </div>
+                <div class="bk-slots">
+                  <b data-slot-head>Thu, 12 Nov · Evening OPD</b>
+                  <div class="slots" data-slots role="group" aria-label="Available times"></div>
+                  <p class="msg hint">{{icon info}}Struck-out times are already booked.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" aria-labelledby="bk-s3">
+              <div class="panel-h"><h3 id="bk-s3">3 · Visit details</h3></div>
+              <div class="panel-b bk-stack">
+                <div class="vtype" role="radiogroup" aria-label="Visit mode">
+                  <label class="on"><input class="sr-only" type="radio" name="mode" value="clinic" checked>{{icon hospital}}<b>In-clinic visit</b><small>Required for hearing tests</small></label>
+                  <label><input class="sr-only" type="radio" name="mode" value="video">{{icon video}}<b>Video consultation</b><small>Follow-ups and report reviews</small></label>
+                </div>
+                <div class="form-grid">
+                  <div class="field"><label for="db-for">Booking for</label>
+                    <select class="inp" id="db-for" name="patient" required>
+                      <option value="Sangeetha Prakash">Myself · Sangeetha Prakash</option>
+                      <option value="Arun Prakash">Arun Prakash · Husband</option>
+                      <option value="Diya Prakash">Diya Prakash · Daughter, 9</option>
+                      <option value="Kamala Raman">Kamala Raman · Mother</option>
+                    </select></div>
+                  <div class="field"><label for="db-type">Visit type</label>
+                    <select class="inp" id="db-type" name="visit" required>
+                      <option value="">Choose a visit type</option>
+                      <option value="New consultation">New consultation</option>
+                      <option value="Follow-up" selected>Follow-up</option>
+                      <option value="Report review">Report review</option>
+                      <option value="Hearing test">Hearing test</option>
+                    </select></div>
+                  <div class="field full"><label for="db-note">Note for the doctor</label>
+                    <textarea class="inp" dir="auto" id="db-note" name="note" maxlength="500" placeholder="Symptoms, how long you've had them, medicines you take">Ringing in the left ear is better, but still noticeable at night.</textarea></div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="bk-aside" style="grid-column:span 4">
+            <div class="panel bk-sum">
+              <div class="panel-h"><h3>Summary</h3></div>
+              <div class="panel-b bk-stack">
+                <div class="sum" aria-live="polite">
+                  <div><span>Doctor</span><b data-s-doc>Dr. Meera Raghavan</b></div>
+                  <div><span>Date</span><b data-s-date>Thu, 12 Nov 2026</b></div>
+                  <div><span>Time</span><b class="tnum" data-s-time>17:10</b></div>
+                  <div><span>Visit</span><b data-s-visit>In-clinic follow-up</b></div>
+                  <div><span>Fee</span><b class="tnum" data-s-fee>₹900</b></div>
+                </div>
+                <button class="btn btn-cta btn-lg btn-block" type="submit" data-confirm>Confirm booking</button>
+                <p class="msg hint">{{icon bell}}Reminders 24 h and 2 h before, by SMS and WhatsApp.</p>
+                <div class="alert ok-alert" data-booked hidden>{{icon circle-check}}<span><b>Appointment booked</b><span data-booked-txt>Booking ID TRD-24811</span><a class="link" href="dashboard-appointments.html">View my appointments{{icon arrow-right 16 flip}}</a></span></div>
+              </div>
+            </div>
+          </aside>
+        </form>
