@@ -69,6 +69,41 @@ js: treatment
               <p class="muted" style="font-size:15.5px">{{tx.prep_text}}</p>
               <button class="btn btn-ghost" type="button" data-open-dialog="dlg-prep">{{icon clipboard-list}}View checklist</button>
             </div>
+            <div class="card">
+              <h4>Insurance and payment</h4>
+              <ul class="tx-list">
+                <li>{{icon receipt}}<span>Estimated cost <b class="tnum">{{tx.cost_range}}</b>, confirmed in writing before you book</span></li>
+                <li>{{icon shield-check}}<span>Our insurance desk checks your cover and handles cashless approval</span></li>
+                <li>{{icon credit-card}}<span>Pay by UPI, card or cash at the front desk</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>Rated 4.9 by our patients</h4>
+              <p class="tx-rating">{{stars 5}}<span>from 2,400+ reviews on Google and our patient portal</span></p>
+              <a class="link" href="index.html#testi-h">Read patient stories{{icon arrow-right 16 flip}}</a>
+            </div>
+            <div class="card">
+              <h4>Finding the clinic</h4>
+              <ul class="tx-list">
+                <li>{{icon map-pin}}<span>42 Race Course Road, Coimbatore, Tamil Nadu 641018</span></li>
+                <li>{{icon parking}}<span>Free basement parking for 30 cars, lift to all floors</span></li>
+                <li>{{icon video}}<span>Follow-ups by video from the patient portal where suitable</span></li>
+              </ul>
+              <a class="link" href="contact.html">Directions and timings{{icon arrow-right 16 flip}}</a>
+            </div>
+            {{#if tx.read_post}}<div class="card">
+              <h4>Read before your visit</h4>
+              <a class="tx-read" href="{{tx.read_post.page}}">{{icon book-open}}<span><b>{{tx.read_post.title}}</b><small>{{tx.read_post.category}} · {{tx.read_post.read}}</small></span></a>
+            </div>{{/if}}
+            <div class="card">
+              <h4>Questions before you book?</h4>
+              <p class="muted" style="font-size:15.5px">Our care coordinators answer by phone or WhatsApp.</p>
+              <ul class="tx-list">
+                <li>{{icon phone}}<a class="tnum" href="tel:+914222456780">+91 422 245 6780</a></li>
+                <li>{{icon clock}}<span>Mon–Sat · 09:00–13:00, 16:30–20:00</span></li>
+              </ul>
+              <a class="btn btn-ghost" href="https://wa.me/914222456780" target="_blank" rel="noopener">{{icon message-circle}}Message on WhatsApp</a>
+            </div>
           </div>
         </aside>
       </div>

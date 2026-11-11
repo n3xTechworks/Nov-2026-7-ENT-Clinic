@@ -1,4 +1,5 @@
-    <section class="page-head" aria-labelledby="page-title">
+    <section class="page-head{{#if head_img}} page-head--img{{/if}}" aria-labelledby="page-title">
+      {{#if head_img}}<div class="ph-bg">{{{head_img_html}}}</div>{{/if}}
       <div class="wrap">
         {{{crumbs_html}}}
         {{#if eyebrow}}<span class="eyebrow">{{eyebrow}}</span>{{/if}}

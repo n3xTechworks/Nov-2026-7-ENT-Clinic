@@ -111,3 +111,8 @@ html.motion .bl-card:hover .bl-cover img{transform:scale(1.04)}
 .bl-read{margin-top:10px}
 .bl-author b{white-space:nowrap}
 .ar-aside .aside,.ar-author-h>div{min-width:0}
+/* report 97: where cards get narrow (under ~335px: e.g. 1024px with 3 columns), "Read article" sits under the author instead of spilling out of the card */
+@media (max-width:379.98px),(min-width:561px) and (max-width:739.98px),(min-width:901px) and (max-width:1099.98px){
+  .bl-foot{flex-direction:column;align-items:flex-start;gap:10px}
+  .bl-read{margin-top:0}
+}

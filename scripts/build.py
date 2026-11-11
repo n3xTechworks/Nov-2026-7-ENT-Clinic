@@ -57,6 +57,9 @@ for d in DOCTORS:
     d["posts"] = [p for p in POSTS if p.get("author") == d["slug"]]
 for p in POSTS:
     p["author_doc"] = DOC.get(p.get("author"), {})
+# report 97: one related article per treatment (matched on specialty) for the treatment-page sidebar
+for t in TREATMENTS:
+    t["read_post"] = next((p for p in POSTS if t["specialty"] in p.get("tags", "").split()), None)
 
 
 # ------------------------------------------------------------------ images
@@ -397,6 +400,8 @@ def build(name, fm, body, extra=None):
     ctx["title"] = ctx.get("title") or "%s | %s" % (name, BRAND)
     ctx["description"] = ctx.get("description") or DEFAULT_DESC
     ctx["crumbs_html"] = crumbs_html(ctx.get("crumbs", ""), ctx)
+    # report 97: inner-page header with a background photo (front matter head_img / head_alt)
+    ctx["head_img_html"] = m_img("%s | %s | 100vw | eager" % (ctx["head_img"], ctx.get("head_alt", "")), ctx) if ctx.get("head_img") else ""
     ctx["page_css"] = asset_tags(fm.get("css", ""), "css", name)
     ctx["page_js"] = asset_tags(fm.get("js", ""), "js", name)
     ctx["app_js"] = '  <script src="js/app.js" defer></script>\n' if layout == "app" else ""
